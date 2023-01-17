@@ -1,1 +1,0 @@
-# grupo_1_electroArco
