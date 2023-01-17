@@ -5,7 +5,11 @@ INTEGRANTES DEL EQUIPO
 
 Melany Perez Ovallos de nacionalidad colombiana, profesional en ingeniería civil - especialista en geotecnia vial y pavimentos. Actualmente en proceso de formacion como desarrollador (a) web en Digital House.  
 
+Rafael Santo Padilla de Agustin Colombiano tengo 25 años, soy tecnólogo en análisis y desarrollo de sistemas, técnico en sistemas. Actualmente estudio desarrollo web Full Stack  en la academia Digital House.
+
+
 SITIOS DE REFERENCIA 
 
-1. https://www.alkosto.com/  Tienda virtual y fisica colombiana que ofrece referencias de electrodomésticos, tecnología, accesorios y consumibles. 
+1. https://www.alkosto.com/  Tienda virtual y fisica colombiana que ofrece la venta de referencias de electrodomésticos, tecnología, accesorios y consumibles. 
 
+2. https://www.mercadolibre.com.co/ tienda virtual latinoamericana que ofrece productos similares a nuestro sitio web, me gusta la funcionalidad en el momento de agregar productos al carrito de compras.
