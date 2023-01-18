@@ -7,9 +7,12 @@ Melany Perez Ovallos de nacionalidad colombiana, profesional en ingeniería civi
 
 Rafael Santo Padilla de Agustin Colombiano tengo 25 años, soy tecnólogo en análisis y desarrollo de sistemas, técnico en sistemas. Actualmente estudio desarrollo web Full Stack  en la academia Digital House.
 
+Hugo Alberto García Soy colombiano tengo 38 años soy técnico en sistemas y actualmente estudio desarrollo web full stack en Digital House
 
 SITIOS DE REFERENCIA 
 
 1. https://www.alkosto.com/  Tienda virtual y fisica colombiana que ofrece la venta de referencias de electrodomésticos, tecnología, accesorios y consumibles. 
 
 2. https://www.mercadolibre.com.co/ tienda virtual latinoamericana que ofrece productos similares a nuestro sitio web, me gusta la funcionalidad en el momento de agregar productos al carrito de compras.
+
+3.https://registration.tucarro.com.co/registration-tc?confirmation_url=https%3A%2F%2Fwww.tucarro.com.co%2Fh%2Fhome%2Findex#nav-header es una plataforma para la venta de autos usados y me ha gustado porque sencilla y fácil de usar.
