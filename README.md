@@ -9,6 +9,8 @@ Rafael Santo Padilla de Agustin Colombiano tengo 25 años, soy tecnólogo en an�
 
 Hugo Alberto García Soy colombiano tengo 38 años soy técnico en sistemas y actualmente estudio desarrollo web full stack en Digital House
 
+Maria Elena Gonzales de Buenos Aires Argentina, tengo 23 años soy estudiando de Diseño Grafico y Multimedia . Actualmente estudio desarrollo web Full Stack en la academia Digital House.
+
 SITIOS DE REFERENCIA 
 
 1. https://www.alkosto.com/  Tienda virtual y fisica colombiana que ofrece la venta de referencias de electrodomésticos, tecnología, accesorios y consumibles. 
