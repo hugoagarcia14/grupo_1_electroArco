@@ -21,4 +21,6 @@ SITIOS DE REFERENCIA
 
 3.https://registration.tucarro.com.co/registration-tc?confirmation_url=https%3A%2F%2Fwww.tucarro.com.co%2Fh%2Fhome%2Findex#nav-header es una plataforma para la venta de autos usados y me ha gustado porque sencilla y fácil de usar.
 
-4. https://www.musimundo.com/login // tienda virtual de empresa de electrodomestico de argentina, similar a nuestro sitio web , utilice la pagina de instagram de celular, por su sencillez y por ser el mas completo. 
+4. https://www.musimundo.com/login // tienda virtual de empresa de electrodomestico de argentina, similar a nuestro sitio web , utilice la pagina de instagram de celular, por su sencillez y por ser el mas completo.
+
+5. https://www.instagram.com/ la tomamos como referencia para el diseño del loguin de la versión app. 
