@@ -11,6 +11,8 @@ Hugo Alberto García Soy colombiano tengo 38 años soy técnico en sistemas y ac
 
 Maria Elena Gonzales de Buenos Aires Argentina, tengo 23 años soy estudiando de Diseño Grafico y Multimedia . Actualmente estudio desarrollo web Full Stack en la academia Digital House.
 
+Gabriel Alejandro Gavier de Buenos Aires Argentina, tengo 29 años soy community mannager, fui candidato politico. Actualmente estudio desarrollo web full stack en la Academia Digital House
+
 SITIOS DE REFERENCIA 
 
 1. https://www.alkosto.com/  Tienda virtual y fisica colombiana que ofrece la venta de referencias de electrodomésticos, tecnología, accesorios y consumibles. 
@@ -18,3 +20,5 @@ SITIOS DE REFERENCIA
 2. https://www.mercadolibre.com.co/ tienda virtual latinoamericana que ofrece productos similares a nuestro sitio web, me gusta la funcionalidad en el momento de agregar productos al carrito de compras.
 
 3.https://registration.tucarro.com.co/registration-tc?confirmation_url=https%3A%2F%2Fwww.tucarro.com.co%2Fh%2Fhome%2Findex#nav-header es una plataforma para la venta de autos usados y me ha gustado porque sencilla y fácil de usar.
+
+4. https://www.musimundo.com/login // tienda virtual de empresa de electrodomestico de argentina, similar a nuestro sitio web , utilice la pagina de instagram de celular, por su sencillez y por ser el mas completo. 
