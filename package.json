@@ -1,0 +1,27 @@
+{
+  "name": "Proyecto-Integrador",
+  "version": "1.0.0",
+  "description": "TEMATICA DEL MARKET PLACE\r El propósito principal es la creación de la plataforma web “Electroarco” cuya función es prestar el servicio de venta y envío de productos electrodomésticos y de tecnología de manera virtual; esto acorde a la tendencia del mercado actual de las compras online; enfocándonos en presentar al público los mejores precios del mercado. Nuestro sitio web esta orientado al publico mayor de 18 años que tenga interes en comprar productos para el hogar como asi tambien de tecnologia; ademas nuestro objetivo tambien es captar potenciales proveedores que deseen vender sus productos por nuestra red.",
+  "main": "app.js",
+  "scripts": {
+    "dev":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugoagarcia14/grupo_1_electroArco.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugoagarcia14/grupo_1_electroArco/issues"
+  },
+  "homepage": "https://github.com/hugoagarcia14/grupo_1_electroArco#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
