@@ -5,8 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>ElectoArco</title>
+    <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
-    <h1>HOLA MUNDO esto fue un éxito</h1>
+    <div class="cabecera">
+        <h1>ElectoArco</h1>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <form action="" method="post" class="crear-formulario">
+        <div class="control-for">
+            <label>Nombre:</label>
+            <input type="text" name="nombreUsuario" id="nombreUsuario" class="input-control">
+        </div>
+        <div class="control-for">
+            <label>Apellidos:</label>
+            <input type="text" name="apellidoUsuario" class="input-control">
+        </div>
+        <div class="control-for">
+            <label>Celular:</label>
+            <input type="text" name="celularUsuario" class="input-control">
+        </div>
+        <div class="control-for">
+            <label>Correo</label>
+            <input type="text" name="correoUsuario" id="correoUsuario" class="input-control">
+        </div>
+        <div class="control-for">
+            <label>Contraseña</label>
+            <input type="password" name="contraseñaUsuario" id="contraseñaUsuario" class="input-control">
+        </div>
+        <div class="boton-guardar">
+            <button type="submit" class="boton-formulario">ENVIAR</button>
+        </div>
+    </form>
 </body>
 </html>

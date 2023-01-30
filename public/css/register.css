@@ -1,0 +1,49 @@
+.cabecera{
+    border: 1px solid black;
+}
+.burger-menu{
+    display: flex;
+    justify-content: right;
+    padding: 5px;
+}
+.burger-menu i{
+    padding: 5px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    background-color: #1259c3;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;    
+}
+.control-for{
+    margin-bottom: 15px;
+}
+.control-for label{
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+.input-control{
+    width: 95%;
+    padding: 10px;
+    padding-left: 0px;
+}
+.boton-formulario{
+    background-color: gray;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+.boton-guardar{
+    text-align: center;
+}
+@media(min-width:760px){
+    .input-control{
+        width: 40%;
+        display: inline-block;
+        
+    }
+}
