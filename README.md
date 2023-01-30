@@ -24,3 +24,7 @@ SITIOS DE REFERENCIA
 4. https://www.musimundo.com/login // tienda virtual de empresa de electrodomestico de argentina, similar a nuestro sitio web , utilice la pagina de instagram de celular, por su sencillez y por ser el mas completo.
 
 5. https://www.instagram.com/ la tomamos como referencia para el diseño del loguin de la versión app. 
+
+Link del tablero de trabajo
+
+https://trello.com/b/ez3m0JYd/electro-arco
