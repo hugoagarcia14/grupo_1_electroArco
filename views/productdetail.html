@@ -4,45 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/productdetail.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>ElectoArco</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <i class="fas fa-chevron-left"></i>
-            <i class="fas fa-shopping-cart"></i>
-            <i class="fas fa-share-square"></i>
-        </div>
-        <div>
+        <section class="box1">
+            <button name="comeback"><a href="#"><i class="fas fa-chevron-left"></i></a></button>
+            <div class="sharesquare"><button name="share"><a href="#"><i class="fas fa-share-square"></i></a></button>
+            </div>
+            <div class="shoppingcar"><button name="shopcar"><a href="#"><i
+                            class="fas fa-shopping-cart"></i></a></button></div>
+        </section>
+        <section class="box2">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Opciones de entrega</span>
-            <button class="decrease">
-                v
-            </button>
-        </div>
+            <span class="deliveryopt">Opciones de entrega</span>
+            <div>
+                <!--<i class="fas fa-chevron-down"></i>-->
+                <select class="select">
+                    <option value="value0">-Selecciona-</option>
+                    <option value="value1">Envío a tu dirección</option>
+                    <option value="value2">Recoge en tienda</option>
+                </select>
+            </div>
+        </section>
     </header>
     <main>
+        <section class="box3">
+            <p class="title">Marca</9>
+            <p class="subtitle">Nombre del producto</p>
+            <p class="other">Número de producto:</p>
+        </section>
+        <section class="productimage"><img src="images/product image.jpg" alt="aquívalaimagendelproducto"></section>
+        <section class="box4">
             <div>
-                <h2>Marca</h2>
-                <h3>Nombre del producto</h3>
-                <h5>Número de producto:</h5>
+                <p class="price">Precio</p>
             </div>
-            <div>
-                <p>Aquí va el carrusel de imagenes</p>
+            <div class="subbox1">
+                <i class="fas fa-info-circle"></i>
+                <button name="moreinfo"><a href="#">
+                        <p class="moreinfo">Más información del producto
+                    </a></button>
             </div>
-            <div>
-                <h3>$Precio</h3>
-                <i class="fas fa-info"></i>
-                <span>Más información del producto</span>
-            </div>
+        </section>
     </main>
     <footer>
-        <div>
-            <h2>Agregar al Carrito</h2>
-        </div>
+        <section class="add">
+            <button name="add"><a href="#">
+                    <p>Agregar al Carrito</p>
+                </a></button>
+        </section>
     </footer>
 </body>
 
