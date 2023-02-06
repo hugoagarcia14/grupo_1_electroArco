@@ -8,11 +8,39 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/productdetail.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34b99c374a.js" crossorigin="anonymous"></script>
     <title>ElectoArco</title>
 </head>
 
 <body>
     <header>
+        <section class="box1-1">
+            <div id="info">
+                <div class="infotop">
+                    <p>Televentas: + 000 000 000
+                </div>
+                <div class="infotop">
+                    <p>Atención al cliente: + 000 000 000
+                </div>
+                <i class="fas fa-truck"></i>
+                <div class="infotop">Rastrea tu pedido</div>
+                <div class="infotop">Tiendas</div>
+                <div class="infotop">PQR</div>
+            </div>
+            <div id="search">
+                <input type="text" class="search1" value="¿Qué buscas hoy?">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user-circle"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+            <div id="categories">
+                <p>Categoria 1</p>
+                <p>Categoria 2</p>
+                <p>Categoria 3</p>
+                <p>Categoria 4</p>
+                <p>Ofertas</p>
+            </div>
+        </section>
         <section class="box1">
             <button name="comeback"><a href="#"><i class="fas fa-chevron-left"></i></a></button>
             <div class="sharesquare"><button name="share"><a href="#"><i class="fas fa-share-square"></i></a></button>
@@ -24,7 +52,6 @@
             <i class="fas fa-map-marker-alt"></i>
             <span class="deliveryopt">Opciones de entrega</span>
             <div>
-                <!--<i class="fas fa-chevron-down"></i>-->
                 <select class="select">
                     <option value="value0">-Selecciona-</option>
                     <option value="value1">Envío a tu dirección</option>
@@ -39,7 +66,54 @@
             <p class="subtitle">Nombre del producto</p>
             <p class="other">Número de producto:</p>
         </section>
-        <section class="productimage"><img src="images/product image.jpg" alt="aquívalaimagendelproducto"></section>
+        <section class="productimage"><!--<img src="images/product image.jpg" alt="aquívalaimagendelproducto">-->
+            <div id="conteItemsCarrusel">
+                <div class="itemCarrusel" id="itemCarrusel-1">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-1">
+                        <img src="./images/product image.jpg" alt="item-1-Carrusel">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-3">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <a href="#itemCarrusel-2">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-2">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-2">
+                        <img src="./images/product image 1.jpg" alt="item-2-Carrusel">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-1">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <a href="#itemCarrusel-3">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="itemCarrusel" id="itemCarrusel-3">
+                    <div class="tarjetaCarrusel" id="tarjetaCarrusel-3">
+                        <img src="./images/product image 2.jpg" alt="item-1-Carrusel">
+                    </div>
+                    <div class="flechasCarrusel">
+                        <a href="#itemCarrusel-2">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </a>
+                        <a href="#itemCarrusel-1">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div id="contePuntos">
+                <a href="#itemCarrusel-1">·</a>
+                <a href="#itemCarrusel-2">·</a>
+                <a href="#itemCarrusel-3">·</a>
+            </div>
+        </section>
         <section class="box4">
             <div>
                 <p class="price">Precio</p>
@@ -49,6 +123,54 @@
                 <button name="moreinfo"><a href="#">
                         <p class="moreinfo">Más información del producto
                     </a></button>
+            </div>
+        </section>
+        <section class="box1-2">
+            <img src="images/product image.jpg" alt="aquívalaimagendelproducto">
+            <div id="box1-2-1">
+                <p>Nombre del producto</p>
+                <p>Número del producto:</p>
+            </div>
+            <div id="box1-2-2">
+                <p class="price">Precio</p>
+                <div id="cantadd">
+                    <select class="select">
+                        <option value="value0">1</option>
+                        <option value="value1">2</option>
+                        <option value="value2">3</option>
+                        <option value="value2">4</option>
+                        <option value="value2">5</option>
+                    </select>
+                    <button name="add">
+                        <p>Agregar al Carrito</p>
+                    </button>
+                    <p>Opciones de entrega</p>
+                    <label>
+                        <input type="radio" name="opcentrega" value="Envío a tu dirección"><i id="truck2"><i
+                                class="fas fa-truck"></i></i>Envío a tu dirección
+                    </label>
+                    <label>
+                        <input type="radio" name="opcentrega" value="Recoge en la tienda"><i
+                            class="fas fa-shopping-bag"></i></i>Recoge en la tienda
+                    </label>
+                    <p>Disponibilidad en tienda</p>
+                    <i class="fas fa-store"></i></i>
+                    <p>Seleccionar tienda</p>
+                </div>
+            </div>
+            <div id="box1-2-3">
+                <p>Caracteristicas Importantes</p>
+                <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+            <div id="box1-2-4">
+                <p id="text1">Resumen del producto</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare, tellus eu interdum auctor, ante
+                    eros tincidunt libero, et rutrum arcu erat vel nulla. Maecenas eu vulputate odio, lacinia ornare
+                    urna.</p>
             </div>
         </section>
     </main>
