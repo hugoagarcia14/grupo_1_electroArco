@@ -34,7 +34,7 @@ button.fa-chevron-left:a {
 }
 
 .box3 {
-    display: flex;
+    display: block;
     padding: 10px 10px 5px 10px;
     flex-direction: column;
 }
@@ -92,9 +92,211 @@ button.fa-chevron-left:a {
     border: 3px solid #ffffff;
 }
 
-.select{
-    display:block;
-    height:19px;
+.select {
+    display: block;
+    height: 19px;
     width: 18px;
 }
 
+.box1-1 {
+    display: none;
+}
+
+.box1-2 {
+    display: none;
+}
+
+.itemCarrusel {
+    height: 200%;
+    position: relative;
+}
+
+.tarjetaCarrusel {
+    height: 50%;
+}
+
+.flechasCarrusel {
+    position: absolute;
+    top: 0;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#conteItemsCarrusel {
+    height: 400px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+#tarjetaCarrusel-1 {
+    background-color: #ffffff;
+}
+
+#tarjetaCarrusel-2 {
+    background-color: #ffffff;
+}
+
+#tarjetaCarrusel-3 {
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+}
+
+#contePuntos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -26px;
+    margin-top: -30px;
+}
+
+#contePuntos > a {
+    font-size: 5em;
+}
+
+.flechasCarrusel >a {
+    text-align: center;
+}
+
+.tarjetaCarrusel >img {
+    width: 100%;
+    height: 100%;
+}
+@media(min-width:760px) {
+    .box1-1 {
+        position: relative;
+        flex-direction: column;
+        display: flex;
+        padding: 10px;
+    }
+
+    #info {
+        margin-left: auto;
+        display: flex;
+        font-size: 8px;
+        padding-bottom: 15px;
+    }
+
+    .infotop {
+        margin-left: 10px;
+    }
+
+    .fa-truck {
+        margin-right: -10px;
+        margin-left: 10px;
+    }
+
+    #search {
+        margin-left: auto;
+        display: flex;
+    }
+
+    .search1 {
+        width: 600px;
+    }
+
+    .fa-shopping-cart {
+        margin-left: 5px;
+        border-left: 2px solid #000000;
+        padding-left: 4px;
+    }
+
+    .fa-user-circle {
+        margin-left: 20px;
+        font-size: 18px;
+    }
+
+    #categories {
+        display: flex;
+        font-size: 12px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        justify-content: space-around;
+        border: 1px solid #000000;
+        margin-top: 10px;
+        border-radius: 5px;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        display: none;
+    }
+
+    .box3 {
+        display: none;
+    }
+
+    .box4 {
+        display: none;
+    }
+
+    .add {
+        display: none;
+    }
+
+    .productimage {
+        display: none;
+    }
+
+    .box1-2 {
+        position: relative;
+        display: flex;
+        border: 5px solid rgb(215, 43, 43);
+    }
+
+    .box1-2 img {
+        width: 50%;
+        object-fit: cover;
+        padding-left: 50px;
+        padding-top: 20px;
+    }
+
+    #box1-2-3 {
+        position: relative;
+        bottom: -330px;
+        left: -600px;
+        margin-left: 70px;
+    }
+
+    #box1-2-4 {
+        position: relative;
+        bottom: -330px;
+        left: -510px;
+    }
+
+    #box1-2-2 {
+        position: relative;
+        top: 100px;
+        width: 350%;
+        height: 70%;
+        border: 1px solid #000000;
+        border-radius: 5px;
+    }
+
+    #box1-2-1 {
+        position: relative;
+        left: 100px;
+        top: 20px;
+        width: 300%;
+    }
+
+    #text1 {
+        margin-bottom: 15px;
+    }
+
+    #truck2 {
+        padding-right: 15px;
+    }
+
+    .fa-shopping-bag {
+        padding-right: 15px;
+    }
+}
