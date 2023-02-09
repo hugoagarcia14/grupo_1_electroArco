@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.enviarA {
+    display: flex;
+    width: 100%;
+}
+
+.productos {
+    display: flex;
+    width: 100%;
+}
+
+.buscar {
+    display: flex;
+    width: 100%;
+}
+
+.usuario {
+    display: flex;
+    width: 100%;
+}
+
+.misCompras {
+    display: flex;
+    width: 100%;
+}
+
+.shoppingCart {
+    display: flex;
+    width: 100%;
+}
+
+.contenidoMenuNavegacion {
+    display: none;
+}
+
+.menuNavegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuHamburguesa {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuHamburguesa i {
+    display: flex;
+}
+
+.menuNavegacion1 {
+    display: flex;
+    width: 100%;
+    background-color: rgb(207, 202, 202);
+}
+
+.ofertas {
+    width: 30%;
+    text-align: center;
+}
+
+.atencionAlCliente {
+    width: 40%;
+}
+
+.vender {
+    width: 30%;
+    text-align: center;
+}
+
+.carrusel img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.carrusel1 img, .carrusel2 img, .carrusel3 img {
+    width: 50%;
+    height: 30%;
+    object-fit: contain;
+}
+
+.carrusel1, .carrusel2, .carrusel3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel {
+    padding-top: 2%;
+}
+
+@media (min-width: 768px) {
+    .menuNavegacion {
+        display: block;
+    }
+
+    .contenidoMenuNavegacion {
+        display: flex;
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+
+    .carrusel1 img, .carrusel2 img, .carrusel3 img {
+        width: 300%;
+        object-fit: contain;
+    }
+    
+    .carrusel1, .carrusel2, .carrusel3 {
+        display: flex;
+
+    }
+
+    .divCarrusel {
+        display: flex;
+        padding-top: 2%;
+    }
+
+    .menuNavegacion {
+        padding-top: 2%;
+    }
+    
+    .menuNavegacion1 {
+        margin-top: 2%;
+    }
+
+}

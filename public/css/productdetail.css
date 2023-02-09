@@ -92,12 +92,6 @@ button.fa-chevron-left:a {
     border: 3px solid #ffffff;
 }
 
-.select {
-    display: block;
-    height: 19px;
-    width: 18px;
-}
-
 .box1-1 {
     display: none;
 }
@@ -144,7 +138,7 @@ button.fa-chevron-left:a {
     background-color: #ffffff;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -152,21 +146,31 @@ a{
     display: flex;
     justify-content: space-around;
     margin-bottom: -26px;
-    margin-top: -30px;
+    margin-top: -50px;
 }
 
-#contePuntos > a {
+#contePuntos>a {
     font-size: 5em;
 }
 
-.flechasCarrusel >a {
+.flechasCarrusel>a {
     text-align: center;
 }
 
-.tarjetaCarrusel >img {
+.tarjetaCarrusel>img {
     width: 100%;
     height: 100%;
 }
+
+.pieDePagina {
+    display: none;
+}
+
+.select1 {
+    width: 15%;
+    margin-left: 85%;
+}
+
 @media(min-width:760px) {
     .box1-1 {
         position: relative;
@@ -184,11 +188,13 @@ a{
 
     .infotop {
         margin-left: 10px;
+        font-size: 10px;
     }
 
     .fa-truck {
         margin-right: -10px;
         margin-left: 10px;
+        padding-top: 3px;
     }
 
     #search {
@@ -197,7 +203,7 @@ a{
     }
 
     .search1 {
-        width: 600px;
+        width: 500px;
     }
 
     .fa-shopping-cart {
@@ -242,61 +248,198 @@ a{
         display: none;
     }
 
+    .box1-2 {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 1fr 1fr 0.6fr 0fr;
+        grid-template-areas:
+            "uno dos"
+            "uno cuatro"
+            "tres cuatro"
+            "cinco .";
+    }
+
+    .Carrusel {
+        grid-area: uno;
+        padding-left: 40px;
+        margin-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .Carrusel img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #box1-2-1 {
+        grid-area: dos;
+        padding-left: 15px;
+        padding-top: 90px;
+        margin: 20px
+    }
+
+    #caracteristicasyresumen {
+        grid-area: tres;
+        display: flex;
+    }
+
+    #box1-2-2 {
+        grid-area: cuatro;
+        height: 75%;
+        border: 1px solid #000000;
+        border-radius: 5px;
+        padding: 15px;
+        margin: 20px
+    }
+
+    #moreinfo {
+        grid-area: cinco;
+        display: flex;
+        padding-left: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
     .productimage {
         display: none;
     }
 
-    .box1-2 {
-        position: relative;
+    #cantadd {
         display: flex;
-        border: 5px solid rgb(215, 43, 43);
+        padding-bottom: 20px;
     }
 
-    .box1-2 img {
-        width: 50%;
-        object-fit: cover;
-        padding-left: 50px;
-        padding-top: 20px;
+    #opcent {
+        padding-bottom: 10px;
+        font-size: 14px;
+        font-weight: bold;
     }
 
-    #box1-2-3 {
-        position: relative;
-        bottom: -330px;
-        left: -600px;
-        margin-left: 70px;
-    }
-
-    #box1-2-4 {
-        position: relative;
-        bottom: -330px;
-        left: -510px;
-    }
-
-    #box1-2-2 {
-        position: relative;
-        top: 100px;
-        width: 350%;
-        height: 70%;
-        border: 1px solid #000000;
-        border-radius: 5px;
-    }
-
-    #box1-2-1 {
-        position: relative;
-        left: 100px;
-        top: 20px;
-        width: 300%;
-    }
-
-    #text1 {
-        margin-bottom: 15px;
+    .labels {
+        display: block;
+        padding-top: 10px;
+        padding-bottom: 20px;
     }
 
     #truck2 {
-        padding-right: 15px;
+        margin-left: -5px;
+        margin-right: 15px;
     }
 
     .fa-shopping-bag {
-        padding-right: 15px;
+        margin-left: 7px;
+        margin-right: 9px;
     }
+
+    #dispon {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    #selectstore {
+        display: flex;
+        margin-left: 20px;
+    }
+
+    #box1-2-3 {
+        margin-left: 51px;
+        width: 50%;
+        font-size: 14px;
+    }
+
+    #box1-2-4 {
+        margin-left: 20px;
+        width: 67%;
+        font-size: 14px;
+    }
+
+    ul {
+        list-style: none;
+        border-bottom: 1px solid #000000;
+        border-left: 1px solid #000000;
+        border-right: 1px solid #000000;
+    }
+
+    div {
+        font-size: 14px;
+    }
+
+    #caracteristicas {
+        border: 1px solid #000000;
+        font-weight: bold;
+    }
+
+    #text1 {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    #text2 {
+        text-align: justify;
+    }
+
+    .pieDePagina {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "one two three";
+        padding: 20px 20px 5px 20px;
+    }
+
+    #pieDePagina1 {
+        grid-area: one;
+    }
+
+    #pieDePagina2 {
+        grid-area: two;
+    }
+
+    #pieDePagina3 {
+        grid-area: three;
+    }
+
+    #pieDePagina1-1 {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #pieDePagina2-1 {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #pieDePagina3-1 {
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    #questions, #retiroEnvio, #politicas {
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    #circle {
+        margin-top: -1px;
+    }
+
+    #questions1, #retiroEnvio1, #politicas1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+
+    #questions2, #retiroEnvio2 {
+        font-size: 12px;
+        text-align: justify;
+        margin-right: 20px;
+    }
+
+    #politicas2 {
+        font-size: 12px;
+        text-align: justify;
+        margin-right: 0px;
+    }
+
 }
