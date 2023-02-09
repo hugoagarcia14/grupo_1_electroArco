@@ -5,8 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fuentes-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!--Iconos-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/stylesproductCart.css">
+    <!--Estilos propios-->
+    <link rel="stylesheet" href="/css/productCart.css">
+    <link href="/css/mediaQueryCart.css" rel="stylesheet">
+    <link href="/css/colors.css" rel="stylesheet">
     <title>Carro de compras</title>
 </head>
 
@@ -14,15 +20,23 @@
     <header>
         <div class="top-header">
             <div class="logo">
-                <img src="images/logo.svg" alt="Logo electroarco">
+                <img class="logo" src="images/logo.png" alt="Logo electroarco">
             </div>
-            <div class="form" action="#" method="GET">
-                <div class="input">Buscar productos</div>
-                <div class="submit"><i class="fa-solid fa-magnifying-glass"></i></div>
+            <div class="search-button-container">
+                <div class="search-container">
+                    <div class="contenedor-search">
+                    <button class="button1"><i class="fas fa-search"></i> </button>
+                    <input type="text" placeholder="buscar productos">
+                </div>
+                </div>
             </div>
-            <p><i class="fa-solid fa-user fa-fw"></i>Usuario</p>
-            <p>Carrito de compras</p>
             <div class="bars"><i class="fa-solid fa-bars fa-fw"></i></div>
+            <div class="Carro">
+                <p class="text">Carrito de compras</p>
+            </div>
+            <div class="user">
+                <p><i class="fa-solid fa-user fa-fw"></i> <p class="text2">Usuario</p></p>
+            </div>
             <div class="heart"><i class="fa-solid fa-heart fa-fw"></i></div>
             <div class="cart">
                 <i class="fa-solid fa-cart-shopping fa-fw"></i>
@@ -30,65 +44,98 @@
         </div>
     </header>
     <main>
-        <div>Productos Agregados</div>
+        <div class="text-one">Productos Agregados</div>
         <hr>
         <section class="products">
-            <div class="product">
-                <article>
-                    <img src="#" alt="Producto1" class="product_img">
-                    <h4 class="description">Nombre producto</h4>
-                    <div class="main-description">
-                        <p class="price">$50.000</p>
-                        <div class="amount">
-                            <div class="value_cont">
-                                <h1 id="amount" value="">1</h1>
-                            </div>
-                            <button class="increase">
-                                ʌ
-                            </button>
-                            <button class="decrease">
-                                v
-                            </button>
-                        </div>
-                        <p><a href="#">Eliminar</i></a></p>
+            <article>
+                <div class="img"> <img src="images/horno.jpeg" alt="Producto1" class="product_img"></div>
+                <div class="descriprion">
+                    <div class="name">
+                        <h4 class="description">Horno Microondas Wonder 25 Lts</h4>
                     </div>
-                </article>
-                <article>
-                    <img src="#" alt="Producto1" class="product_img">
-                    <h4 class="description">Nombre producto</h4>
-                    <div class="main-description">
-                        <p class="price">$90.000</p>
-                        <div class="amount">
-                            <div class="value_cont">
-                                <h1 id="amount" value="">1</h1>
+
+                    <div class="containerinf">
+                        <article>
+                            <div class="cantidad">
+                                <div class="buton-one"> <button class="increase">
+                                        ʌ
+                                    </button>
+                                </div>
+                                <div class="value_cont">
+                                    <h1 id="amount" value="">1</h1>
+                                </div>
+                                <div class="buton-two"> <button class="decrease">
+                                        v
+                                    </button>
+                                </div>
                             </div>
-                            <button class="increase">
-                                ʌ
-                            </button>
-                            <button class="decrease">
-                                v
-                            </button>
-                        </div>
-                        <p><a href="#">Eliminar</i></a></p>
+
+                            <div class="price">
+                                <p>$600.000</p>
+                            </div>
+                            <div class="reset">
+                                <p><a href="#">Eliminar</i></a></p>
+                            </div>
                     </div>
-                </article>
-            </div>
+            </article>
+            <article>
+                <div class="img"> <img src="images/laptop.jpg" alt="Producto2" class="product_img"></div>
+                <div class="descriprion">
+                    <div class="name">
+                        <h4 class="description">Computador hp modelo 2023</h4>
+                    </div>
+
+                    <div class="containerinf">
+                        <article>
+                            <div class="cantidad">
+                                <div class="buton-one"> <button class="increase">
+                                        ʌ
+                                    </button>
+                                </div>
+                                <div class="value_cont">
+                                    <h1 id="amount" value="">1</h1>
+                                </div>
+                                <div class="buton-two"> <button class="decrease">
+                                        v
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="price">
+                                <p>$2.40.000</p>
+                            </div>
+                            <div class="reset">
+                                <p><a href="#">Eliminar</i></a></p>
+                            </div>
+                    </div>
+            </article>
+
 
         </section>
     </main>
-    <hr>
+    <hr class="two">
     <footer>
-        <div>
-            <p>Valor del envio</p> 
-            <h4>$15.000</h4>
+        <div class="container-two">
+            <div class="container">
+                <div class="valor">
+                    <p class="text1">Valor del envio</p>
+                </div>
+                <div class="valor-1">
+                    <h3>$15.000</h3>
+                </div>
+            </div>
+            <div class="container">
+                <div class="valor">
+                    <p class="text1">Total</p>
+                </div>
+                <div class="valor-1">
+                    <h3>$155.000</h3>
+                </div>
+            </div>
         </div>
-        <div>
-            <p>Total</p> 
-            <h4>$155.000</h4>
-        </div>
-        <button class="buy">
-            Continuar compra
-        </button>
+        <div class="buy"> <button class="buy">
+                Continuar compra
+            </button></div>
     </footer>
 
 </body>
