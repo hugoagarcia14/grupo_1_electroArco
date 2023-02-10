@@ -3,6 +3,13 @@ h1{
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    color: red;
+    color: black;
     
+}
+label{
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
 }

@@ -3,38 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ElectoArco</title>
     <link rel="stylesheet" href="/css/register.css">
 </head>
 <body>
+    <h1>ElectoArco</h1>
     <div class="cabecera">
-        <h1>ElectoArco</h1>
+        <div class="imgLogo"><img src="images/logo.svg" alt="Logo electro arco"></div>
+        <div class="cabecera-botones">
+            <div class="botones">
+                <div class="botonHome"><button type="submit">Home</button></div>
+                <div class="botonIngresa"><button type="submit">Ingresá</button></div>
+                <div class="botonAyuda"><button type="submit">Ayuda/PQR</button></div>
+                <div class="botonContacto"><button type="submit">Contacto</button></div>
+            </div>
+                <div class="botonPublica"><button type="submit">Publica tu anuncio</button></div>
+        </div>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
     </div>
+    <h2>Completa tus datos</h2>
     <form action="" method="post" class="crear-formulario">
-        <div class="control-for">
-            <label>Nombre:</label>
-            <input type="text" name="nombreUsuario" id="nombreUsuario" class="input-control">
+        
+        <div class="divNombreApellido">
+            <div class="nombre">
+                <label>Nombre:</label>
+                <input type="text" name="nombreUsuario" id="nombreUsuario" class="input-control">
+            </div>
+            <div class="apellido">
+                <label>Apellidos:</label>
+                <input type="text" name="apellidoUsuario" class="input-control">
+            </div>
         </div>
-        <div class="control-for">
-            <label>Apellidos:</label>
-            <input type="text" name="apellidoUsuario" class="input-control">
-        </div>
-        <div class="control-for">
+        <div class="celular">
             <label>Celular:</label>
             <input type="text" name="celularUsuario" class="input-control">
         </div>
-        <div class="control-for">
-            <label>Correo</label>
-            <input type="text" name="correoUsuario" id="correoUsuario" class="input-control">
+        <div class="divCorreoContrasena">
+            <div class="correo">
+                <label>Correo:</label>
+                <input type="text" name="correoUsuario" id="correoUsuario" class="input-control">
+            </div>
+            <div class="contrasena">
+                <label>Contraseña:</label>
+                <input type="password" name="contraseñaUsuario" id="contraseñaUsuario" class="input-control">
+            </div>
         </div>
-        <div class="control-for">
-            <label>Contraseña</label>
-            <input type="password" name="contraseñaUsuario" id="contraseñaUsuario" class="input-control">
-        </div>
+       
         <div class="boton-guardar">
             <button type="submit" class="boton-formulario">ENVIAR</button>
         </div>

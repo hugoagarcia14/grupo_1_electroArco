@@ -1,31 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
 .cabecera{
-    border: 1px solid black;
-}
-.burger-menu{
+    width:100%;
+    border-radius: 10px;
     display: flex;
+    height: 50px;
     justify-content: right;
-    padding: 5px;
 }
-.burger-menu i{
-    padding: 5px;
+.imgLogo{
+    width: 30%;
+    height:100px;
     display: flex;
-    color: white;
-    justify-content: center;
-    background-color: #1259c3;
+}
+.botones{
+    display: flex;
+    padding: 10px;
+    margin-left: 20px;
+}
+.botonHome > button{
+    width: 150px;
     height: 30px;
-    width: 30px;
-    border-radius: 5px;    
 }
-.control-for{
-    margin-bottom: 15px;
+.botonIngresa > button{
+    width: 150px;
+    height: 30px;
 }
-.control-for label{
+.botonAyuda > button{
+    width: 150px;
+    height: 30px;
+}
+.botonContacto > button{
+    width: 150px;
+    height: 30px;
+}
+.botonPublica > button{
+    width: 150px;
+    height: 40px;
+    margin: 4px;
+    margin-left: -4px;
+  
+}
+.botonPublica{
+    width: 150px;
+    margin-top: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+}
+
+label{
+    font-size: 18px;
     margin-bottom: 5px;
     font-style: italic;
     display: block;
 }
+input{
+    border-radius: 5px;
+}
 .input-control{
-    width: 95%;
+    width: 100%;
     padding: 10px;
     padding-left: 0px;
 }
@@ -40,10 +78,70 @@
 .boton-guardar{
     text-align: center;
 }
-@media(min-width:760px){
-    .input-control{
-        width: 40%;
-        display: inline-block;
+.burger-menu{
+    display:none;
+}
+.nombre, .apellido,.correo, .contrasena{
+    width: 100%;
+}
+
+               
+@media(min-width:361px){
+    .cabecera-botones{
+        display: none;
+    }
+    .imgLogo{
+        width: 80%;
+        height: 50px;
+        justify-content: left;
         
     }
+    .burger-menu{
+        display:flex;
+    }
+    .burger-menu i{
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 4px;
+        display: flex;
+        color: #ffff;
+        justify-content: center;
+        background-color: black;
+        height: 25px;
+        width: 30px;
+        border-radius: 5px;  
+        margin-right: 10px;  
+    }
+    .nombre, .apellido,.correo, .contrasena{
+        width: 100%;
+        padding: 30px;
+    }
+    .celular{
+        width: 100%;
+        padding: 30px;
+    }
+    
+}
+@media(min-width:760px){
+    .cabecera-botones{
+        display: flex;
+        
+    }
+    .burger-menu{
+        display: none;
+    }
+    .divNombreApellido{
+        display: flex;
+    }
+    .divCorreoContrasena{
+        display:flex;
+    }
+    .celular{
+        width:50%;
+    }
+    .nombre, .apellido,.correo, .contrasena{
+        width: 50%;
+    }
+  
+    
 }
