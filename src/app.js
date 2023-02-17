@@ -4,11 +4,11 @@ const app = express();
 
 const publicPath= path.join(__dirname,'public');
 
-const port = 3500;
+const port = process.env.PORT || 3000;
 
 app.use(express.static(publicPath));
 app.listen(port, ()=>{
-    console.log('server started on http://localhost:3500');
+    console.log('server started on http://localhost:3000');
 });
 
 app.get('/',(req, res)=>{
