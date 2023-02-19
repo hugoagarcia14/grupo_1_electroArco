@@ -256,4 +256,6 @@ p.location {
     width: 80%;
     margin: auto;
     display: flex;
+    margin-top: 15px;
 }
+
