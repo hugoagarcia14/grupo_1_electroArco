@@ -58,7 +58,6 @@
     "minimatch": "^3.1.2",
     "ms": "^2.0.0",
     "negotiator": "^0.6.3",
-    "nodemon": "^2.0.20",
     "nopt": "^1.0.10",
     "normalize-path": "^3.0.0",
     "object-inspect": "^1.12.3",
@@ -105,5 +104,8 @@
   "bugs": {
     "url": "https://github.com/hugoagarcia14/grupo_1_electroArco/issues"
   },
-  "homepage": "https://github.com/hugoagarcia14/grupo_1_electroArco#readme"
+  "homepage": "https://github.com/hugoagarcia14/grupo_1_electroArco#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
 }
