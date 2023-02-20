@@ -3,18 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+main{
+    background-color:var(--grisClaro);
+}
 body{
     font-family: 'Roboto', sans-serif;
-    background: #ebebeb;
+    
 
 }
 header{
     width:100%;
 }
 .header1{
-    color:white;
+    color:black;
     width: 100%;
-    background: #03264C;
+    background: white;
     padding: 10px;
     font-size: 18px;
 }
@@ -31,6 +34,17 @@ h1 {
 }
 .opcionesMenu li{
     list-style: none;
+    width: 140px;
+    height: 50px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    border:solid 1px white;
+    padding-top: 15px;
+   
+}
+.opcionesMenu li:hover{
+    box-shadow: 10px 10px 5px 0px gray;
 }
 .compra{
     padding-top: 10px;
@@ -71,6 +85,12 @@ main{
     width: 100%; 
       
 }
+.descripcion{
+    display: none;
+}
+.articulo-horno:hover .descripcion, .articulo-laptop:hover .descripcion, .articulo-samsung:hover .descripcion, .articulo-tv:hover .descripcion{
+    display: block;
+}
 
 .articulo-horno{
     width:100%;
@@ -82,12 +102,13 @@ main{
 .articulo-horno > .relative-horno{
     position: relative;   
 }
+
 .horno img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
-
 .articulo-laptop{
     width:100%;
     background-color: white;
@@ -131,6 +152,11 @@ main{
     height: 100%;
     object-fit: cover;
 }
+.articulo-horno:hover , .articulo-laptop:hover, .articulo-samsung:hover, .articulo-tv:hover{
+    box-shadow: 10px 10px 5px 0px gray;
+
+}
+
 .enviarA {
     display: flex;
     width: 100%;
@@ -183,7 +209,6 @@ main{
     flex-direction: column;
     align-items: center;
 }
-
 .menuHamburguesa i {
     display: flex;
 }
@@ -193,9 +218,6 @@ main{
     width: 100%;
     background-color: rgb(207, 202, 202);
 }
-
-
-
 .atencionAlCliente {
     width: 40%;
 }
@@ -227,6 +249,7 @@ main{
 }
 
 @media (min-width: 768px) {
+    
     .menu{
         display: block;
     }
@@ -280,6 +303,7 @@ main{
         padding-top: 50px;
        
     }
+
     .bloque1{
         display: flex;
         justify-content: space-between;
@@ -327,5 +351,8 @@ main{
     }
     .tv img{
         height: 25%;
+    }
+    .relative-laptop:hover{
+        display: block;
     }
 }
