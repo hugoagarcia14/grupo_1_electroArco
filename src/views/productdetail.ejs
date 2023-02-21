@@ -10,57 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/34b99c374a.js" crossorigin="anonymous"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <link href="/css/colors.css" rel="stylesheet">
     <title>ElectoArco</title>
 </head>
 
 <body>
-    <header>
-        <section class="box1-1">
-            <div id="info">
-                <div class="infotop">
-                    <p>Televentas: + 000 000 000
-                </div>
-                <div class="infotop">
-                    <p>Atención al cliente: + 000 000 000
-                </div>
-                <i class="fas fa-truck"></i>
-                <div class="infotop">Rastrea tu pedido</div>
-                <div class="infotop">Tiendas</div>
-                <div class="infotop">PQR</div>
-            </div>
-            <div id="search">
-                <input type="text" class="search1" value="¿Qué buscas hoy?">
-                <i class="fas fa-search"></i>
-                <i class="fas fa-user-circle"></i>
-                <i class="fas fa-shopping-cart"></i>
-            </div>
-            <div id="categories">
-                <p>Categoria 1</p>
-                <p>Categoria 2</p>
-                <p>Categoria 3</p>
-                <p>Categoria 4</p>
-                <p>Ofertas</p>
-            </div>
-        </section>
-        <section class="box1">
-            <button name="comeback"><a href="#"><i class="fas fa-chevron-left"></i></a></button>
-            <div class="sharesquare"><button name="share"><a href="#"><i class="fas fa-share-square"></i></a></button>
-            </div>
-            <div class="shoppingcar"><button name="shopcar"><a href="#"><i
-                            class="fas fa-shopping-cart"></i></a></button></div>
-        </section>
-        <section class="box2">
-            <i class="fas fa-map-marker-alt"></i>
-            <span class="deliveryopt">Opciones de entrega</span>
-            <div>
-                <select class="select1">
-                    <option value="value0">-Selecciona-</option>
-                    <option value="value1">Envío a tu dirección</option>
-                    <option value="value2">Recoge en tienda</option>
-                </select>
-            </div>
-        </section>
-    </header>
     <main>
         <section class="box3">
             <p class="title">Marca</9>
@@ -126,76 +80,74 @@
                     </a></button>
             </div>
         </section>
-        <section class="box1-2">
-            <div class="Carrusel"><img src="images/product image.jpg" alt="aquívalaimagendelproducto"></div>
-            <div id="box1-2-1">
-                <p class="subtitle">Nombre del producto:</p>
-                <p class="other">Número del producto:</p>
+        <section class="containerProductDetail">
+            <div class="slide"><img src="images/img-samsung-galaxy-s10.jpg" alt="aquívalaimagendelproducto"></div>
+            <div id="containerProductDescription">
+                <p class="titleProductDescription">Samsung Galaxy S10 Core 32GB Blue</p>
+                <p class="subtitleProductDescription">Código: 0802 0011 2236</p>
             </div>
-            <div id="box1-2-2">
-                <div id="addbag">
-                    <p class="price">Precio</p>
-                    <div id="cantadd">
-                        <select class="select">
-                            <option value="value0">1</option>
-                            <option value="value1">2</option>
-                            <option value="value2">3</option>
-                            <option value="value2">4</option>
-                            <option value="value2">5</option>
-                        </select>
-                        <button name="add">
-                            <p>Agregar al Carrito</p>
-                        </button>
+            <div id="containerPriceAndShipping">
+                <div class="price">
+                    <p>1.700.000</p>
+                </div>
+                <div class="addAmount">
+                        <button class="addToCart" type="submit">Agregar al Carrito</button>
+                </div>
+                <div class="deliveryOptions">
+                    <p>Opciones de entrega</p>
+                </div>
+                <div class="containerDeliveryOptions">
+                    <div class="text2">
+                        <label>
+                            <input type="radio" name="deliveryOptions" value="Envío a tu dirección"><i id="truck2"><i
+                                    class="fas fa-truck"></i></i>Envío a tu dirección
+                        </label>
                     </div>
-                    <p id="opcent">Opciones de entrega</p>
-                    <div class="labels">
-                        <div>
-                            <label>
-                                <input type="radio" name="opcentrega" value="Envío a tu dirección"><i id="truck2"><i
-                                        class="fas fa-truck"></i></i>Envío a tu dirección
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <input type="radio" name="opcentrega" value="Recoge en la tienda"><i
-                                    class="fas fa-shopping-bag"></i></i>Recoge en la tienda
-                            </label>
-                        </div>
+                    <div class="text2">
+                        <label>
+                            <input type="radio" name="deliveryOptions" value="Recoge en la tienda"><i
+                                class="fas fa-shopping-bag"></i></i>Recoge en la tienda
+                        </label>
                     </div>
-                    <div id="dispon">
-                        <p>Disponibilidad en tienda</p>
-                    </div>
-                    <div id="selectstore">
-                        <div><i class="fas fa-store"></i></i></div>
-                        <div>
-                            <p>Seleccionar tienda</p>
-                        </div>
+                </div>
+                <div class="availabilityInStore">
+                    <p>Disponibilidad en tienda</p>
+                </div>
+                <div class="containerSelectStore">
+                    <div class="iconSelectStore"><i class="fas fa-store"></i></i></div>
+                    <div class="textSelectStore">
+                        <p>Seleccionar tienda</p>
                     </div>
                 </div>
             </div>
-            <div id="caracteristicasyresumen">
-                <div id="box1-2-3">
-                    <p id="caracteristicas">Caracteristicas Importantes</p>
+            <div id="containerOutstandingFeatures">
+                <div class="titleOutstandingFeatures">
+                    <p>Caracteristicas Importantes</p>
+                </div>
+                <div class="listOutstandingFeatures">
                     <ul>
-                        <li>Item 1</li>
-                        <li>Item 2</li>
-                        <li>Item 3</li>
+                        <li>Contenidos más nítidos, definidos y claros.</li>
+                        <li>Disfruta del dispositivo durante horas con su gran batería.</li>
+                        <li>Gran procesador para un rendimiento rápido y eficiente.</li>
                     </ul>
                 </div>
-                <div id="box1-2-4">
-                    <p id="text1">Resumen del producto</p>
-                    <p id="text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ornare, tellus eu
-                        interdum auctor,
-                        ante
-                        eros tincidunt libero, et rutrum arcu erat vel nulla. Maecenas eu vulputate odio, lacinia ornare
-                        urna.</p>
+            </div>
+            <div id="containerProductOverview">
+                <div class="titleProductOverview">
+                    <p>Resumen del producto</p>
+                </div>
+                <div class="textProductOverview">
+                    <p>Con Galaxy S10 los beneficios claves están en su mejor expresión, disfruta de tus contenidos al
+                        mejor nivel, gracias a su amplia pantalla de 6.5" con alta resolución. Disfruta de tu apps
+                        favoritas con la alta velocidad de su procesador de ocho núcleos y quédate tranquilo todo el
+                        día, gracias a su batería de larga duración de 5.000 mAh. ¡Lleva el tuyo ahora!</p>
                 </div>
             </div>
-            <div id="moreinfo">
-                <i id="circle"><i class="fas fa-info-circle"></i></i>
-                <p>Más información del producto</p>
-            </div>
         </section>
+        <div id="containerMoreInfoProduct">
+            <i class="fas fa-info-circle"></i>
+            <p>Más información del producto</p>
+        </div>
     </main>
     <footer>
         <div class="footerContainer1">
@@ -204,7 +156,7 @@
                     <i class="far fa-question-circle"></i>
                 </div>
                 <div class="text1">
-                    <p>Te escuchamos/PQRS</p>
+                    <p>Te escuchamos / PQRS</p>
                 </div>
             </div>
             <div class="containerSend">
@@ -219,7 +171,7 @@
                 <div class="iconPersonal">
                     <i class="far fa-hand-point-up"></i>
                 </div>
-                <div>
+                <div class="text1">
                     <p>Autogestión de Datos personales</p>
                 </div>
             </div>
@@ -227,13 +179,106 @@
                 <div class="iconPhone">
                     <i class="fas fa-phone-square-alt"></i>
                 </div>
-                <div>
+                <div class="text1">
                     <p>Venta telefónica: 018000 00 0000</p>
                 </div>
             </div>
         </div>
-        <div>
-            
+        <div class="footerContainer2">
+            <div class="containerCustomerService">
+                <div class="titlesFooterContainer2">
+                    <p>Servicio al cliente</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Venta a empresas</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Medios de pago</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Cambios y devoluciones</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Política de proteccion de datos personales/p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Términos y condiciones</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Estatuto del consumidor</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Mapa del sitio</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Superintendencia de Industria y Comercio SIC</p>
+                </div>
+            </div>
+            <div class="containerUser">
+                <div class="titlesFooterContainer2">
+                    <p>Mi cuenta</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Regístrate</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Cambia tu clave</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Olvidé mi clave</p>
+                </div>
+            </div>
+            <div class="containerMoreInfo">
+                <div class="titlesFooterContainer2">
+                    <p>Más de ElectroArco</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Información a proveedores</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p></p>Información a inversionistas
+                </div>
+                <div class="textFooterContainer2">
+                    <p></p>Responsabilidad Social Empresarial
+                </div>
+                <div class="textFooterContainer2">
+                    <p></p>La linea de ética y anticorrupción
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Trabaje para nosotros</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Vende en ElectroArco</p>
+                </div>
+            </div>
+            <div class="containerSocialNetworks">
+                <div class="titlesFooterContainer2">
+                    <p>Descarga la APP ElectroArco</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Apple Store</p>
+                </div>
+                <div class="textFooterContainer2">
+                    <p>Google Store</p>
+                </div>
+                <div class="contenedorIconsSocialNetworks">
+                    <div class="iconsSocialNetworks"><i class="fab fa-facebook-square"></i></div>
+                    <div class="iconsSocialNetworks"><i class="fab fa-instagram-square"></i></div>
+                    <div class="iconsSocialNetworks"><i class="fab fa-twitter-square"></i></div>
+                    <div class="iconsSocialNetworks"><i class="fab fa-youtube-square"></i></div>
+                    <div class="iconsSocialNetworks"><i class="fab fa-pinterest-square"></i></div>
+                </div>
+                <div class="containerOnlineChat">
+                    <div id="iconWhatsApp"><i class="fab fa-whatsapp"></i></div>
+                    <div id="textOnlineChat">
+                        <p>Chat en línea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="containerRightsReserved">
+            <div class="logoRightsReserved"><img src="images/logo.svg" alt="logoElectroArco"></div>
+            <div id="textRightsReserved">Todos los derechos reservados</div>
         </div>
     </footer>
 </body>
