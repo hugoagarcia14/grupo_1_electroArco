@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>ElectoArco</title>
     <link rel="stylesheet" href="/css/register.css">
 </head>
+
 <body>
     <h1>ElectoArco</h1>
     <div class="cabecera">
@@ -18,43 +20,50 @@
                 <div class="botonAyuda"><button type="submit">Ayuda/PQR</button></div>
                 <div class="botonContacto"><button type="submit">Contacto</button></div>
             </div>
-                <div class="botonPublica"><button type="submit">Publica tu anuncio</button></div>
+            <div class="botonPublica"><button type="submit">Publica tu anuncio</button></div>
         </div>
         <div class="burger-menu">
             <i class="fas fa-bars"></i>
         </div>
     </div>
-    <h2>Completa tus datos</h2>
-    <form action="" method="post" class="crear-formulario">
-        
-        <div class="divNombreApellido">
-            <div class="nombre">
-                <label>Nombre:</label>
-                <input type="text" name="nombreUsuario" id="nombreUsuario" class="input-control">
-            </div>
-            <div class="apellido">
-                <label>Apellidos:</label>
-                <input type="text" name="apellidoUsuario" class="input-control">
-            </div>
+    <dialog class="overlay" id="overlay">
+        <div class="formularioRegistro" id="formularioRegistro">
+            <form action="" method="dialog" class="crear-formulario">
+                <a href="/" id="botonCerrar" class="botonCerrarFor"><i class="fas fa-times"></i></a>
+                <h2>Completa tus datos</h2>
+                <div class="divNombreApellido">
+                    <div class="nombre">
+                        <label>Nombre:</label>
+                        <input type="text" name="nombreUsuario" id="nombreUsuario" class="input-control">
+                    </div>
+                    <div class="apellido">
+                        <label>Apellidos:</label>
+                        <input type="text" name="apellidoUsuario" class="input-control">
+                    </div>
+                </div>
+                <div class="celular">
+                    <label>Celular:</label>
+                    <input type="text" name="celularUsuario" class="input-control">
+                </div>
+                <div class="divCorreoContrasena">
+                    <div class="correo">
+                        <label>Correo:</label>
+                        <input type="text" name="correoUsuario" id="correoUsuario" class="input-control">
+                    </div>
+                    <div class="contrasena">
+                        <label>Contraseña:</label>
+                        <input type="password" name="contraseñaUsuario" id="contraseñaUsuario"
+                            class="input-control">
+                    </div>
+                </div>
+
+                <div class="boton-guardar">
+                    <button type="submit" class="boton-formulario">ENVIAR</button>
+                </div>
+            </form>
         </div>
-        <div class="celular">
-            <label>Celular:</label>
-            <input type="text" name="celularUsuario" class="input-control">
-        </div>
-        <div class="divCorreoContrasena">
-            <div class="correo">
-                <label>Correo:</label>
-                <input type="text" name="correoUsuario" id="correoUsuario" class="input-control">
-            </div>
-            <div class="contrasena">
-                <label>Contraseña:</label>
-                <input type="password" name="contraseñaUsuario" id="contraseñaUsuario" class="input-control">
-            </div>
-        </div>
-       
-        <div class="boton-guardar">
-            <button type="submit" class="boton-formulario">ENVIAR</button>
-        </div>
-    </form>
+    </dialog>
+    <script src="/src/ventanaRegistro.js"></script>
 </body>
+
 </html>

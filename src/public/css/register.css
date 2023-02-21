@@ -1,8 +1,44 @@
 *{
     box-sizing: border-box;
 }
+h2{
+    width: 100%;
+}
+.overlay{
+    box-shadow: 10px 10px 5px 0px gray;
+    width: 50%;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    position: fixed;
+    top: 20%;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+    display: flex; 
+    display: none;   
+}
+
+.formularioRegistro{
+    width: 100%;
+       
+}
+.botonCerrarFor{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: black;
+    transition: .3s ease all;
+}
+.botonCerrarFor:hover{
+    color:#bbbbbb;
+}
 h1{
     text-align: center;
+}
+.crear-formulario{
+    width: 100%;
 }
 .cabecera{
     width:100%;
@@ -68,15 +104,16 @@ input{
     padding-left: 0px;
 }
 .boton-formulario{
-    background-color: gray;
+    color: #ffff;
+    background-color: #1259c3;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     padding: 5px 10px;
     border-radius: 5px;
-    text-align: center;
+    transition: .3s ease all;
 }
-.boton-guardar{
-    text-align: center;
+.boton-formulario:hover{
+    background:gray;
 }
 .burger-menu{
     display:none;
