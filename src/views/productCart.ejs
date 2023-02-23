@@ -1,9 +1,9 @@
-<%- include('./partials/head') %>
+<%- include('partials/head',{styles:['productCart','mediaQueryCart']}) %>
 
 <body>
     <%- include('./partials/header') %>
     <main>
-        <div class="barra"><img src="images/barra.png" alt=""></div>
+        <div class="barra"><img src="/images/barra.png" alt=""></div>
         <div class="main-article">
             <div class="title">
                 <h1 class="title"> Carro de compras</h1>
@@ -94,6 +94,7 @@
                 </div>
             </div>
         </div>
+        <%- include('./partials/register') %>
     </main>
     <%- include('./partials/footer') %>
 

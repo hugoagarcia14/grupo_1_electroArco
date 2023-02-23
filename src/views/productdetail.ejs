@@ -1,20 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/productdetail.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/34b99c374a.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-    <link href="/css/colors.css" rel="stylesheet">
-    <title>ElectoArco</title>
-</head>
+<%- include('partials/head',{styles:['productdetail']}) %>
 
 <body>
+    <%- include('./partials/header') %>
     <main>
         <section class="box3">
             <p class="title">Marca</9>
@@ -148,7 +135,9 @@
             <i class="fas fa-info-circle"></i>
             <p>Más información del producto</p>
         </div>
+        <%- include('./partials/register') %>
     </main>
+    <%- include('./partials/footer') %>
 </body>
 
 </html>

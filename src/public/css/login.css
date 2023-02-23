@@ -1,15 +1,55 @@
-h1{
-    font-size: 40px;
-    font-weight: normal;
+*{
+    box-sizing: border-box;
+}
+h2{
+    width: 100%;
     text-align: center;
-    text-transform: uppercase;
-    color: black;
+    padding: 5px;
+}
+.overlay2{
+    box-shadow: 10px 10px 5px 0px gray;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #ebebeb;
+    border-radius: 20px;   
+    margin-bottom: 10px;
+    margin-top: 10px;  
+}
+
+.labelCorreo,.correoUsuario,.labelContraseña,.contraseñaUsuario{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
     
 }
-label{
-    font-size: 40px;
-    font-weight: normal;
+p{
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
     text-align: center;
-    text-transform: uppercase;
-    color: black;
+}
+.formularioRegistroLogin{
+    width: 100%;
+       
+}
+.correoUsuario, .contraseñaUsuario{
+    
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+
+}
+.botonGuardarLogin{
+    width: 100%;
+    display: flex;
+    
+}
+.botonFormularioLogin{
+    width: 50%;
+    height: 30px;
+    margin: 30px;
+    background-color: #1259c3;
+    color: #ebebeb;
+    justify-content: space-between;
+    border-radius: 5px;
 }

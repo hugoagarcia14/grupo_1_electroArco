@@ -1,0 +1,56 @@
+<%- include('partials/head',{styles:['formCreationProduct']}) %>
+
+    <body>
+        <%- include('./partials/header') %>
+        <div class="titulo"><h1>Creación de productos</h1></div>
+            <main class="main">
+                
+                <form action="" method="post" class="crear-formulario">
+                    
+                    <div class="formulario">
+                        <div class="control-for">
+                            <input type="text" placeholder="Id del producto:" name="idProducto" class="input-control"
+                                id="idProducto">
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Nombre del producto:" name="nombreProducto" class="input-control"
+                                id="nombreProducto" required>
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Descripción del producto" name="descripcionProducto" class="input-control"
+                                required>
+                        </div>
+                        <div class="controlFoto">
+                            <h5>Foto del producto</h5>
+                            <input type="file" placeholder="Foto del producto" name="fotoProducto" id="fotoProducto" class="inputFoto"
+                                required>
+                        </div>
+                        <div class="controlCategoria">
+                            <h5>Categoria del producto</h5>
+                            <div class="categoriaProducto">
+                                <div class="inputElectrodomesticos"><input type="radio" name="categoriaProducto"
+                                        id="electrodomesticos" value="electrodomesticos">Electrodomésticos</div>
+                                <div class="inputTecnologia"><input type="radio" name="categoriaProducto" id="tecnologia"
+                                        value="tecnologia">Tecnología</div>
+                                <div class="inputVideoJuegos"><input type="radio" name="categoriaProducto" id="videoJuegos"
+                                        value="videoJuegos">Video Juegos</div>
+                            </div>
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Colores del producto:" name="coloresProducto" class="input-control"
+                                id="coloresProducto">
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Precio del producto:" name="precioProducto" class="input-control"
+                                id="precioProducto">
+                        </div>
+                        <div class="boton-guardar">
+                            <button type="submit" class="botonGuardar">GUARDAR</button>
+                            <button type="delete" class="botonBorrar">BORRAR</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+
+            <%- include('./partials/footer') %>
+    </body>

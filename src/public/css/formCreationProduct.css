@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #ebebeb;
+
+}
+.main{
+    background-color: #fff;
+    width: 50%;
+    margin: auto; 
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    justify-content: center; 
+    box-shadow: 10px 10px 5px 0px gray; 
+}
+.titulo{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+
+}
+h5{
+    font-size: 16px;
+}
+.formulario{
+    margin-top: 20px;
+    width: 60%;
+}
+.input-control{
+    display: flex;
+    width: 100%;
+    height: 35px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: #ebebeb;
+    padding: 10px;
+    justify-content: center;
+}
+.controlFoto{
+    padding-top: 10px;
+}
+.inputFoto{
+    padding-top: 10px;
+}
+.controlCategoria{
+    width: 100%;;
+    padding-top: 20px;
+}
+.divImagen{
+    width: 30%;
+    height: 80px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.categoriaProducto{
+    padding-top: 10px;
+}
+.boton-guardar>button:hover{
+    background: #0022AA;
+    box-shadow: 10px 10px 5px 0px gray;
+}
+.boton-guardar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    justify-content: space-evenly;
+}
+.boton-guardar>button{
+    display: flex;
+    width: 33%;
+    justify-content: center;
+    justify-items: center;
+    height: 35px;
+    color: #ffff;
+    background-color: #1259c3;
+    border-radius: 5px; 
+    margin-top: 30px;
+    padding:5px;
+}
+
+.inputEditar{
+    width: 100%;
+}
+.inputId{
+    width: 100%;
+}
+
+@media(min-width:361px){
+    .main{
+        width: 80%;
+    }
+    .inputFoto{
+        width: 100%;
+    }
+    .boton-guardar>button{
+        width: 60%;
+        font-size: 12px;
+    }
+}
+@media(min-width:761px){
+    .boton-guardar>button{
+        width: 33%;
+        font-size: 12px;
+    }
+}
+@media(min-width:1024px){
+    .main{
+        width: 50%;
+    }
+   
+}

@@ -1,28 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
-</head>
-<body>
-    <h1>Bienvenido a Electo Arco</h1>
-<h2>porfavor ingrese su usuario</h2>
-<form action="" method="post">
-<div>
-<label>ingrese su cuenta</label>
-                <input type="text" name="nombreUsuario" id="nombreUsuario">
+<%- include('partials/head',{styles:['login']}) %>
+
+    <body>
+        <%- include('partials/header') %>
+            
+            <div class="overlay2" id="overlay2">
+                <div class="formularioRegistroLogin" id="formularioRegistroLogin">
+                    <form action="" method="dialog" class="crear-formulario">
+                        <h2>Ingresa tus datos</h2>
+                        <div class="divNombreApellidologin">
+                            <label class="labelCorreo">Correo:</label>
+                            <input type="text" name="correoUsuario" id="correoUsuario" class="correoUsuario">
+                        </div>
+                        <div class="contrasenaLogin">
+                            <label class="labelContraseña">Contraseña:</label>
+                            <input type="password" name="contraseñaUsuario" id="contraseñaUsuario"
+                                class="contraseñaUsuario">
+                        </div>
+                        <p>Recordar contraseña</p>
+                </div>
+
+                <div class="botonGuardarLogin">
+                    <button type="submit" class="botonFormularioLogin">INGRESAR</button>
+                    <button type="delete" class="botonFormularioLogin">CANCELAR</button>
+                </div>
+                </form>
             </div>
-<div>
-    <label>ingrese su Contraseña</label>
-                <input type="text" name="Contraseña" id="Contraseña">
-</div>
-</form>
+            <%- include('./partials/footer') %>
+    </body>
 
-<h3>sino tienes una , has click aca</h3>
-
-
-</body>
-</html>
+    </html>

@@ -14,6 +14,12 @@ const controller = {
     login:(req, res) => {
         res.render ('login')
     },
+    formularioCreacionProductos:(req, res) => {
+        res.render ('formCreationProduct')
+    },
+    editProduct:(req, res) => {
+        res.render ('editProduct')
+    },
 }
 
 

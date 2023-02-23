@@ -6,33 +6,21 @@ h2{
 }
 .overlay{
     box-shadow: 10px 10px 5px 0px gray;
-    width: 50%;
-    background: white;
+    width: 60%;
+    background-color: #ebebeb;
     border-radius: 30px;
     padding: 20px;
-    position: fixed;
-    top: 20%;
-    bottom: 0;
-    left: 25%;
-    right: 0;
-    display: flex; 
-    display: none;   
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 20%;
+    align-items: center;
+    
+      
 }
 
 .formularioRegistro{
     width: 100%;
        
-}
-.botonCerrarFor{
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    color: black;
-    transition: .3s ease all;
-}
-.botonCerrarFor:hover{
-    color:#bbbbbb;
 }
 h1{
     text-align: center;
@@ -104,13 +92,14 @@ input{
     padding-left: 0px;
 }
 .boton-formulario{
-    color: #ffff;
+    width: 40%;
+    height: 30px;
+    margin: 20px;
     background-color: #1259c3;
-    border: none;
-    font-size: 16px;
-    padding: 5px 10px;
+    color: #ebebeb;
+    justify-content: space-between;
     border-radius: 5px;
-    transition: .3s ease all;
+    
 }
 .boton-formulario:hover{
     background:gray;
@@ -121,7 +110,11 @@ input{
 .nombre, .apellido,.correo, .contrasena{
     width: 100%;
 }
-
+.boton-guardar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
                
 @media(min-width:361px){
     .cabecera-botones{
@@ -149,6 +142,7 @@ input{
         border-radius: 5px;  
         margin-right: 10px;  
     }
+   
     .nombre, .apellido,.correo, .contrasena{
         width: 100%;
         padding: 30px;
@@ -157,12 +151,13 @@ input{
         width: 100%;
         padding: 30px;
     }
-    
+    .boton-formulario{
+        width: 50%;
+    }
 }
 @media(min-width:760px){
     .cabecera-botones{
         display: flex;
-        
     }
     .burger-menu{
         display: none;
@@ -179,6 +174,12 @@ input{
     .nombre, .apellido,.correo, .contrasena{
         width: 50%;
     }
-  
-    
+    .overlay{
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .boton-formulario{
+        width: 40%;
+    }
 }
