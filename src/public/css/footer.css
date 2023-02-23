@@ -1,3 +1,68 @@
+.containerPQRS,
+.containerSend,
+.containerPersonalInformation,
+.containerPhone {
+    display: none;
+}
+
+.textFooterContainer2 {
+    display: none;
+}
+
+.titlesFooterContainer2 {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-style: outset;
+    background-color: var(--grisClaro);
+}
+
+.contenedorIconsSocialNetworks {
+    display: none;
+}
+
+.containerCustomerService,
+.containerUser,
+.containerMoreInfo,
+.containerSocialNetworks {
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.containerOnlineChat {
+    display: flex;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+}
+
+.titlesFooterContainer2 p {
+    font-style: italic;
+    font-weight: 600;
+}
+
+.containerRightsReserved {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0px 10px 0px;
+    border-top: 1px solid var(--grisClaro);
+}
+
+.logoRightsReserved img {
+    width: 30px;
+    align-items: center;
+    display: flex;
+}
+
+#textRightsReserved {
+    align-items: center;
+    display: flex;
+    font-size: 10px;
+}
+
 @media(min-width:768px) {
 
     /*Start Footer*/
@@ -25,7 +90,7 @@
     .containerPhone {
         display: flex;
         flex-direction: column;
-        width: 16%;
+        width: 19%;
     }
 
     .text1 {
@@ -37,15 +102,6 @@
         justify-content: space-around;
         width: 100%;
         padding: 20px 20px 10px 30px;
-    }
-
-    .containerCustomerService,
-    .containerUser,
-    .containerMoreInfo,
-    .containerSocialNetworks {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
     }
 
     .contenedorIconsSocialNetworks {
@@ -64,10 +120,14 @@
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 15px;
+        border-style: none;
+        background: none;
+        height: 0;
     }
 
     .textFooterContainer2 {
         margin-bottom: 10px;
+        display: flex;
     }
 
     .containerRightsReserved {
@@ -77,39 +137,43 @@
         padding: 10px 0px 10px 0px;
         border-top: 1px solid var(--grisClaro);
     }
-
+    
     .logoRightsReserved img {
         width: 30px;
         align-items: center;
         display: flex;
     }
-
+    
     #textRightsReserved {
         align-items: center;
         display: flex;
         font-size: 10px;
     }
-
+    
     .containerOnlineChat {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 40px;
+        color: var(--verde);
     }
-
+    
     #iconWhatsApp {
         font-size: 40px;
     }
-
+    
     #textOnlineChat {
         font-size: 10px;
         font-style: italic;
         font-weight: bold;
     }
-
+    
     /*End Footer*/
 
 }
+
+
+
 
 @media(min-width:1024px) {
     /*Start Footer*/
@@ -121,5 +185,18 @@
         width: 100%;
         background-color: var(--grisClaro);
         padding: 25px 70px 25px 70px;
+    }
+}
+
+@media(min-width:1440px) {
+    .footerContainer1 {
+        padding: 25px 70px 25px 70px;
+    }
+
+    .containerPQRS,
+    .containerSend,
+    .containerPersonalInformation,
+    .containerPhone {
+        align-items: center;
     }
 }
