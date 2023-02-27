@@ -320,7 +320,7 @@
         justify-content: flex-start;
         align-items: center;
         margin-left: 50px;
-        margin-top: 25px;
+        margin-top: 5px;
         margin-bottom: 15px;
     }
 
@@ -332,7 +332,6 @@
 
     #containerMoreInfoProduct p {
         font-size: 16px;
-        font-weight: 600;
     }
 
     /* End Main */
