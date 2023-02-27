@@ -20,6 +20,9 @@ const controller = {
     editProduct:(req, res) => {
         res.render ('editProduct')
     },
+    homeAdmin:(req, res) => {
+        res.render ('homeAdmin')
+    },
 }
 
 
