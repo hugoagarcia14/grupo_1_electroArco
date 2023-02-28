@@ -11,5 +11,6 @@
  router.get ('/login', mainController.login);
  router.get ('/formCreationProduct', mainController.formularioCreacionProductos);
  router.get ('/editProduct', mainController.editProduct);
+ router.get ('/homeAdmin', mainController.homeAdmin);
  
  module.exports = router;
