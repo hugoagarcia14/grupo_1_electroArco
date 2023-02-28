@@ -41,3 +41,9 @@ SPRINT 2
 •   Optimizar mejor el tiempo
 •   El que lo requiera, usar dailys y/o weeklies
 
+Sprint 3
+Utilizando como base las ideas y experiencias que nos ocurrieron en el sprint numero 2 utilizamos el tablero Trello mucho más para poder dividir las responsabilidades de cada uno en las partes a realizar en el proyecto. 
+
+Nuevamente separamos las tareas en diferentes formas; la primera es potenciando individualmente lo que mejor sabe hacer cada uno, la segunda es que hicimos sesiones de coding en conjunto para que cada uno repase los temas dados mientas ayudábamos a resolver problemas o dudas de los mismos y así lograr que todos los miembros del equipo estén en las mismas condiciones de conocimiento dentro del mismo y tercero nos dividimos las asignaturas en base a lo realizado en el sprint anterior.
+
+
