@@ -1,40 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="/css/login.css">
-</head>
+<%- include('partials/head',{styles:['login']}) %>
 
+    <body>
+        <%- include('partials/header') %>
+            
+            <div class="overlay2" id="overlay2">
+                <div class="formularioRegistroLogin" id="formularioRegistroLogin">
+                    <form action="/headerAdmin" method="POST" class="crear-formulario">
+                        <h2>Ingresa tus datos</h2>
+                        <div class="divNombreApellidologin">
+                            <label class="labelCorreo">Correo:</label>
+                            <input type="text" name="correoUsuario" id="correoUsuario" class="correoUsuario">
+                        </div>
+                        <div class="contrasenaLogin">
+                            <label class="labelContraseña">Contraseña:</label>
+                            <input type="password" name="contraseñaUsuario" id="contraseñaUsuario"
+                                class="contraseñaUsuario" >
+                        </div>
+                        <p>Recordar contraseña</p>
+                </div>
 
-<body>
-    <!-- inicio del main -->
-<main>
-<h1>Bienvenidos a Electro Arco </h1>
-<h2> Inicia seccion</h2>
-<form class="login" action="/login" method="POST">
-    <div class="form-container">
-        <input type="email" required placeholder="Email"
-            pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$">
-    </div>
-    <div class="password"> <label for="password"></label>
-        <input type="password" name="pass"  placeholder="Contraseña" id="pass" pattern="[A-Za-z0-9!?-]{8,12}" required/>
-    </div>
-    <div class="button-container">
-        <div class="button-one"><button class="one" type="submit">Iniciar sesión</button></div>
-    </div>
-   <div class="acceder"> <p class="acceso">No tienes una cuenta</p> <a href="/register" class="register"> Registrate aqui</a> </div>
-   <div class="recuperar"><a href="/" class="recuperar">Olvidaste Tu Contraseña</a></div>
-</form>
-</div>
-</form>
-</main>
-<!-- fin del Main -->
-</body>
+                <div class="botonGuardarLogin">
+                    <button type="submit" class="botonFormularioLogin">INGRESAR</button>
+                    <button type="delete" class="botonFormularioLogin">CANCELAR</button>
+                </div>
+                </form>
+            </div>
+            <%- include('partials/footer') %>
+    </body>
 
-
-
-
-</html>
+    </html>
