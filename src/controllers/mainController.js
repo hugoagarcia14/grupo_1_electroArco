@@ -5,12 +5,7 @@ const controller = {
     register:(req, res) => {
         res.render ('register')
     },
-    productdetail:(req, res) => {
-        res.render ('productdetail')
-    },
-    productCart:(req, res) => {
-        res.render ('productCart')
-    },
+   
     login:(req, res) => {
         res.render ('login')
     },
