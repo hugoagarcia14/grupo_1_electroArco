@@ -20,6 +20,7 @@ const port = process.env.PORT || 3000;
 //Routes
 const mainRouter = require('./routes/main');
 const productRouter = require('./routes/productRouter');
+const userRouter = require('./routes/user');
 
 //Public
 app.use(express.static(path.join(__dirname,'public')));
@@ -33,6 +34,7 @@ app.listen(port, () => {
 //Route main
 app.use(mainRouter);
 app.use(productRouter);
+app.use(userRouter);
 //app.use('/product', listProducts);
 
 

@@ -12,6 +12,6 @@ const controller={
         res.render ('product/listProducts')
     },
 
-};
+};// edicion y creación de productos
 
 module.exports = controller;
