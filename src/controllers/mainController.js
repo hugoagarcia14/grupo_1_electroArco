@@ -1,8 +1,11 @@
+const express = require('express');
+const path = require('path');
+
 const controller = {
     index:(req, res) => {
-        res.render ('home')
+        res.render ('main/home')
     },
-    register:(req, res) => {
+   /*register:(req, res) => {
         res.render ('register')
     },
    
@@ -17,12 +20,12 @@ const controller = {
     },
     homeAdmin:(req, res) => {
         res.render ('homeAdmin')
-    },
+    },*/
 }
 
 
 
-
+//home
 
 module.exports = controller;
 

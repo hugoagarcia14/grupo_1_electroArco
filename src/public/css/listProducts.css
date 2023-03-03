@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color:var(--grisClaro);
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    
+
+}
+header{
+    width:100%;
+}
+.header1{
+    color:black;
+    width: 100%;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+.logo{
+   width: 100%;
+}
+.logo img{
+    width: 100%;
+    height: 200px;  
+}
+.opcionesMenu li{
+    list-style: none;
+    width: 140px;
+    height: 61px;
+    text-align: center;
+    background-color: white;
+    margin-bottom: 20px;
+    border:solid 1px white;
+    padding-top: 15px;
+   
+}
+.opcionesMenu li:hover{
+    box-shadow: 10px 10px 5px 0px gray;
+}
+.compra{
+    padding-top: 10px;
+    text-align: center;
+}
+.opcionesMenu{
+    display: none;
+}
+.burger-menu{
+    display: flex;
+    justify-content: center;
+}
+.burger-menu i{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 4px;
+    display: flex;
+    color: #1259c3;
+    justify-content: center;
+    background-color: #ffff;
+    height: 25px;
+    width: 26px;
+    border-radius: 5px;    
+}
+.banner{
+    width: 100%;    
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+main{
+    width: 100%;
+    margin: auto;   
+}
+.ofertas {
+    width: 100%; 
+      
+}
+.descripcion{
+    display: none;
+}
+.articulo-horno:hover .descripcion, .articulo-laptop:hover .descripcion, .articulo-samsung:hover .descripcion, .articulo-tv:hover .descripcion{
+    display: block;
+}
+
+.articulo-horno{
+    width:100%;
+    background-color: white;
+    margin-bottom: 20px;
+    border:solid 1px white;
+    margin:10px;
+}
+.articulo-horno > .relative-horno{
+    position: relative;   
+}
+
+.horno img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.articulo-laptop{
+    width:100%;
+    background-color: white;
+    margin-bottom: 20px;
+    border:solid 1px white;
+    margin:10px;
+}
+.articulo-laptop > .relative-laptop{
+    position: relative; 
+        
+}
+.laptop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.articulo-samsung{
+    width:100%;
+    background-color:white;
+    margin-bottom: 20px;
+    margin:10px;
+}
+.articulo-samsung > .relative-samsung{
+    position: relative;    
+}
+.samsung img{
+    width: 100%;
+    height: 100;
+    object-fit: cover;
+}
+.articulo-tv{
+    width:100%;
+    background-color: white;
+    margin-bottom: 20px;
+    border:solid 1px white;
+    margin:10px;
+}
+
+.tv img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.articulo-horno:hover , .articulo-laptop:hover, .articulo-samsung:hover, .articulo-tv:hover{
+    box-shadow: 10px 10px 5px 0px gray;
+
+}
+
+.enviarA {
+    display: flex;
+    width: 100%;
+}
+
+.productos {
+    display: flex;
+    width: 100%;
+}
+.buscarProducto{
+    width:100%;
+    justify-content: center;
+    display: flex;
+}
+.input-control2{
+    width: 80%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    
+}
+.usuario {
+    display: flex;
+    width: 100%;
+}
+
+.misCompras {
+    display: flex;
+    width: 100%;
+}
+
+.shoppingCart {
+    display: flex;
+    width: 100%;
+}
+
+.contenidoMenuNavegacion {
+    display: none;
+}
+
+.menuNavegacion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.menuHamburguesa {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+.menuHamburguesa i {
+    display: flex;
+}
+
+.menuNavegacion1 {
+    display: flex;
+    width: 100%;
+    background-color: rgb(207, 202, 202);
+}
+.atencionAlCliente {
+    width: 40%;
+}
+
+.vender {
+    width: 30%;
+    text-align: center;
+}
+
+.carrusel img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.carrusel1 img, .carrusel2 img, .carrusel3 img {
+    width: 50%;
+    height: 30%;
+    object-fit: contain;
+}
+
+.carrusel1, .carrusel2, .carrusel3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carrusel {
+    padding-top: 2%;
+}
+
+@media (min-width: 768px) {
+    
+    .menu{
+        display: block;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .opcionesMenu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menuHeader{
+        display: flex;
+        width: 50%;
+        height: 110px;
+    }
+    .menuHeader li{
+        margin:10px;
+    }
+    .menuNavegacion {
+        display: block;
+    }
+
+    .contenidoMenuNavegacion {
+        display: flex;
+    }
+
+    .menuHamburguesa {
+        display: none;
+    }
+    
+    .horno img{
+        height: 50%;
+        object-fit: cover;
+        padding-top: 50px;
+        
+    }
+
+    .laptop img{
+        height: 50%;
+        object-fit: cover;
+        padding-top: 50px;
+        
+    }
+    .samsung img{
+        height: 50%;
+        object-fit: cover;
+        padding-top: 50px;
+        
+    }
+    .tv img{
+        height: 50%;
+        object-fit: cover;
+        padding-top: 50px;
+       
+    }
+
+    .bloque1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .bloque2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .carrusel1 img, .carrusel2 img, .carrusel3 img {
+        width: 300%;
+        object-fit: contain;
+    }
+    
+    .carrusel1, .carrusel2, .carrusel3 {
+        display: flex;
+
+    }
+
+    .divCarrusel {
+        display: flex;
+        padding-top: 2%;
+    }
+
+    .menuNavegacion {
+        padding-top: 2%;
+    }
+    
+    .menuNavegacion1 {
+        margin-top: 2%;
+    }
+
+}
+@media(min-width:1024px){ 
+    .ofertasBloques{
+        display: flex;
+    }
+    .horno img{
+        height: 25%;
+    }
+    .laptop img{
+        height: 25%;
+    }
+    .samsung img{
+        height: 25%;
+    }
+    .tv img{
+        height: 25%;
+    }
+    .relative-laptop:hover{
+        display: block;
+    }
+}

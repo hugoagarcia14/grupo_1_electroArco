@@ -1,17 +1,17 @@
-<%- include('partials/head',{styles:['productCart','mediaQueryCart']}) %>
+<%- include('../partials/head',{styles:['productCart','mediaQueryCart']}) %>
 
 <body>
-    <%- include('./partials/header') %>
+    <%- include('../partials/header') %>
     <main>
-        <div class="barra"><img src="/images/barra.png" alt=""></div>
+        <div class="barra"><img src="/images/products/barra.png" alt=""></div>
         <div class="main-article">
             <div class="title">
                 <h1 class="title"> Carro de compras</h1>
             </div>
-            <div class="banner"><img class="banner" src="images/banner.jpg"></div>
+            <div class="banner"><img class="banner" src="images/home/banner.jpg"></div>
             <article>
                 <div class="img">
-                    <img class="article" src="images/img-tv-samsung-smart.jpg">
+                    <img class="article" src="images/products/img-tv-samsung-smart.jpg">
                 </div>
                 <div class="content">
                     <div class="brand">
@@ -40,7 +40,7 @@
                     <button class="increment"><i class="fa-solid fa-plus"></i></button>
                 </div>
                 <div class="information">
-                    <p class="price">2.300.200 und</p>
+                    <p class="price">$2.300.200 und</p>
                     <p class="discount">5% off und</p>
                 </div>
                 <button type="reset" class="reset">Eliminar</button>
@@ -66,7 +66,7 @@
             <div class="location"><i class="fa-solid fa-location-dot"></i>
                 <p class="location"> Precios y opciones de entrega basado en tu ubicación actual.</p>
             </div>
-            <div class="img-paymenOptions"><img class="paymentOptions" src="images/paymentOptions.svg" alt=""></div>
+            <div class="img-paymenOptions"><img class="paymentOptions" src="images/products//paymentOptions.svg" alt=""></div>
             <div class="container-text">
                 <div class="lock"><i class="fa-solid fa-lock"></i></div>
                 <div class="container-lock-information">
@@ -96,7 +96,7 @@
         </div>
       
     </main>
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
 
 </body>
 

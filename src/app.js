@@ -31,8 +31,8 @@ app.listen(port, () => {
 });
 
 //Route main
-app.use('/', mainRouter);
-app.use('/product', productRouter);
+app.use(mainRouter);
+app.use(productRouter);
 //app.use('/product', listProducts);
 
 

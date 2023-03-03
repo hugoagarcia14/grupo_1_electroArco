@@ -4,7 +4,8 @@
 
  const router = express.Router ();
 
- /*router.get ('/',mainController.index);
+ router.get ('/',mainController.index);
+ /*
  router.get ('/register', mainController.register);
  router.get ('/productdetail', mainController.productdetail);
  router.get ('/productCart', mainController.productCart);
