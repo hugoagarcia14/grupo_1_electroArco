@@ -11,7 +11,13 @@ const controller={
     listProducts:(req, res) => {
         res.render ('product/listProducts')
     },
+    formularioCreacionProductos:(req, res) => {
+        res.render ('product/formCreationProduct')
+    },
+    editProduct:(req, res) => {
+        res.render ('product/editProduct')
+    },
 
-};// edicion y creación de productos
+};
 
 module.exports = controller;

@@ -8,6 +8,7 @@ const app = express();
 
 //Path
 const path = require('path');
+const { editProduct } = require('./controllers/productController');
 //const publicPath = path resolve(__dirname, './public')
 
 //Ejs
@@ -35,6 +36,7 @@ app.listen(port, () => {
 app.use(mainRouter);
 app.use(productRouter);
 app.use(userRouter);
+
 //app.use('/product', listProducts);
 
 
