@@ -9,6 +9,7 @@ const app = express();
 //Path
 const path = require('path');
 const { editProduct } = require('./controllers/productController');
+const { adminUser, editUser } = require('./controllers/userController');
 //const publicPath = path resolve(__dirname, './public')
 
 //Ejs
@@ -26,7 +27,6 @@ const userRouter = require('./routes/user');
 //Public
 app.use(express.static(path.join(__dirname,'public')));
 
-
 //Start server
 app.listen(port, () => {
     console.log(`Server started on: http://localhost:${port}`);
@@ -36,6 +36,8 @@ app.listen(port, () => {
 app.use(mainRouter);
 app.use(productRouter);
 app.use(userRouter);
+app.use(adminUser);
+app.use(editUser);
 
 //app.use('/product', listProducts);
 
