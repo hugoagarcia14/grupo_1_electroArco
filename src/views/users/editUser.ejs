@@ -6,7 +6,9 @@
                 <div class="overlay" id="overlay">
                     <div class="formularioRegistro" id="formularioRegistro">
                         <form action="" method="dialog" class="crear-formulario">
-                            <h2>Completa tus datos</h2>
+                            <div class="col-12">
+                                <h2 class="products-title">Estás editando: User id</h2>
+                            </div>
                             <div class="divNombreApellido">
                                 <div class="nombre">
                                     <label>Nombre:</label>
@@ -17,10 +19,16 @@
                                     <input type="text" name="apellidoUsuario" class="input-control">
                                 </div>
                             </div>
+                            <div class="container">
                             <div class="celular">
                                 <label>Celular:</label>
                                 <input type="text" name="celularUsuario" class="input-control">
                             </div>
+                            <div class="img-edit">
+                                <label for="image" class="form-label">Imagen:</label>
+                                <input type="file" id="image" name="image" class="form-input">
+                            </div>
+                        </div>
                             <div class="divCorreoContrasena">
                                 <div class="correo">
                                     <label>Correo:</label>
@@ -32,6 +40,7 @@
                                         class="input-control">
                                 </div>
                             </div>
+                           
     
                             <div class="boton-guardar">
                                 <button type="submit" class="boton-formulario">EDITAR</button>

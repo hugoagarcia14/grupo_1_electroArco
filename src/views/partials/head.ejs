@@ -7,30 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/icon" sizes="16x16" href="images/home/logo.svg">
     <title>ElectroArco</title>
- <!--Estilos propios-->
+    <!--Estilos propios-->
     <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/src/public/css/homeAdmin.css">
     <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/colors.css">
     <link rel="stylesheet" href="/css/productCart.css">
-    <link rel="stylesheet" href="/css/mediaQueryCart.css" >
+    <link rel="stylesheet" href="/css/mediaQueryCart.css">
     <link rel="stylesheet" href="/css/productdetail.css">
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/editUser.css">
+    <link rel="stylesheet" href="/css/adminUser.css">
     <link rel="stylesheet" href="/src/public/css/colors.css">
- <!--Fuentes-->
+    <!--Fuentes-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    
-    <% if (locals.styles && Array.isArray(locals.styles)) { 
-        styles.forEach(style => {%>
-            <link rel="stylesheet" href="/css/<%= style %>.css" />
-    <%  })
-    } %>
-    
-    
-</head>
 
+    <% if (locals.styles && Array.isArray(locals.styles)) { styles.forEach(style=> {%>
+        <link rel="stylesheet" href="/css/<%= style %>.css" />
+        <% }) } %>
+
+
+</head>

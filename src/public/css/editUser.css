@@ -106,6 +106,7 @@ label {
 
 input {
     border-radius: 5px;
+    width: 100%;
 }
 
 .input-control {
@@ -136,7 +137,7 @@ input {
 .nombre,
 .apellido,
 .correo,
-.contrasena {
+.contrasena, .img-edit {
     width: 100%;
 }
 
@@ -145,8 +146,24 @@ input {
     display: flex;
     justify-content: center;
 }
+.img-edit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.celular {
+    width: 100%;
+}
 
-@media(min-width:361px) {
+@media(min-width:481px) {
     .cabecera-botones {
         display: none;
     }
@@ -185,16 +202,21 @@ input {
     }
 
     .celular {
-        width: 100%;
+        width: 50%;
         padding: 30px;
     }
 
     .boton-formulario {
         width: 50%;
     }
+    .img-edit {
+        width: 50%;
+
+        padding: 30px;
+    }
 }
 
-@media(min-width:760px) {
+@media(min-width:1024px) {
     .cabecera-botones {
         display: flex;
     }
