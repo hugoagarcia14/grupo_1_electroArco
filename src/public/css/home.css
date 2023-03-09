@@ -9,14 +9,10 @@ main{
 body{
     font-family: 'Roboto', sans-serif;
 }
-a {
+
+a{
     text-decoration: none;
     color: var(--negro);
-    width: 70%;
-    text-align: right;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
 }
 i.fa-solid.fa-house  {
     display: flex;
@@ -321,10 +317,7 @@ main{
         height: 110px;
       
     }
-    a{
-        font-size: 17px;
-        padding-top: 1px;
-    }
+   
     i.fa-solid.fa-cart-shopping{
         display: flex;
         justify-content: flex-start;
