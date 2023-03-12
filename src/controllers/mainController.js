@@ -10,7 +10,7 @@ function getProducts() {
 const controller = {
     index:(req, res) => {
         const products = getProducts()
-        res.render ('main/home',{visited:products})
+        res.render ('main/home',{visited:products,inSale:products})
     },
 
    /*register:(req, res) => {

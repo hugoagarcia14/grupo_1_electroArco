@@ -1,5 +1,7 @@
 const express = require('express');
 
+const path = require('path');
+
 const fs = require('fs');
 
 const multer = require('multer');
@@ -10,7 +12,7 @@ const productController = require('../controllers/productController');
 
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, path.resolve(__dirname, '../../public/images/products'));
+        cb(null, path.resolve(__dirname, '../public/images/products'));
     },
     filename: (req, file, cb) => {
         cb(null, Date.now() + '-' + file.originalname);
