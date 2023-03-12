@@ -17,7 +17,10 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 //Server
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3030;
+
+app.use(express.urlencoded({ extended:false }));
+app.use(express.json());
 
 //Routes
 const mainRouter = require('./routes/main');

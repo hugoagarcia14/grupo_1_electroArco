@@ -4,19 +4,23 @@
         <%- include('../partials/header') %>
             <main>
                 <h2>Basado en las últimas visitas</h2>
+                
                 <div class="ofertas">
+                    <% visited.forEach((product) => { %>
                     <div class="ofertasBloques">
                         <div class="bloque1">
                             <div class="articulo-horno">
-                                <div class="horno"><img src="images/products/horno.jpeg"> </div>
+                                <a href="/product/productdetail/<%= product.id %>"></a>
+                                <div class="horno"><img src="images/products/<%= product.image %>"> </div>
                                 <div class="relative-horno">
                                     <div class="img-envio"><i class="fa-solid fa-truck"></i></div>
                                     <div class="precio-descuento">
-                                        <div class="precios">$6.770</div>
+                                        <div class="precios"><%= product.price %></div>
                                         <div class="desc">40% OFF</div>
                                     </div>
-                                    <div class="descripcion">Horno microondas</div>
+                                    <div class="descripcion"><%= product.name %></div>
                                 </div>
+                                <% }) %>
                             </div>
 
 
