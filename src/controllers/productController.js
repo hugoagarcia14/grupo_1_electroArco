@@ -9,6 +9,7 @@ function getProducts() {
 const controller={
     productdetail:(req, res) => {
         const { id } = req.params;
+		console.log(id);
 		const products = getProducts();
 		const product = products.find((element) => element.id === +id);
         res.render ('product/productdetail', { product })
@@ -25,12 +26,6 @@ const controller={
     editProduct:(req, res) => {
         res.render ('product/editProduct')
     },
-    productdetail: (req, res) => {
-		const { id } = req.params;
-		const products = getProducts();
-		const product = products.find((element) => element.id === +id);
-		res.render('productdetail', { product });
-	},
     store: (req, res) => {
 		const image = req.file ? req.file.filename : 'default-image.png';
 		const products = getProducts();
@@ -45,7 +40,7 @@ const controller={
 		};
 		products.push(newProduct);
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-		res.redirect('/listProducts');
+		res.redirect('/');
 	},
 
 };

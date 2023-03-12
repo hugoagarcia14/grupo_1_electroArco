@@ -22,12 +22,12 @@ const upload = multer({ storage });
 
 router.get ('/productCart', productController.productCart);
 
-router.get ('/productdetail', productController.productdetail);
+router.get ('/productdetail/:id', productController.productdetail);
 
 router.get ('/listProducts', productController.listProducts);
 
-router.get ('/formCreationProduct', productController.formularioCreacionProductos);
-router.post('/', upload.single('image'), productController.store);
+router.get ('/create', productController.formularioCreacionProductos);
+router.post('/createProduct', upload.single('image'), productController.store);
 
 router.get ('/editProduct', productController.editProduct);
 

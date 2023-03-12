@@ -1,10 +1,18 @@
 const express = require('express');
 const path = require('path');
+const fs = require('fs');
+
+const productsFilePath = path.join(__dirname, '../data/product.json');
+function getProducts() {
+	return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+}
 
 const controller = {
     index:(req, res) => {
-        res.render ('main/home')
+        const products = getProducts()
+        res.render ('main/home',{visited:products})
     },
+
    /*register:(req, res) => {
         res.render ('register')
     },

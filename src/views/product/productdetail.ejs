@@ -17,13 +17,13 @@
             </div>
             <div class="containerProductInfo">
                 <div id="mark">
-                    <p>Samsung</p>
+                    <p><%=product.name%></p>
                 </div>
                 <div id="productName">
-                    <p>Galaxy S10 Core 32GB Blue</p>
+                    <p></p>
                 </div>
                 <div id="subtitleProductDescription">
-                    <p>Código: 0802 0011 2236</p>
+                    <p><%=product.description%></p>
                 </div>
             </div>
             <div class="slide1"><img src="/images/products/<%= product.image %>" alt="aquívalaimagendelproducto"></div>
@@ -63,14 +63,14 @@
             </div>
         </section>
         <section class="containerProductDetail">
-            <div class="slide"><img src="images/products/img-samsung-galaxy-s10.jpg" alt="aquívalaimagendelproducto"></div>
+            <div class="slide"><img src="images/products/<%=product.image%>" alt="aquívalaimagendelproducto"></div>
             <div id="containerProductDescription">
-                <p class="titleProductDescription">Samsung Galaxy S10 Core 32GB Blue</p>
-                <p class="subtitleProductDescription">Código: 0802 0011 2236</p>
+                <p class="titleProductDescription"><%=product.name%></p>
+                <p class="subtitleProductDescription"><%=product.description%></p>
             </div>
             <div id="containerPriceAndShipping">
                 <div class="price">
-                    <p class="price3">1.700.000</p>
+                    <p class="price3"><%=product.price%></p>
                 </div>
                 <div class="addAmount">
                     <button class="addToCart" type="submit">Agregar al Carrito</button>
