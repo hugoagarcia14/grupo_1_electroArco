@@ -1,10 +1,55 @@
-<%- include('../partials/head',{styles:['login']}) %>
+<%- include('../partials/head',{styles:['editUser']}) %>
 
     <body>
         <%- include('../partials/header') %>
-            <main>
-
-               hola
+            <main class="editUser">
+                <div class="overlay" id="overlay">
+                    <div class="formularioRegistro" id="formularioRegistro">
+                        <form action="" method="dialog" class="crear-formulario">
+                            <div class="col-12">
+                                <h2 class="products-title">Estás editando: User id</h2>
+                            </div>
+                            <div class="divNombreApellido">
+                                <div class="nombre">
+                                    <label>Nombre:</label>
+                                    <input type="text" name="nombreUsuario" id="nombreUsuario" class="input-control">
+                                </div>
+                                <div class="apellido">
+                                    <label>Apellidos:</label>
+                                    <input type="text" name="apellidoUsuario" class="input-control">
+                                </div>
+                            </div>
+                            <div class="container">
+                            <div class="celular">
+                                <label>Celular:</label>
+                                <input type="text" name="celularUsuario" class="input-control">
+                            </div>
+                            <div class="img-edit">
+                                <label for="image" class="form-label">Imagen:</label>
+                                <input type="file" id="image" name="image" class="form-input">
+                            </div>
+                        </div>
+                            <div class="divCorreoContrasena">
+                                <div class="correo">
+                                    <label>Correo:</label>
+                                    <input type="text" name="correoUsuario" id="correoUsuario" class="input-control">
+                                </div>
+                                <div class="contrasena">
+                                    <label>Contraseña:</label>
+                                    <input type="password" name="contraseñaUsuario" id="contraseñaUsuario"
+                                        class="input-control">
+                                </div>
+                            </div>
+                           
+    
+                            <div class="boton-guardar">
+                                <button type="submit" class="boton-formulario">EDITAR</button>
+                                <button type="submit" class="boton-formulario">GUARDAR</button>
+                                <button type="delete" class="boton-formulario">BORRAR</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
 
             </main>
             <%- include('../partials/footer') %>

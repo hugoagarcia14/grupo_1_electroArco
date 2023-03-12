@@ -7,13 +7,13 @@ h2{
     padding: 5px;
 }
 .overlay2{
-    box-shadow: 10px 10px 5px 0px gray;
-    width: 60%;
-    margin-left: 20%;
+    box-shadow: 10px 10px 5px 0px grey;
+    width: 80%;
+    margin-left: 12%;
     background-color: #ebebeb;
-    border-radius: 20px;   
+    border-radius: 20px;
     margin-bottom: 10px;
-    margin-top: 10px;  
+    margin-top: 10px;
 }
 
 .labelCorreo,.correoUsuario,.labelContraseña,.contraseñaUsuario{

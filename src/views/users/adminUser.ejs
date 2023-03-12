@@ -1,13 +1,24 @@
-<%- include('../partials/head',{styles:['login']}) %>
+<%- include('../partials/head',{styles:['adminUser']}) %>
 
     <body>
         <%- include('../partials/header') %>
             <main>
-
-               hola
+                <div class="container">
+                   <a href="editUser">
+                    <div class="img-user">
+                        <img class="img-user" src="images/user/user.png">
+                    </div>
+                    <div class="container-information">
+                        <div class="id">id</div>
+                        <div class="name">Luis Miguel</div>
+                        <div class="lastname">Lucas Lagares</div>
+                        <div class="email">ejemplo@ejemplo.com</div>
+                    </div>
+                </a>
+                </div>
 
             </main>
             <%- include('../partials/footer') %>
     </body>
 
-</html>
+    </html>
