@@ -1,6 +1,11 @@
 // usuarios, agregar usuario y login
-const express = require('express');
+const fs = require('fs');
 const path = require('path');
+const userFilePath = path.join(__dirname, '../data/users.json');
+
+function getUser() {
+	return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+}
 
 const controller = {
     login: (req, res) => {
@@ -10,7 +15,10 @@ const controller = {
         res.render('users/register')
     },
     adminUser: (req, res) => {
-        res.render('users/adminUser')
+        const users = getUser();
+        res.render('users/adminUser', {
+            users
+        })
     },
     editUser: (req, res) => {
         res.render('users/editUser')

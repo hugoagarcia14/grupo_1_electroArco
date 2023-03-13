@@ -3,20 +3,23 @@
     <body>
         <%- include('../partials/header') %>
             <main>
+                <% users.forEach(users=> { %>
                 <div class="container">
                    <a href="editUser">
                     <div class="img-user">
-                        <img class="img-user" src="images/user/user.png">
+                        <img class="img-user" src="<%= users.image %>">
                     </div>
                     <div class="container-information">
-                        <div class="id">id</div>
-                        <div class="name">Luis Miguel</div>
-                        <div class="lastname">Lucas Lagares</div>
-                        <div class="email">ejemplo@ejemplo.com</div>
+                        <div class="id"><%= users.id_user %></div>
+                        <div class="name"><%= users.first_name %></div>
+                        <div class="lastname"><%= users.last_name %></div>
+                        <div class="phone"><%= users.phone %></div>
+                        <div class="email"><%= users.email %></div>
                     </div>
                 </a>
-                </div>
-
+            </div>
+            
+            <% }); %>
             </main>
             <%- include('../partials/footer') %>
     </body>

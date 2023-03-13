@@ -17,6 +17,10 @@ main {
     padding-top: 5px;
     padding-bottom: 5px;
 }
+a {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .img-user {
     display: flex;
@@ -43,7 +47,7 @@ img.img-user {
 }
 
 .name,
-.lastname {
+.lastname, .phone {
     width: 100%;
     display: flex;
     font-size: 18px;
