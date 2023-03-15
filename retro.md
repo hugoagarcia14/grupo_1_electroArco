@@ -46,4 +46,27 @@ Utilizando como base las ideas y experiencias que nos ocurrieron en el sprint nu
 
 Nuevamente separamos las tareas en diferentes formas; la primera es potenciando individualmente lo que mejor sabe hacer cada uno, la segunda es que hicimos sesiones de coding en conjunto para que cada uno repase los temas dados mientas ayudábamos a resolver problemas o dudas de los mismos y así lograr que todos los miembros del equipo estén en las mismas condiciones de conocimiento dentro del mismo y tercero nos dividimos las asignaturas en base a lo realizado en el sprint anterior.
 
+Sprint 4
 
+1. Seguir haciendo
+•   Continuar con la comunicación que hemos tenido hasta el momento . 
+•   continuar con el compromiso de cada uno en realizar las actividades asignadas.                                                  
+•   Apoyar la ejecucion de las tareas de los compañeros de grupo que no se han reportado.
+•	Apoyo en los compañeros de grupo
+
+2. Menos de:
+•   No esperar hasta el final para agregar actividades faltantes
+•   No preguntar a los profesores, así sean preguntas "insignificantes"
+•   Tolerancia hacia los compañeros que no se han reportado en el grupo
+
+3. Mas de: 
+•  Comunicación por discord 
+•  Planificación de las actividades organizando por nivel de dificultad.
+
+4. Dejar de hacer:
+•   Procrastinar
+
+5. Empezar a hacer:
+•   Optimizar mejor el tiempo
+•   Ser más organizados en el desarrollo de los sprint
+•   El que lo requiera, usar dailys y/o weeklies

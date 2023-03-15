@@ -7,12 +7,12 @@ function getProducts() {
 	return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 }
 
-const controller = {
-    index:(req, res) => {
-        const products = getProducts()
-        res.render ('main/home',{visited:products,inSale:products})
-    },
 
+const controller = {
+    index: (req, res) => {
+		const products = getProducts();
+		res.render('main/home', { products });
+	},
    /*register:(req, res) => {
         res.render ('register')
     },
