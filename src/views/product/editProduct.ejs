@@ -13,7 +13,7 @@
                         <div class="divEdit">
                             <div class="inputId">
                                 <input type="text" placeholder="Id del producto:" name="idProducto"
-                                    class="input-control" id="idProducto">
+                                    class="input-control" id="idProducto" value="<%= productToEdit.id %>">
                             </div>
                             <div class="inputEditar"><input type="text" placeholder="Buscar producto:"
                                     name="buscarProducto" class="input-control" id="buscarProducto" required>
@@ -21,17 +21,17 @@
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Nombre del producto:" name="nombreProducto"
-                                class="input-control" id="nombreProducto" required>
+                                class="input-control" id="nombreProducto" value="<%= productToEdit.name %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Descripción del producto" name="descripcionProducto"
-                                class="input-control" required>
+                                class="input-control" value="<%= productToEdit.descrition %>">
                         </div>
                         <div class="divImagen"></div>
                         <div class="controlFoto">
                             <h5>Foto del producto</h5>
                             <input type="file" placeholder="Foto del producto" name="fotoProducto" id="fotoProducto"
-                                class="inputFoto" required>
+                                class="inputFoto" value="<%= productToEdit.image %>">
                         </div>
                         <div class="controlCategoria">
                             <h5>Categoria del producto</h5>
@@ -46,11 +46,11 @@
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Colores del producto:" name="coloresProducto"
-                                class="input-control" id="coloresProducto">
+                                class="input-control" id="coloresProducto"value="<%= productToEdit.color %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Precio del producto:" name="precioProducto"
-                                class="input-control" id="precioProducto">
+                                class="input-control" id="precioProducto"value="<%= productToEdit.price %>">
                         </div>
                         <div class="boton-guardar">
 

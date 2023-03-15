@@ -22,20 +22,6 @@ a {
     flex-wrap: wrap;
     width: 100%;
 }
-a.btn-link {
-    display: flex;
-    justify-content: center;
-    height: 31px;
-    width: 70%;
-    margin: auto;
-    align-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: var(--celeste);
-    border-radius: 5px;
-    color: var(--blanco);
-}
-
 
 .img-user {
     display: flex;
@@ -116,19 +102,6 @@ img.img-user {
         width: 40%;
         padding-top: 5px;
     }
-    a.btn-link {
-        display: flex;
-        justify-content: center;
-        height: 31px;
-        width: 40%;
-        margin: auto;
-        align-content: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background: var(--celeste);
-        border-radius: 5px;
-        color: var(--blanco);
-    }
 }
 /* Destop */
 @media (min-width: 1024px) {
@@ -161,22 +134,4 @@ img.img-user {
         padding-top: 5px;
         padding-bottom: 5px;
     }
-    a.btn-link {
-        display: flex;
-        justify-content: center;
-        height: 31px;
-        width: 30%;
-        margin: auto;
-        align-content: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background: var(--celeste);
-        border-radius: 5px;
-        color: var(--blanco);
-    }
-    a.btn-link :hover {
-        background: var(--grisClaro);
-        color: var(--negro);
-        transition: 450ms;
-        }
 }

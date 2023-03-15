@@ -26,11 +26,12 @@ router.get ('/productCart', productController.productCart);
 
 router.get ('/productdetail/:id', productController.productdetail);
 
-router.get ('/listProducts', productController.listProducts);
+router.get ('/formCreationProduct', productController.formCreationProduct);
+router.post('/', upload.single('image'), productController.store);
 
-router.get ('/create', productController.formularioCreacionProductos);
 router.post('/createProduct', upload.single('image'), productController.store);
 
-router.get ('/editProduct', productController.editProduct);
+router.get ('/editProduct/:id', productController.editProduct);
+router.put('/:id', upload.single('image'), productController.update); 
 
 module.exports = router;

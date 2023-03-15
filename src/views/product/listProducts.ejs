@@ -4,33 +4,22 @@
     <%- include('../partials/header') %>
     <main>
         <% product.forEach((product) => { %>
-        <div class="ofertas">
-            <div class="ofertasBloques">
-                <div class="bloque1">
-                    <div class="articulo-horno">
-                        <div class="horno"><img src="images/products/<%= product.image %>"> </div>
-                        <div class="relative-horno">
-                            <div class="img-envio"><i class="fa-solid fa-truck"></i></div>
-                            <div class="precio-descuento">
-                                <div class="precios"><%= product.price %></div>
-                                <div class="desc">40% OFF</div>
-                            </div>
-                            <div class="descripcion"><%= product.description %></div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <section class="product-box">
+                    <a href="/productdetail/<%= product.id %>">
+                        <figure class="product-box_image">
+                            <img src="/images/products/<%= product.image %>" alt="imagen de producto">
+                        </figure>
+                        <div class="product-box_data">
+                            <h3>$<%= product.price %></h3>
+                            <span class="descuento"><%= product.discount %> % OFF</span>
+                            <p><%= product.name %></p>
+                            <i class="fas fa-truck"></i>
                         </div>
-                    </div>
-                    <% }) %>
-
-                    <div class="articulo-laptop">
-                        <div class="laptop"><img src="images/products/laptop.jpg"></div>
-                        <div class="relative-laptop">
-                            <div class="img-envio"><i class="fa-solid fa-truck"></i></div>
-                            <div class="precio-descuento">
-                                <div class="precios">$230.000</div>
-                                <div class="desc">20% off</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </a>
+                </section>
+            </div>
+            <% }) %>
 
 
             </main>

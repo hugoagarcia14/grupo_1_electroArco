@@ -1,5 +1,6 @@
-const fs = require('fs');
+const express = require('express');
 const path = require('path');
+const fs = require('fs');
 
 const productsFilePath = path.join(__dirname, '../data/product.json');
 function getProducts() {
@@ -7,25 +8,42 @@ function getProducts() {
 }
 
 const controller={
+
+	formCreationProduct:(req, res) => {
+        res.render ('product/formCreationProduct')
+    },
+
     productdetail:(req, res) => {
         const { id } = req.params;
-		console.log(id);
 		const products = getProducts();
-		const product = products.find((element) => element.id === +id);
+		const product = products.find((element) => element.id == id);
         res.render ('product/productdetail', { product })
     },
+
     productCart:(req, res) => {
         res.render ('product/productCart')
     },
-    listProducts:(req, res) => {
-        res.render ('product/listProducts')
-    },
-    formularioCreacionProductos:(req, res) => {
-        res.render ('product/formCreationProduct')
-    },
+   
     editProduct:(req, res) => {
-        res.render ('product/editProduct')
+        const product = products.find(element => element.id == req.params.id);
+		res.render('editProduct', { productToEdit: product });
     },
+	update: (req, res) => {
+		const products = getProducts();
+		const productIndex = products.findIndex(element => element.id == req.params.id);
+		const image = req.file ? req.file.filename : products[productIndex].image;
+		products[productIndex] = {
+			...products[productIndex],
+			name: req.body.name,
+			price: req.body.price,
+			discount: req.body.discount,
+			category: req.body.category,
+			description: req.body.description,
+			image
+		};
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+		res.redirect('/products');
+	},
     store: (req, res) => {
 		const image = req.file ? req.file.filename : 'default-image.png';
 		const products = getProducts();
@@ -42,6 +60,7 @@ const controller={
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
 		res.redirect('/');
 	},
+	
 
 };
 
