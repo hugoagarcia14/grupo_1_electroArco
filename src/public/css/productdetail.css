@@ -49,6 +49,7 @@
 .containerProductInfo {
     margin: 5px 15px 5px 15px;
 }
+
 .price1 {
     font-size: 18px;
     font-weight: 800;
@@ -57,7 +58,8 @@
     padding-top: 10px;
     color: var(--rojo);
 }
-.pricedetail{
+
+.pricedetail {
     font-size: 18px;
 }
 
@@ -126,7 +128,8 @@
     margin-bottom: 10px;
 }
 
-#containerMoreInfoProduct i, #containerMoreInfoProduct p  {
+#containerMoreInfoProduct i,
+#containerMoreInfoProduct p {
     font-size: 14px;
 }
 
@@ -173,10 +176,10 @@
         grid-area: containerPriceAndShipping;
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 105%;
         padding-left: 25px;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        margin: -25px 0px 120px 6px;
+        margin: -25px 0px 120px 0px;
 
     }
 
@@ -228,6 +231,7 @@
     .subtitleProductDescription {
         font-size: 12px;
         font-weight: 300;
+        text-align: justify;
     }
 
     .price3::before {
@@ -277,11 +281,26 @@
         margin-left: -25px;
     }
 
-    .text2 {
+    .text2,
+    .boxText2 {
         font-size: 16px;
         text-align: justify;
         margin-top: 5px;
         font-weight: 100;
+    }
+
+    .discont3 {
+        display: flex;
+        font-size: 22px;
+        line-height: 20px;
+        margin-bottom: 5px;
+        font-weight: 800;
+        margin-top: 5px;
+        color: var(--verde);
+    }
+
+    .discont3::after {
+        content: "% OFF";
     }
 
     .availabilityInStore {
@@ -294,6 +313,7 @@
         display: flex;
         width: 100%;
         align-items: center;
+        margin-bottom: 10px;
     }
 
     .iconSelectStore {

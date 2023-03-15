@@ -137,19 +137,19 @@
         padding: 10px 0px 10px 0px;
         border-top: 1px solid var(--grisClaro);
     }
-    
+
     .logoRightsReserved img {
         width: 30px;
         align-items: center;
         display: flex;
     }
-    
+
     #textRightsReserved {
         align-items: center;
         display: flex;
         font-size: 10px;
     }
-    
+
     .containerOnlineChat {
         display: flex;
         flex-direction: column;
@@ -157,17 +157,39 @@
         margin-top: 40px;
         color: var(--verde);
     }
-    
+
     #iconWhatsApp {
         font-size: 40px;
     }
-    
+
     #textOnlineChat {
         font-size: 10px;
         font-style: italic;
         font-weight: bold;
     }
-    
+
+    .fa-facebook-square {
+        color: var(--azulFace)
+    }
+
+    .fa-twitter-square {
+        color: var(--azulTwi)
+    }
+
+    .fa-youtube-square {
+        color: var(--rojoYou)
+    }
+
+    .fa-pinterest-square {
+        color: var(--rojoPint)
+    }
+
+    .iconsSocialNetworksInsta {
+        color: var(--purpuraInsta);
+        font-size: 30px;
+        margin-right: 10px;
+    }
+
     /*End Footer*/
 
 }

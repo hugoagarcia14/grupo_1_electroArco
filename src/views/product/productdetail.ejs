@@ -63,14 +63,18 @@
             </div>
         </section>
         <section class="containerProductDetail">
-            <div class="slide"><img src="images/products/<%=product.image%>" alt="aquívalaimagendelproducto"></div>
+            <div class="slide"><img src="/images/products/<%= product.image %>" alt="product image" class="product-detail-img"></div>
             <div id="containerProductDescription">
                 <p class="titleProductDescription"><%=product.name%></p>
                 <p class="subtitleProductDescription"><%=product.description%></p>
+                <p class="colorProduct"><%=product.color%></p>
             </div>
             <div id="containerPriceAndShipping">
                 <div class="price">
                     <p class="price3"><%=product.price%></p>
+                </div>
+                <div class="discont">
+                    <p class="discont3"><%=product.discont%></p>
                 </div>
                 <div class="addAmount">
                     <button class="addToCart" type="submit">Agregar al Carrito</button>
@@ -80,15 +84,15 @@
                 </div>
                 <div class="containerDeliveryOptions">
                     <div class="text2">
-                        <label>
+                        <label class="boxText2">
                             <input type="radio" name="deliveryOptions" value="Envío a tu dirección"><i id="truck2"><i
-                                    class="fas fa-truck"></i></i>Envío a tu dirección
+                                    class="fas fa-truck"></i><p>Envío a tu dirección</p>
                         </label>
                     </div>
                     <div class="text2">
-                        <label>
+                        <label class="boxText2">
                             <input type="radio" name="deliveryOptions" value="Recoge en la tienda"><i
-                                class="fas fa-shopping-bag"></i></i>Recoge en la tienda
+                                class="fas fa-shopping-bag"></i><p>Recoge en la tienda</p>
                         </label>
                     </div>
                 </div>

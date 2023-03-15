@@ -1,12 +1,13 @@
 [
   {
     "id": 1,
-    "name": "ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra",
-    "description": "vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi",
+    "name": "Horno Microondas HACEB 0.7 Azafrán",
+    "description": "Horno Microondas de 20 litros con 6 programas predeterminados: papas, palomitas, pizza, bebidas, comidas congeladas y calentamiento de comidas en general, para facilitar su uso.",
     "image": "horno.jpeg",
     "category": "pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci",
-    "color": "Red",
-    "price": 69.08
+    "color": "Gris",
+    "price": 69.08,
+    "discont": 15
   },
   {
     "id": 2,
