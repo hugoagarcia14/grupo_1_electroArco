@@ -7,8 +7,12 @@ const uploadFile = require('../middlewares/multerMiddleware')
 
 
 router.get ('/login', userController.login);
+
+router.get ('/adminUser', userController.adminUser);
+
 router.get ('/register', userController.register);
-router.get ('/adminUser/:id', userController.adminUser);
+router.post('/adminUser', uploadFile.single("image"), userController.store);
+
 router.get ('/editUser', userController.editUser);
 
 module.exports = router;

@@ -14,6 +14,23 @@ const controller = {
     register: (req, res) => {
         res.render('users/register')
     },
+    store: (req, res) => {
+        const image = req.file ? req.file.filename : 'defaul-image.png';
+        const users = getUser();
+        const newUser = {
+            id: users[users.length - 1].id + 1,
+            id_user:req.body.id_user,
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            image: image,
+            email: req.body.email,
+            phone: req.body.phone,
+            password: req.body.password
+        }
+        users.push(newUser);
+        fs.writeFileSync(userFilePath, JSON.stringify(users, null, ' '));
+        res.redirect('/adminUser')
+    },
     adminUser: (req, res) => {
         const users = getUser();
         res.render('users/adminUser', {

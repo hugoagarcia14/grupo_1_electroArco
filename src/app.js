@@ -30,6 +30,7 @@ const userRouter = require('./routes/user');
 //Public
 app.use(express.static(path.join(__dirname,'public')));
 
+
 //Start server
 app.listen(port, () => {
     console.log(`Server started on: http://localhost:${port}`);
