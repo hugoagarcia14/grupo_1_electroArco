@@ -95,12 +95,12 @@
  },
  {
   "id": 10,
-  "id_user": "0033283133",
-  "image": "user.png",
-  "first_name": "Rad",
-  "last_name": "Bohan",
-  "email": "rbohan9@oracle.com",
-  "phone": "0426850483",
-  "password": "JrlctylO8Oh"
+  "id_user": "1041234567",
+  "first_name": "juan",
+  "last_name": "lucas lopez",
+  "image": "defaul-image.png",
+  "email": "user@gmail.com",
+  "phone": "323456789",
+  "password": "szdsfghjkhj"
  }
 ]
