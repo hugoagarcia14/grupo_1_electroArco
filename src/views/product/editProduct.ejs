@@ -7,17 +7,17 @@
             </div>
             <main class="main">
 
-                <form action="" method="post"  action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
+                <form method="post"  action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
 
                     <div class="formulario">
                         <div class="divEdit">
                         </div>
                         <div class="control-for">
-                            <input type="text" placeholder="Nombre del producto:" name="nombreProducto"
+                            <input type="text" placeholder="Nombre del producto:" name="name"
                                 class="input-control" id="name" value="<%= product.name %>">
                         </div>
                         <div class="control-for">
-                            <input type="text" placeholder="Descripción del producto" name="descripcionProducto"
+                            <input type="text" placeholder="Descripción del producto" name="description"
                                 class="input-control" id="description" value="<%= product.description %>">
                         </div>
                         <div class="controlFoto">
@@ -26,12 +26,16 @@
                                 class="inputFoto" id="image" value="<%= product.image %>">
                         </div>
                         <div class="control-for">
-                            <input type="text" placeholder="Colores del producto:" name="coloresProducto"
-                                class="input-control" id="colores"value="<%= product.color %>">
+                            <input type="text" placeholder="Colores del producto:" name="color"
+                                class="input-control" id="color" value="<%= product.color %>">
                         </div>
                         <div class="control-for">
-                            <input type="text" placeholder="Precio del producto:" name="precioProducto"
+                            <input type="number" placeholder="Precio del producto:" name="price"
                                 class="input-control" id="price" value="<%= product.price %>">
+                        </div>
+                        <div class="control-for">
+                            <input type="number" placeholder="Descuento del producto:" name="discount"
+                                class="input-control" id="discount" value="<%= product.discount %>">
                         </div>
                         <div class="boton-guardar">
 

@@ -32,6 +32,7 @@ const controller={
 			 product });
     },
 	update: (req, res) => {
+		const id = req.params.id;
 		const products = getProducts();
 		const productIndex = products.findIndex(product => product.id == id);
 		const image = req.file ? req.file.filename : products[productIndex].image;
@@ -44,7 +45,7 @@ const controller={
 			description: req.body.description,
 			image
 		};
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 		res.redirect('/');
 	},
     store: (req, res) => {

@@ -1,73 +1,71 @@
 [
-  {
-    "id": 1,
-    "name": "Horno Microondas WONDER 0.8 AGE83X Negro",
-    "description": "Su resistente diseño en cerámica hace que sea 7 veces mas resistente a los rayones y a la corrosión en el interior. Si no tienes tiempo para revisar los tiempos de cocción de los alimentos, con el auto menú de los hornos microondas de Samsung podrás seleccionar el tipo de comida que necesitas calentar y éste hará el resto por ti, calentando tu comida a temperaturas perfectas. Cuando se trata de impresionar a tu familia y amigos no te preocupes el Auto Menú no dirá nada, será nuestro pequeño secreto.",
-    "image": "horno.jpeg",
-    "category": "Ultimas visitas",
-    "discount": 20,
-    "color": "Negro",
-    "price": 69.08
-  },
-  {
-    "id": 2,
-    "name": "Teclado LOGITECH Inalámbrico Bluetooth K380 Blanco",
-    "description": "ESCRIBE CON CUALQUIER DISPOSITIVO. Disfruta de escritura en smartphones y tablets tan cómoda y práctica como en el escritorio con este teclado portátil. K380 es un teclado inalámbrico multidispositivo que se conecta a todos los dispositivos inalámbricos Bluetooth® compatibles con teclados externos.",
-    "image": "img-apple-magic-keyboard.jpg",
-    "category": "ultimos agregados",
-    "discount": 40,
-    "color": "Blanco",
-    "price": 49.14
-  },
-  {
-    "id": 3,
-    "name": "Bicicleta Fierce Locarno 29 Pulgadas",
-    "description": "Entrena y desarrolla tu pasión con la bicicleta FIERCE Locarno diseño sobrio, elegante y cómoda. Ideal para aquellos que inician en el gran mundo del ciclismo de montaña. Cuenta con características de gran nivel permitiendo que el deportista encuentre en cada recorrido un mejor desempeño y un estilo único que se adapte a cada una de sus necesidades. La bicicleta ahora hace parte de tu vida ¡Encuentra aquí tu favorita!",
-    "image": "img-bicicleta-fierce.jpg",
-    "category": "ultimos agregados",
-    "discount": 30,
-    "color": "Negro",
-    "price": 12.51
-  },
-  {
-    "id": 4,
-    "name": "Cámara Nikon D5600",
-    "description": "Destáquese de la multitud con fotos y videos que sean tan impresionantes que lo inspiren a seguir fotografiando y aprendiendo. Desde el primer momento, puede dejarle las cosas a la cámara y comenzar de inmediato a capturar fotos y videos maravillosos sin la curva de aprendizaje. A medida que desarrolle sus habilidades, la D5600 le ofrece mucho espacio para crecer con calidad de imagen excepcional, controles intuitivos y herramientas potentes para que lleve los límites de su creatividad tan lejos como pueda. A diferencia de otros, con una batería que dura por más de 970 disparos por carga, podrá disparar todo el día.",
-    "image": "img-camara-nikon.jpg",
-    "category": "Ultimas visitas",
-    "discount": 10,
-    "color": "Negro",
-    "price": 46.65
-  },
-  {
-    "id": 5,
-    "name": "Lavadora SAMSUNG Carga Superior 19 Kilogramos WA19T6260BV Negro",
-    "description": "La nueva lavadora carga superior de 19Kg Samsung te brinda una amplia capacidad de lavado que te permite reducir la frecuencia de uso, incluso puedes incluir artículos realmente grandes. Maneja un motor digital inverter con 10 años de garantía que te permite tener un desempeño más potente y consume menos energía. Además, puedes personalizar tu ciclo de lavado de acuerdo a tus necesidades. Así mismo, tiene un compartimiento que disuelve el detergente en polvo antes de echarlo a la lavadora.",
-    "image": "1678650793807-descarga.jpeg",
-    "category": "",
-    "discount": 15,
-    "color": "Negro",
-    "price": "350"
-  },
-
-  {
-    "id": 6,
-    "name": "Nevera LG No Frost Congelador Inferior 340 Litros Brutos GB37SPP Gris",
-    "description": "LG trae para ti esta nevera de 420 litros de capacidad con diseño tipo europeo. Tiene acabados en Negro Mate, panel digital de fácil manejo. Cuenta con tecnología Linear Door Cooling, la cual garantiza un enfriamiento más uniforme y en cualquier lugar. Disfruta su dispensador de agua y aprovecha sus 10 años de garantía en el compresor.",
-    "image": "1678767771320-Nevera.jpeg",
-    "category": "",
-    "discount": "20",
-    "color": "Gris",
-    "price": "200"
-  },
-  {
-    "id": 7,
-    "name": "TV LG 65 Pulgadas 164 cm 65UP7760PSB 4K-UHD LED Plano Smart TV",
-    "description": "Televisor LG 65UP7760 está diseñado para superar tus expectativas a través imágenes realistas y colores vivos con la mejor calidad Ultra HD y con su función FILMMAKER MODE™ verás tus contenidos favoritos como fueron concebidos por el director. Además sirve con tus plataformas de streaming para que accedas a los contenidos que más te gustan y puedas disfrútarlos en la calidad para la que fueron pensados. Con este TV podrás sacar el máximo provecho de tu suscripciones. ¡lleva el tuyo ahora!.",
-    "image": "1678846232643-tv.jpeg",
-    "category": "",
-    "discount": "20",
-    "color": "Negro",
-    "price": "200"
-  }
+ {
+  "id": 1,
+  "image": "horno.jpeg",
+  "color": "Negro",
+  "name": "Horno",
+  "price": "12000",
+  "description": "dfhsnkv dnv skvm fmv mv k fmv sdjvjsdmd,lvcmvnzcmb zvsd vmsf, gzdfg",
+  "discount": "0"
+ },
+ {
+  "id": 2,
+  "name": "Teclado LOGITECH Inalámbrico Bluetooth K380 Blanco",
+  "description": "ESCRIBE CON CUALQUIER DISPOSITIVO. Disfruta de escritura en smartphones y tablets tan cómoda y práctica como en el escritorio con este teclado portátil. K380 es un teclado inalámbrico multidispositivo que se conecta a todos los dispositivos inalámbricos Bluetooth® compatibles con teclados externos.",
+  "image": "img-apple-magic-keyboard.jpg",
+  "category": "ultimos agregados",
+  "discount": 40,
+  "color": "Blanco",
+  "price": 49.14
+ },
+ {
+  "id": 3,
+  "name": "Bicicleta Fierce Locarno 29 Pulgadas",
+  "description": "Entrena y desarrolla tu pasión con la bicicleta FIERCE Locarno diseño sobrio, elegante y cómoda. Ideal para aquellos que inician en el gran mundo del ciclismo de montaña. Cuenta con características de gran nivel permitiendo que el deportista encuentre en cada recorrido un mejor desempeño y un estilo único que se adapte a cada una de sus necesidades. La bicicleta ahora hace parte de tu vida ¡Encuentra aquí tu favorita!",
+  "image": "img-bicicleta-fierce.jpg",
+  "category": "ultimos agregados",
+  "discount": 30,
+  "color": "Negro",
+  "price": 12.51
+ },
+ {
+  "id": 4,
+  "name": "Cámara Nikon D5600",
+  "description": "Destáquese de la multitud con fotos y videos que sean tan impresionantes que lo inspiren a seguir fotografiando y aprendiendo. Desde el primer momento, puede dejarle las cosas a la cámara y comenzar de inmediato a capturar fotos y videos maravillosos sin la curva de aprendizaje. A medida que desarrolle sus habilidades, la D5600 le ofrece mucho espacio para crecer con calidad de imagen excepcional, controles intuitivos y herramientas potentes para que lleve los límites de su creatividad tan lejos como pueda. A diferencia de otros, con una batería que dura por más de 970 disparos por carga, podrá disparar todo el día.",
+  "image": "img-camara-nikon.jpg",
+  "category": "Ultimas visitas",
+  "discount": 10,
+  "color": "Negro",
+  "price": 46.65
+ },
+ {
+  "id": 5,
+  "name": "Lavadora SAMSUNG Carga Superior 19 Kilogramos WA19T6260BV Negro",
+  "description": "La nueva lavadora carga superior de 19Kg Samsung te brinda una amplia capacidad de lavado que te permite reducir la frecuencia de uso, incluso puedes incluir artículos realmente grandes. Maneja un motor digital inverter con 10 años de garantía que te permite tener un desempeño más potente y consume menos energía. Además, puedes personalizar tu ciclo de lavado de acuerdo a tus necesidades. Así mismo, tiene un compartimiento que disuelve el detergente en polvo antes de echarlo a la lavadora.",
+  "image": "1678650793807-descarga.jpeg",
+  "category": "",
+  "discount": 15,
+  "color": "Negro",
+  "price": "350"
+ },
+ {
+  "id": 6,
+  "name": "Nevera LG No Frost Congelador Inferior 340 Litros Brutos GB37SPP Gris",
+  "description": "LG trae para ti esta nevera de 420 litros de capacidad con diseño tipo europeo. Tiene acabados en Negro Mate, panel digital de fácil manejo. Cuenta con tecnología Linear Door Cooling, la cual garantiza un enfriamiento más uniforme y en cualquier lugar. Disfruta su dispensador de agua y aprovecha sus 10 años de garantía en el compresor.",
+  "image": "1678767771320-Nevera.jpeg",
+  "category": "",
+  "discount": "20",
+  "color": "Gris",
+  "price": "200"
+ },
+ {
+  "id": 7,
+  "name": "TV LG 65 Pulgadas 164 cm 65UP7760PSB 4K-UHD LED Plano Smart TV",
+  "description": "Televisor LG 65UP7760 está diseñado para superar tus expectativas a través imágenes realistas y colores vivos con la mejor calidad Ultra HD y con su función FILMMAKER MODE™ verás tus contenidos favoritos como fueron concebidos por el director. Además sirve con tus plataformas de streaming para que accedas a los contenidos que más te gustan y puedas disfrútarlos en la calidad para la que fueron pensados. Con este TV podrás sacar el máximo provecho de tu suscripciones. ¡lleva el tuyo ahora!.",
+  "image": "1678846232643-tv.jpeg",
+  "category": "",
+  "discount": "20",
+  "color": "Negro",
+  "price": "200"
+ }
 ]
