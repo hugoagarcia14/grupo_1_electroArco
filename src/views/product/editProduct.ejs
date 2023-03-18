@@ -1,19 +1,19 @@
 <%- include('../partials/head',{styles:['formCreationProduct']}) %>
 
     <body>
-        <%- include('../partials/headerAdmin') %>
+        <%- include('../partials/header') %>
             <div class="titulo">
                 <h1>Editar producto</h1>
             </div>
             <main class="main">
 
-                <form action="" method="post" class="crear-formulario">
+                <form action="" method="post"  action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
 
                     <div class="formulario">
                         <div class="divEdit">
                             <div class="inputId">
                                 <input type="text" placeholder="Id del producto:" name="idProducto"
-                                    class="input-control" id="idProducto" value="<%= productToEdit.id %>">
+                                    class="input-control" id="idProducto" value="<%= product.id %>">
                             </div>
                             <div class="inputEditar"><input type="text" placeholder="Buscar producto:"
                                     name="buscarProducto" class="input-control" id="buscarProducto" required>
@@ -21,17 +21,17 @@
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Nombre del producto:" name="nombreProducto"
-                                class="input-control" id="nombreProducto" value="<%= productToEdit.name %>">
+                                class="input-control" id="nombreProducto" value="<%= product.name %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Descripción del producto" name="descripcionProducto"
-                                class="input-control" value="<%= productToEdit.descrition %>">
+                                class="input-control" value="<%= product.descrition %>">
                         </div>
                         <div class="divImagen"></div>
                         <div class="controlFoto">
                             <h5>Foto del producto</h5>
-                            <input type="file" placeholder="Foto del producto" name="fotoProducto" id="fotoProducto"
-                                class="inputFoto" value="<%= productToEdit.image %>">
+                            <input type="file" placeholder="Foto del producto" name="image" id="image"
+                                class="inputFoto" value="<%= product.image %>">
                         </div>
                         <div class="controlCategoria">
                             <h5>Categoria del producto</h5>
@@ -46,11 +46,11 @@
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Colores del producto:" name="coloresProducto"
-                                class="input-control" id="coloresProducto"value="<%= productToEdit.color %>">
+                                class="input-control" id="coloresProducto"value="<%= product.color %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Precio del producto:" name="precioProducto"
-                                class="input-control" id="precioProducto"value="<%= productToEdit.price %>">
+                                class="input-control" id="precioProducto"value="<%= product.price %>">
                         </div>
                         <div class="boton-guardar">
 

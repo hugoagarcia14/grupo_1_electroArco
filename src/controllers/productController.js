@@ -25,8 +25,11 @@ const controller={
     },
    
     editProduct:(req, res) => {
-        const product = products.find(element => element.id == req.params.id);
-		res.render('editProduct', { productToEdit: product });
+		const id = req.params.id;
+        const products = getProducts();
+        const product = products.find(product => product.id == id);
+		res.render('product/editProduct', { 
+			 product });
     },
 	update: (req, res) => {
 		const products = getProducts();
@@ -42,7 +45,7 @@ const controller={
 			image
 		};
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-		res.redirect('/products');
+		res.redirect('/product');
 	},
     store: (req, res) => {
 		const image = req.file ? req.file.filename : 'default-image.png';
