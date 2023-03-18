@@ -13,10 +13,9 @@
   "name": "Teclado LOGITECH Inalámbrico Bluetooth K380 Blanco",
   "description": "ESCRIBE CON CUALQUIER DISPOSITIVO. Disfruta de escritura en smartphones y tablets tan cómoda y práctica como en el escritorio con este teclado portátil. K380 es un teclado inalámbrico multidispositivo que se conecta a todos los dispositivos inalámbricos Bluetooth® compatibles con teclados externos.",
   "image": "img-apple-magic-keyboard.jpg",
-  "category": "ultimos agregados",
-  "discount": 40,
-  "color": "Blanco",
-  "price": 49.14
+  "discount": "40",
+  "color": "rojo",
+  "price": "49.14"
  },
  {
   "id": 3,

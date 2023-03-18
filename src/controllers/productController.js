@@ -39,6 +39,7 @@ const controller={
 		products[productIndex] = {
 			...products[productIndex],
 			name: req.body.name,
+			color: req.body.color,
 			price: req.body.price,
 			discount: req.body.discount,
 			category: req.body.category,
