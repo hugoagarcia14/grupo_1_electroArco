@@ -65,6 +65,15 @@ const controller={
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
 		res.redirect('/');
 	},
+
+	destroy: (req, res) => {
+        const id = req.params.id;
+        const products = getProducts();
+        const product = products.findIndex(product => product.id == id);
+        products.splice(product, 1);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+        res.redirect('/');
+    }
 	
 
 };

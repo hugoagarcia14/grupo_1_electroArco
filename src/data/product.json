@@ -1,23 +1,5 @@
 [
  {
-  "id": 1,
-  "image": "horno.jpeg",
-  "color": "Gris",
-  "name": "Horno Microondas 20L WONDER",
-  "price": "12000",
-  "description": "Con el Horno Microondas 20L WONDER calienta y descongela tus recetas favoritas. Es completo y aporta aún más facilidad a tu día a día, descongela todos tus alimentos fácilmente con la Función Descongelar por tipo de Alimento. La circulación del aire que te entrega la Función Elimina Olor, te permite dejar tu microondas siempre listo para preparar o calentar la siguiente receta. Este Horno Microondas Electrolux posee opciones funcionales que le brindan practicidad a tu vida diaria, como por ejemplo el Menú para Niños, que integra tres funciones preprogramadas que favorecen la preparación de las recetas favoritas de los niños, como palomitas, quesadillas e inclusive avena. Los platos preparados regularmente, como arroz, papas y pastas ahora son más accesibles gracias al Menú Diario, que hará que tu semana sea más práctica, solo acciónalo solo con un toque en su panel moderno.",
-  "discount": "0"
- },
- {
-  "id": 2,
-  "name": "Teclado LOGITECH Inalámbrico Bluetooth K380",
-  "description": "ESCRIBE CON CUALQUIER DISPOSITIVO. Disfruta de escritura en smartphones y tablets tan cómoda y práctica como en el escritorio con este teclado portátil. K380 es un teclado inalámbrico multidispositivo que se conecta a todos los dispositivos inalámbricos Bluetooth® compatibles con teclados externos.",
-  "image": "img-apple-magic-keyboard.jpg",
-  "discount": "40",
-  "color": "Verde",
-  "price": "49.14"
- },
- {
   "id": 3,
   "name": "Bicicleta Fierce Locarno 29 Pulgadas",
   "description": "Entrena y desarrolla tu pasión con la bicicleta FIERCE Locarno diseño sobrio, elegante y cómoda. Ideal para aquellos que inician en el gran mundo del ciclismo de montaña. Cuenta con características de gran nivel permitiendo que el deportista encuentre en cada recorrido un mejor desempeño y un estilo único que se adapte a cada una de sus necesidades. La bicicleta ahora hace parte de tu vida ¡Encuentra aquí tu favorita!",
@@ -32,10 +14,9 @@
   "name": "Cámara Nikon D5600",
   "description": "Destáquese de la multitud con fotos y videos que sean tan impresionantes que lo inspiren a seguir fotografiando y aprendiendo. Desde el primer momento, puede dejarle las cosas a la cámara y comenzar de inmediato a capturar fotos y videos maravillosos sin la curva de aprendizaje. A medida que desarrolle sus habilidades, la D5600 le ofrece mucho espacio para crecer con calidad de imagen excepcional, controles intuitivos y herramientas potentes para que lleve los límites de su creatividad tan lejos como pueda. A diferencia de otros, con una batería que dura por más de 970 disparos por carga, podrá disparar todo el día.",
   "image": "img-camara-nikon.jpg",
-  "category": "Ultimas visitas",
-  "discount": 10,
-  "color": "Negro",
-  "price": 46.65
+  "discount": "10",
+  "color": "blanco",
+  "price": "46.65"
  },
  {
   "id": 5,
