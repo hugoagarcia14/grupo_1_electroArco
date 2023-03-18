@@ -1,42 +1,46 @@
 [
  {
   "id": 1,
-  "id_user": "7886741587",
+  "id_user": "342876567",
   "image": "user.png",
-  "first_name": "Cornall",
+  "first_name": "Rafael ",
   "last_name": "Losty",
   "email": "closty0@rambler.ru",
-  "phone": "1480090328",
-  "password": "hzCntF"
+  "password": "hzCntF",
+  "phone": "3128192722"
  },
  {
   "id": 2,
-  "id_user": "2659984468",
+  "id_user": [
+   "4887787200",
+   "2659984468"
+  ],
   "image": "user.png",
   "first_name": "Johnny",
-  "last_name": "Millican",
+  "last_name": "Padilla",
   "email": "jmillican1@123-reg.co.uk",
-  "phone": "4887787200",
   "password": "3GRQSSAjyaE"
  },
  {
   "id": 3,
-  "id_user": "1273181123",
+  "id_user": "234567890",
   "image": "user.png",
   "first_name": "Allissa",
   "last_name": "Woodeson",
   "email": "awoodeson2@trellian.com",
-  "phone": "6809811133",
-  "password": "wRr1xtXN8YbE"
+  "password": "wRr1xtXN8YbE",
+  "phone": "34567890"
  },
  {
   "id": 4,
-  "id_user": "8505112938",
+  "id_user": [
+   "6680718872",
+   "8505112938"
+  ],
   "image": "user.png",
   "first_name": "Denice",
-  "last_name": "MacCartney",
+  "last_name": "lucas",
   "email": "dmaccartney3@reddit.com",
-  "phone": "6680718872",
   "password": "4xv5aosa5It"
  },
  {
@@ -98,75 +102,5 @@
   "email": "rbohan9@oracle.com",
   "phone": "0426850483",
   "password": "JrlctylO8Oh"
- },
- {
-  "id": 11,
-  "id_user": "1041268992",
-  "first_name": "Rafael ",
-  "last_name": "Padilla de Agustín ",
-  "image": "defaul-image.png",
-  "email": "santopd1997@gmail.com",
-  "phone": "3128192722",
-  "password": "rs7rafael"
- },
- {
-  "id": 12,
-  "id_user": "1234567",
-  "first_name": "Yeimy",
-  "last_name": "lucas",
-  "image": "defaul-image.png",
-  "email": "admin@admin.com",
-  "phone": "3128192722",
-  "password": "<zdxfcgfhjgfds"
- },
- {
-  "id": 13,
-  "id_user": "56783456",
-  "first_name": "Yeimy",
-  "last_name": "lucas",
-  "image": "1678763527759_user.jpg",
-  "email": "sdfghjk@gmail.com",
-  "phone": "3128192722",
-  "password": "dfghjkljnhbvc"
- },
- {
-  "id": 14,
-  "id_user": "345678",
-  "first_name": "Yeimy",
-  "last_name": "Padilla de Agustín ",
-  "image": "1678764105222_user.jpg",
-  "email": "sdfghjk@hmma.vom",
-  "phone": "3128192722",
-  "password": "asdfghj"
- },
- {
-  "id": 15,
-  "id_user": "23456789",
-  "first_name": "Yeimy",
-  "last_name": "Padilla de Agustín ",
-  "image": "1678767503709_user.png",
-  "email": "asdfghg@gmail.com",
-  "phone": "3128192722",
-  "password": "wertykl"
- },
- {
-  "id": 16,
-  "id_user": "34567890",
-  "first_name": "raquel",
-  "last_name": "lucas",
-  "image": "1678767588038_user.png",
-  "email": "admin@admin.com",
-  "phone": "345678909",
-  "password": "45tyujhknmbvcf"
- },
- {
-  "id": 17,
-  "id_user": "2345678",
-  "first_name": "raquel",
-  "last_name": "ASDFGHJK",
-  "image": "defaul-image.png",
-  "email": "rspadillaa@eafit.edu.co",
-  "phone": "3456789",
-  "password": "asdfguk"
  }
 ]

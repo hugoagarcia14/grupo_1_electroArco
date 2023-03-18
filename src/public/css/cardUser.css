@@ -61,6 +61,16 @@ img.img-user {
     font-size: 15px;
     flex-wrap: wrap;
 }
+a.back {
+    color: var(--blanco);
+    display: flex;
+    justify-content: center;
+}
+a.edit {
+    display: flex;
+    justify-content: center;
+    color: var(--blanco);
+}
 
 /* Tablet */
 @media (min-width: 768px) {

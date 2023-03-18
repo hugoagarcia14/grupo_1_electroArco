@@ -12,9 +12,9 @@ main.editUser {
 }
 
 .overlay {
-    box-shadow: 10px 10px 5px 0px gray;
+    box-shadow: 10px 10px 5px 0px var(--grisClaro);
     width: 90%;
-    background-color: #ebebeb;
+    background-color: var(--blanco);
     border-radius: 30px;
     padding: 20px;
     margin-bottom: 20px;
@@ -113,18 +113,31 @@ input {
 }
 
 .boton-formulario {
-    width: 40%;
+    width: 70%;
     height: 30px;
     margin: 20px;
-    background-color: #1259c3;
-    color: #ebebeb;
+    background-color: var(--celeste);
+    color: var(--blanco);
     justify-content: space-between;
     border-radius: 5px;
 
 }
+.boton-delete {
+    width: 70%;
+    height: 30px;
+    margin: 20px;
+    background-color: var(--celeste);
+    color: var(--blanco);
+    justify-content: space-between;
+    border-radius: 5px;
+
+}
+form.delete {
+    width: 40%;
+}
 
 .boton-formulario:hover {
-    background: gray;
+    background: var(--grisClaro);
 }
 
 .burger-menu {
@@ -181,9 +194,9 @@ input {
         margin-top: 10px;
         padding: 4px;
         display: flex;
-        color: #ffff;
+        color: var(--blanco);
         justify-content: center;
-        background-color: black;
+        background-color: var(--negro);
         height: 25px;
         width: 30px;
         border-radius: 5px;
@@ -215,6 +228,19 @@ input {
         width: 50%;
 
         padding: 30px;
+    }
+    form.delete {
+        width: 60%;
+    }
+    .boton-delete {
+        width: 70%;
+        height: 30px;
+        margin: 20px;
+        background-color: var(--celeste);
+        color: var(--blanco);
+        justify-content: space-between;
+        border-radius: 5px;
+    
     }
 }
 
@@ -254,6 +280,6 @@ input {
     }
 
     .boton-formulario {
-        width: 40%;
+        width: 45%;
     }
 }

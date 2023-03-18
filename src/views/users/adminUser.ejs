@@ -5,7 +5,7 @@
             <main>
                 <% users.forEach(users=> { %>
                     <div class="container">
-                        <a href="editUser">
+                        <a href="/detail/<%= users.id %>">
                             <div class="img-user">
                                 <img class="img-user" src="../images/user/<%= users.image %>">
                             </div>

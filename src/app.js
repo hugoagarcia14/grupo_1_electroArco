@@ -4,12 +4,12 @@ const { resolve } = require('path');
 const app = express();
 
 //Multer
-//const methodOverride =  require('method-override');
+const methodOverride =  require('method-override');
 
 //Path
 const path = require('path');
 const { editProduct, productdetail } = require('./controllers/productController');
-const { adminUser, editUser } = require('./controllers/userController');
+const { adminUser, editUser, detail } = require('./controllers/userController');
 //const publicPath = path resolve(__dirname, './public')
 
 //Ejs
@@ -22,6 +22,7 @@ const port = process.env.PORT || 3030;
 app.use(express.static(path.join(__dirname,'/public')));
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
+app.use(methodOverride('_method'));
 
 
 
@@ -47,7 +48,7 @@ app.use(productRouter);
 //app.use(productdetail);
 app.use(userRouter);
 app.use('/admin',adminRouter);
-//app.use(adminUser);
+app.use('/detail', userRouter);
 //app.use(editUser);
 app.use((req,res, next)=>{
     res.status(404).render('404/404')
