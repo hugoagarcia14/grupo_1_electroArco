@@ -2,10 +2,10 @@
  {
   "id": 1,
   "image": "horno.jpeg",
-  "color": "Negro",
-  "name": "Horno",
+  "color": "Gris",
+  "name": "Horno Microondas 20L WONDER",
   "price": "12000",
-  "description": "dfhsnkv dnv skvm fmv mv k fmv sdjvjsdmd,lvcmvnzcmb zvsd vmsf, gzdfg",
+  "description": "Con el Horno Microondas 20L WONDER calienta y descongela tus recetas favoritas. Es completo y aporta aún más facilidad a tu día a día, descongela todos tus alimentos fácilmente con la Función Descongelar por tipo de Alimento. La circulación del aire que te entrega la Función Elimina Olor, te permite dejar tu microondas siempre listo para preparar o calentar la siguiente receta. Este Horno Microondas Electrolux posee opciones funcionales que le brindan practicidad a tu vida diaria, como por ejemplo el Menú para Niños, que integra tres funciones preprogramadas que favorecen la preparación de las recetas favoritas de los niños, como palomitas, quesadillas e inclusive avena. Los platos preparados regularmente, como arroz, papas y pastas ahora son más accesibles gracias al Menú Diario, que hará que tu semana sea más práctica, solo acciónalo solo con un toque en su panel moderno.",
   "discount": "0"
  },
  {
@@ -14,7 +14,7 @@
   "description": "ESCRIBE CON CUALQUIER DISPOSITIVO. Disfruta de escritura en smartphones y tablets tan cómoda y práctica como en el escritorio con este teclado portátil. K380 es un teclado inalámbrico multidispositivo que se conecta a todos los dispositivos inalámbricos Bluetooth® compatibles con teclados externos.",
   "image": "img-apple-magic-keyboard.jpg",
   "discount": "40",
-  "color": "rojo",
+  "color": "Verde",
   "price": "49.14"
  },
  {
@@ -39,7 +39,7 @@
  },
  {
   "id": 5,
-  "name": "Lavadora SAMSUNG Carga Superior 19 Kilogramos WA19T6260BV Negro",
+  "name": "Lavadora SAMSUNG Carga Superior 19 Kilogramos WA19T6260BV",
   "description": "La nueva lavadora carga superior de 19Kg Samsung te brinda una amplia capacidad de lavado que te permite reducir la frecuencia de uso, incluso puedes incluir artículos realmente grandes. Maneja un motor digital inverter con 10 años de garantía que te permite tener un desempeño más potente y consume menos energía. Además, puedes personalizar tu ciclo de lavado de acuerdo a tus necesidades. Así mismo, tiene un compartimiento que disuelve el detergente en polvo antes de echarlo a la lavadora.",
   "image": "1678650793807-descarga.jpeg",
   "category": "",
@@ -49,7 +49,7 @@
  },
  {
   "id": 6,
-  "name": "Nevera LG No Frost Congelador Inferior 340 Litros Brutos GB37SPP Gris",
+  "name": "Nevera LG No Frost Congelador Inferior 340 Litros Brutos GB37SPP",
   "description": "LG trae para ti esta nevera de 420 litros de capacidad con diseño tipo europeo. Tiene acabados en Negro Mate, panel digital de fácil manejo. Cuenta con tecnología Linear Door Cooling, la cual garantiza un enfriamiento más uniforme y en cualquier lugar. Disfruta su dispensador de agua y aprovecha sus 10 años de garantía en el compresor.",
   "image": "1678767771320-Nevera.jpeg",
   "category": "",
