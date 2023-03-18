@@ -3,7 +3,7 @@
     <body>
         <%- include('../partials/header') %>
             <div class="titulo">
-                <h1>Editar producto</h1>
+                <h1>Estas editando el producto <%= product.id %></h1>
             </div>
             <main class="main">
 
@@ -11,50 +11,31 @@
 
                     <div class="formulario">
                         <div class="divEdit">
-                            <div class="inputId">
-                                <input type="text" placeholder="Id del producto:" name="idProducto"
-                                    class="input-control" id="idProducto" value="<%= product.id %>">
-                            </div>
-                            <div class="inputEditar"><input type="text" placeholder="Buscar producto:"
-                                    name="buscarProducto" class="input-control" id="buscarProducto" required>
-                            </div>
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Nombre del producto:" name="nombreProducto"
-                                class="input-control" id="nombreProducto" value="<%= product.name %>">
+                                class="input-control" id="name" value="<%= product.name %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Descripción del producto" name="descripcionProducto"
-                                class="input-control" value="<%= product.descrition %>">
+                                class="input-control" id="description" value="<%= product.description %>">
                         </div>
-                        <div class="divImagen"></div>
                         <div class="controlFoto">
                             <h5>Foto del producto</h5>
                             <input type="file" placeholder="Foto del producto" name="image" id="image"
-                                class="inputFoto" value="<%= product.image %>">
-                        </div>
-                        <div class="controlCategoria">
-                            <h5>Categoria del producto</h5>
-                            <div class="categoriaProducto">
-                                <div class="inputElectrodomesticos"><input type="radio" name="categoriaProducto"
-                                        id="electrodomesticos" value="electrodomesticos">Electrodomésticos</div>
-                                <div class="inputTecnologia"><input type="radio" name="categoriaProducto"
-                                        id="tecnologia" value="tecnologia">Tecnología</div>
-                                <div class="inputVideoJuegos"><input type="radio" name="categoriaProducto"
-                                        id="videoJuegos" value="videoJuegos">Video Juegos</div>
-                            </div>
+                                class="inputFoto" id="image" value="<%= product.image %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Colores del producto:" name="coloresProducto"
-                                class="input-control" id="coloresProducto"value="<%= product.color %>">
+                                class="input-control" id="colores"value="<%= product.color %>">
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Precio del producto:" name="precioProducto"
-                                class="input-control" id="precioProducto"value="<%= product.price %>">
+                                class="input-control" id="price" value="<%= product.price %>">
                         </div>
                         <div class="boton-guardar">
 
-                            <button type="text" class="botonEditar">EDITAR PRODUCTO</button>
+                            
                             <button type="submit" class="botonGuardar">GUARDAR</button>
                             <button type="delete" class="botonBorrar">BORRAR</button>
                         </div>

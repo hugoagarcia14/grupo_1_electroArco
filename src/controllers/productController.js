@@ -33,7 +33,7 @@ const controller={
     },
 	update: (req, res) => {
 		const products = getProducts();
-		const productIndex = products.findIndex(element => element.id == req.params.id);
+		const productIndex = products.findIndex(product => product.id == id);
 		const image = req.file ? req.file.filename : products[productIndex].image;
 		products[productIndex] = {
 			...products[productIndex],
@@ -45,7 +45,7 @@ const controller={
 			image
 		};
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-		res.redirect('/product');
+		res.redirect('/');
 	},
     store: (req, res) => {
 		const image = req.file ? req.file.filename : 'default-image.png';

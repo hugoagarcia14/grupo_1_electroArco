@@ -34,4 +34,5 @@ router.post('/createProduct', upload.single('image'), productController.store);
 router.get ('/editProduct/:id', productController.editProduct);
 router.put('/editProduct/:id', upload.single('image'), productController.update); 
 
+
 module.exports = router;
