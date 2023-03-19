@@ -8,81 +8,52 @@
             </div>
             <main class="mainEdit">
 
-<<<<<<< HEAD
-                <form action="" class="formEdit" method="post" action="/editProduct/<%= product.id %>?_method=PUT"
-                    enctype="multipart/form-data">
-=======
-                <form method="post"  action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
->>>>>>> d593b62d9b0088c0c3fdc79f4e12806c23d7a8a9
+                <form method="post" action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
 
                     <div class="formularioEdit">
                         <div class="divEdit">
-                        </div>
-<<<<<<< HEAD
-                        <div class="div-name-color">
-                            <div class="nameProduct">
-                                <label class="labelEdit">Nombre del producto</label>
-                                <input type="text" name="nombreProducto" class="inputEdit" id="name"
-                                    value="<%= product.name %>">
+                            <div class="div-name-color">
+                                <div class="nameProduct">
+                                    <label class="labelEdit">Nombre del producto</label>
+                                    <input type="text" name="nombreProducto" class="inputEdit" id="name"
+                                        value="<%= product.name %>">
+                                </div>
+                                <div class="colorProduct">
+                                    <label class="labelEdit">Color</label>
+                                    <input type="text" name="colorProducto" class="inputEdit" id="price"
+                                        value="<%= product.color %>">
+                                </div>
                             </div>
-                            <div class="colorProduct">
-                                <label class="labelEdit">Color</label>
-                                <input type="text" name="colorProducto" class="inputEdit" id="price"
-                                    value="<%= product.color %>">
+                            <div class="price-discount">
+                                <div class="priceProduct">
+                                    <label class="labelEdit">Precio del producto</label>
+                                    <input type="text" name="precioProducto" class="inputEdit" id="price"
+                                        value="<%= product.price %>">
+                                </div>
+                                <div class="discountProduct">
+                                    <label class="labelEdit">Descuento</label>
+                                    <input type="text" name="descuentoProducto" class="inputEdit" id="discount"
+                                        value="<%= product.discount %>">
+                                </div>
                             </div>
-                        </div>
-                        <div class="price-discount">
-                            <div class="priceProduct">
-                                <label class="labelEdit">Precio del producto</label>
-                                <input type="text" name="precioProducto" class="inputEdit" id="price"
-                                    value="<%= product.price %>">
+                            <div class="controlFoto">
+                                <label class="labelEdit">Foto del producto</label>
+                                <input type="file" placeholder="Foto del producto" name="image" id="image"
+                                    class="inputEdit" id="image" value="<%= product.image %>">
                             </div>
-                            <div class="discountProduct">
-                                <label class="labelEdit">Descuento</label>
-                                <input type="text" name="descuentoProducto" class="inputEdit" id="discount"
-                                    value="<%= product.discount %>">
-                            </div>
-=======
-                        <div class="control-for">
-                            <input type="text" placeholder="Nombre del producto:" name="name"
-                                class="input-control" id="name" value="<%= product.name %>">
-                        </div>
-                        <div class="control-for">
-                            <input type="text" placeholder="Descripción del producto" name="description"
-                                class="input-control" id="description" value="<%= product.description %>">
->>>>>>> d593b62d9b0088c0c3fdc79f4e12806c23d7a8a9
-                        </div>
-                        <div class="controlFoto">
-                            <label class="labelEdit">Foto del producto</label>
-                            <input type="file" placeholder="Foto del producto" name="image" id="image" class="inputEdit"
-                                id="image" value="<%= product.image %>">
-                        </div>
-<<<<<<< HEAD
-                        <div class="divDescriptionProduct">
-                            <label for="description" class="labelEdit">Descripción</label>
-                            <textarea name="descripcionProducto"  class="descriptionProduct" id="description"><%= product.description %></textarea>
-                                
-                        </div>
+                            <div class="divDescriptionProduct">
+                                <label for="description" class="labelEdit">Descripción</label>
+                                <textarea name="descripcionProducto" class="descriptionProduct"
+                                    id="description"><%= product.description %></textarea>
 
-=======
-                        <div class="control-for">
-                            <input type="text" placeholder="Colores del producto:" name="color"
-                                class="input-control" id="color" value="<%= product.color %>">
-                        </div>
-                        <div class="control-for">
-                            <input type="number" placeholder="Precio del producto:" name="price"
-                                class="input-control" id="price" value="<%= product.price %>">
-                        </div>
-                        <div class="control-for">
-                            <input type="number" placeholder="Descuento del producto:" name="discount"
-                                class="input-control" id="discount" value="<%= product.discount %>">
-                        </div>
->>>>>>> d593b62d9b0088c0c3fdc79f4e12806c23d7a8a9
-                        <div class="boton-guardar">
+                            </div>
+
+                            <div class="boton-guardar">
 
 
-                            <button type="submit" class="botonGuardar">GUARDAR</button>
-                            <button type="delete" class="botonBorrar">BORRAR</button>
+                                <button type="submit" class="botonGuardar">GUARDAR</button>
+                                <button type="delete" class="botonBorrar">BORRAR</button>
+                            </div>
                         </div>
                     </div>
                 </form>

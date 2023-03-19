@@ -112,15 +112,13 @@ h5{
 
 }
 
-.formEdit{
-   
-    width: 90%;
-}
+
 .mainEdit{
     background-color: #fff;
     width: 90%;
+    padding: 10px;
     margin: auto; 
-    display: flex;
+    display: block;
     margin-bottom: 20px;
     border-radius: 10px;
     justify-content: center; 
