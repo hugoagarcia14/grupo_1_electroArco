@@ -3,39 +3,55 @@
     <body>
         <%- include('../partials/header') %>
             <div class="titulo">
-                <h1>Estas editando el producto <%= product.id %></h1>
+                <h1>Estas editando <%= product.name %>
+                </h1>
             </div>
-            <main class="main">
+            <main class="mainEdit">
 
-                <form action="" method="post"  action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
+                <form action="" class="formEdit" method="post" action="/editProduct/<%= product.id %>?_method=PUT"
+                    enctype="multipart/form-data">
 
-                    <div class="formulario">
+                    <div class="formularioEdit">
                         <div class="divEdit">
                         </div>
-                        <div class="control-for">
-                            <input type="text" placeholder="Nombre del producto:" name="nombreProducto"
-                                class="input-control" id="name" value="<%= product.name %>">
+                        <div class="div-name-color">
+                            <div class="nameProduct">
+                                <label class="labelEdit">Nombre del producto</label>
+                                <input type="text" name="nombreProducto" class="inputEdit" id="name"
+                                    value="<%= product.name %>">
+                            </div>
+                            <div class="colorProduct">
+                                <label class="labelEdit">Color</label>
+                                <input type="text" name="colorProducto" class="inputEdit" id="price"
+                                    value="<%= product.color %>">
+                            </div>
                         </div>
-                        <div class="control-for">
-                            <input type="text" placeholder="Descripción del producto" name="descripcionProducto"
-                                class="input-control" id="description" value="<%= product.description %>">
+                        <div class="price-discount">
+                            <div class="priceProduct">
+                                <label class="labelEdit">Precio del producto</label>
+                                <input type="text" name="precioProducto" class="inputEdit" id="price"
+                                    value="<%= product.price %>">
+                            </div>
+                            <div class="discountProduct">
+                                <label class="labelEdit">Descuento</label>
+                                <input type="text" name="descuentoProducto" class="inputEdit" id="discount"
+                                    value="<%= product.discount %>">
+                            </div>
                         </div>
                         <div class="controlFoto">
-                            <h5>Foto del producto</h5>
-                            <input type="file" placeholder="Foto del producto" name="image" id="image"
-                                class="inputFoto" id="image" value="<%= product.image %>">
+                            <label class="labelEdit">Foto del producto</label>
+                            <input type="file" placeholder="Foto del producto" name="image" id="image" class="inputEdit"
+                                id="image" value="<%= product.image %>">
                         </div>
-                        <div class="control-for">
-                            <input type="text" placeholder="Colores del producto:" name="coloresProducto"
-                                class="input-control" id="colores"value="<%= product.color %>">
+                        <div class="divDescriptionProduct">
+                            <label for="description" class="labelEdit">Descripción</label>
+                            <textarea name="descripcionProducto"  class="descriptionProduct" id="description"><%= product.description %></textarea>
+                                
                         </div>
-                        <div class="control-for">
-                            <input type="text" placeholder="Precio del producto:" name="precioProducto"
-                                class="input-control" id="price" value="<%= product.price %>">
-                        </div>
+
                         <div class="boton-guardar">
 
-                            
+
                             <button type="submit" class="botonGuardar">GUARDAR</button>
                             <button type="delete" class="botonBorrar">BORRAR</button>
                         </div>
