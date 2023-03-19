@@ -32,19 +32,21 @@ const controller={
 			 product });
     },
 	update: (req, res) => {
+		const id = req.params.id;
 		const products = getProducts();
 		const productIndex = products.findIndex(product => product.id == id);
 		const image = req.file ? req.file.filename : products[productIndex].image;
 		products[productIndex] = {
 			...products[productIndex],
 			name: req.body.name,
+			color: req.body.color,
 			price: req.body.price,
 			discount: req.body.discount,
 			category: req.body.category,
 			description: req.body.description,
 			image
 		};
-		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
 		res.redirect('/');
 	},
     store: (req, res) => {
@@ -63,6 +65,15 @@ const controller={
 		fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
 		res.redirect('/');
 	},
+
+	destroy: (req, res) => {
+        const id = req.params.id;
+        const products = getProducts();
+        const product = products.findIndex(product => product.id == id);
+        products.splice(product, 1);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));
+        res.redirect('/');
+    }
 	
 
 };
