@@ -4,18 +4,29 @@
   "name": "Bicicleta Fierce Locarno 29 Pulgadas",
   "description": "Entrena y desarrolla tu pasión con la bicicleta FIERCE Locarno diseño sobrio, elegante y cómoda. Ideal para aquellos que inician en el gran mundo del ciclismo de montaña. Cuenta con características de gran nivel permitiendo que el deportista encuentre en cada recorrido un mejor desempeño y un estilo único que se adapte a cada una de sus necesidades. La bicicleta ahora hace parte de tu vida ¡Encuentra aquí tu favorita!",
   "image": "img-bicicleta-fierce.jpg",
-  "category": "ultimos agregados",
-  "discount": 30,
-  "color": "Negro",
-  "price": 12.51
+  "discount": "30",
+  "color": "Negra",
+  "price": "12.51"
  },
  {
   "id": 4,
-  "image": "img-camara-nikon.jpg"
+  "name": "Cámara Nikon D5600",
+  "description": "Destáquese de la multitud con fotos y videos que sean tan impresionantes que lo inspiren a seguir fotografiando y aprendiendo. Desde el primer momento, puede dejarle las cosas a la cámara y comenzar de inmediato a capturar fotos y videos maravillosos sin la curva de aprendizaje. A medida que desarrolle sus habilidades, la D5600 le ofrece mucho espacio para crecer con calidad de imagen excepcional, controles intuitivos y herramientas potentes para que lleve los límites de su creatividad tan lejos como pueda. A diferencia de otros, con una batería que dura por más de 970 disparos por carga, podrá disparar todo el día.",
+  "image": "img-camara-nikon.jpg",
+  "category": "Ultimas visitas",
+  "discount": 10,
+  "color": "Negro",
+  "price": 46.65
  },
  {
   "id": 5,
-  "image": "1678650793807-descarga.jpeg"
+  "name": "Lavadora SAMSUNG Carga Superior 19 Kilogramos WA19T6260BV Negro",
+  "description": "La nueva lavadora carga superior de 19Kg Samsung te brinda una amplia capacidad de lavado que te permite reducir la frecuencia de uso, incluso puedes incluir artículos realmente grandes. Maneja un motor digital inverter con 10 años de garantía que te permite tener un desempeño más potente y consume menos energía. Además, puedes personalizar tu ciclo de lavado de acuerdo a tus necesidades. Así mismo, tiene un compartimiento que disuelve el detergente en polvo antes de echarlo a la lavadora.",
+  "image": "1678650793807-descarga.jpeg",
+  "category": "",
+  "discount": 15,
+  "color": "Negro",
+  "price": "350"
  },
  {
   "id": 6,

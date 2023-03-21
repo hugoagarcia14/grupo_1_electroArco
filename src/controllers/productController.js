@@ -58,6 +58,7 @@ const controller={
 			price: req.body.price,
 			discount: req.body.discount,
 			category: req.body.category,
+			color:req.body.color,
 			description: req.body.description,
 			image
 		};
