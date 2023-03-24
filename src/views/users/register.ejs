@@ -9,35 +9,70 @@
                         <div class="divNombreApellido">
                             <div class="nombre">
                                 <label>Nombres:</label>
-                                <input type="text" name="first_name" id="first_name" class="input-control">
+                                <input type="text" name="first_name" id="first_name" class="input-control <% locals.errors && errors.file ? 'is-invalid': null%>" value="<%= locals.oldData ? oldData.first_name : null %>">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.first_name) { %>
+                                        <%= errors.first_name.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                             <div class="apellido">
                                 <label>Apellidos:</label>
-                                <input type="text" name="last_name" id="last_name" class="input-control">
+                                <input type="text" name="last_name" id="last_name" class="input-control" value="<%= locals.oldData ? oldData.last_name : null %>">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.last_name) { %>
+                                        <%= errors.last_name.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                         </div>
                         <div class="container">
                             <div class="celular">
                                 <label>Celular:</label>
                                 <input type="number" name="phone" id="phone" class="input-control">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.phone) { %>
+                                        <%= errors.phone.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                             <div class="idUser">
                                 <label>Identificación:</label>
-                                <input type="number" id="id_user" name="id_user" class="input-control">
+                                <input type="number" id="id_user" name="id_user" class="input-control" value="<%= locals.oldData ? oldData.id_user : null %>">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.id_user) { %>
+                                        <%= errors.id_user.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                             <div class="img-edit">
                                 <label for="image" class="form-label">Imagen:</label>
                                 <input type="file" id="image" name="image" class="form-input">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.image) { %>
+                                        <%= errors.image.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                         </div>
                         <div class="divCorreoContrasena">
                             <div class="correo">
                                 <label>Correo:</label>
-                                <input type="email" name="email" id="email" class="input-control">
+                                <input type="email" name="email" id="email" class="input-control is-invalid" value="<%= locals.oldData ? oldData.email : null %>">
+                                <div class="validator ">
+                                    <% if (locals.errors && errors.email) { %>
+                                        <%= errors.email.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                             <div class="contrasena">
                                 <label>Contraseña:</label>
-                                <input type="password" name="password" id="password" class="input-control">
+                                <input type="password" name="password" id="password" class="input-control" >
+                                <div class="validator">
+                                    <% if (locals.errors && errors.password) { %>
+                                        <%= errors.password.msg %>
+                                            <% }%>
+                                </div>
                             </div>
                         </div>
 

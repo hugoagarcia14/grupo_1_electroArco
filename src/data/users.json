@@ -102,5 +102,45 @@
   "email": "user@gmail.com",
   "phone": "323456789",
   "password": "szdsfghjkhj"
+ },
+ {
+  "id": 11,
+  "id_user": "1212155251",
+  "first_name": "Hugo Alberto",
+  "last_name": "Garcia Castaño",
+  "image": "defaul-image.png",
+  "email": "hugoagarcia14@hotmail.com",
+  "phone": "3125486644",
+  "password": "$2a$10$RdhRrMqWQwAsXmqUENrlfOlzK3NMFqRiKpg8sZcV.HRVHCMlOqDee"
+ },
+ {
+  "id": 12,
+  "id_user": "454584252",
+  "first_name": "Andres",
+  "last_name": "Ramirez",
+  "image": "defaul-image.png",
+  "email": "hugoagarcia14@hotmail.com",
+  "phone": "3212121452",
+  "password": "$2a$10$KClB2Q/4bI7bPaRcou1ziuzaNV3dEpGPU16XPM/.8xQQgz505aoCq"
+ },
+ {
+  "id": 13,
+  "id_user": "",
+  "first_name": "",
+  "last_name": "",
+  "image": "defaul-image.png",
+  "email": "",
+  "phone": "",
+  "password": "$2a$10$INTOLwGTfms1XX70sB1/rux1dXhu60M0pp5lYQzieROdUi86qvth."
+ },
+ {
+  "id": 14,
+  "id_user": "44455222",
+  "first_name": "Andres",
+  "last_name": "Perez",
+  "image": "defaul-image.png",
+  "email": "hugoagarcia14@gmail.com",
+  "phone": "321456987",
+  "password": "$2a$10$F443efR.MxQNwlrwETSoNOwxTF2r.3shleRFjNt2YM5agrVPPqZNq"
  }
 ]
