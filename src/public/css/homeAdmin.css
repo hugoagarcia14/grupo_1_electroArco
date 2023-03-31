@@ -1,32 +1,13 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
     box-sizing: border-box;
 }
 
-main {
-    background-color: var(--grisClaro);
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-
-
-}
-
-header {
-    width: 100%;
-}
-
-.header1 {
-    color: black;
-    width: 100%;
-    background: white;
-    padding: 10px;
-    font-size: 18px;
-}
-
-h1 {
+.compra {
+    padding-top: 10px;
     text-align: center;
 }
 
@@ -34,528 +15,186 @@ h1 {
     width: 100%;
 }
 
-.logo img {
-    width: 100%;
-    height: 200px;
-}
-
-.opcionesMenu li {
-    list-style: none;
-    width: 33%;
-    height: 61px;
-    text-align: center;
-    background-color: white;
-    border: solid 1px white;
-    padding-top: 15px;
-
-}
-
-
-
-.compra {
-    padding-top: 10px;
-    text-align: center;
-}
-
-.opcionesMenu {
+#check {
     display: none;
 }
 
-.burger-menu {
-    display: flex;
-    justify-content: center;
-}
-
-.burger-menu i {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    padding: 4px;
-    display: flex;
-    color: #1259c3;
-    justify-content: center;
-    background-color: #ffff;
-    height: 25px;
-    width: 26px;
-    border-radius: 5px;
-}
-
-.banner {
-    width: 100%;
-    z-index: -1;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main {
-    width: 100%;
-    margin: auto;
-}
-
-.ofertas {
-    width: 100%;
-
-}
-
-.descripcion {
-    display: none;
-}
-
-.articulo-horno:hover .descripcion,
-.articulo-laptop:hover .descripcion,
-.articulo-samsung:hover .descripcion,
-.articulo-tv:hover .descripcion {
+.checkbtn {
     display: block;
 }
 
-.articulo-horno {
-    width: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    border: solid 1px white;
-    margin: 10px;
-}
-
-.articulo-horno>.relative-horno {
-    position: relative;
-}
-
-.horno img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-.articulo-laptop {
-    width: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    border: solid 1px white;
-    margin: 10px;
-}
-
-.articulo-laptop>.relative-laptop {
-    position: relative;
-
-}
-
-.laptop img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.articulo-samsung {
-    width: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    margin: 10px;
-}
-
-.articulo-samsung>.relative-samsung {
-    position: relative;
-}
-
-.samsung img {
-    width: 100%;
-    height: 100;
-    object-fit: cover;
-}
-
-.articulo-tv {
-    width: 100%;
-    background-color: white;
-    margin-bottom: 20px;
-    border: solid 1px white;
-    margin: 10px;
-}
-
-.tv img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.articulo-horno:hover,
-.articulo-laptop:hover,
-.articulo-samsung:hover,
-.articulo-tv:hover {
-    box-shadow: 10px 10px 5px 0px gray;
-
-}
-
-.enviarA {
+a {
     display: flex;
-    width: 100%;
-}
-
-.productos {
-    display: flex;
-    width: 100%;
-}
-
-.buscarProducto {
+    flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    display: flex;
+}
+.checkbtn {
+    font-size: 30px;
+    color: var(--negro);
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
 }
 
-.input-control2 {
-    width: 80%;
-    height: 50px;
-    border-radius: 10px;
-    padding: 15px;
-
-}
-
-.usuario {
-    display: flex;
+ul.list {
+    position: fixed;
     width: 100%;
-}
-
-.misCompras {
-    display: flex;
-    width: 100%;
-}
-
-.shoppingCart {
-    display: flex;
-    width: 100%;
-}
-
-.contenidoMenuNavegacion {
-    display: none;
-}
-
-.menuNavegacion {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.menuHamburguesa {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-}
-
-.menuHamburguesa i {
-    display: flex;
-}
-
-.menuNavegacion1 {
-    display: flex;
-    width: 100%;
-    background-color: rgb(207, 202, 202);
-}
-
-.atencionAlCliente {
-    width: 40%;
-}
-
-.vender {
-    width: 30%;
+    height: 67vh;
+    background: var(--grisClaro);
+    top: 305px;
+    left: -100%;
     text-align: center;
+    transition: 540ms;
 }
 
-.carrusel img {
-    width: 100%;
-    object-fit: contain;
+nav ul.list li {
+    display: block;
+    margin: 10px 0;
+    line-height: 30px;
 }
 
-.carrusel1 img,
-.carrusel2 img,
-.carrusel3 img {
+nav ul.list li a {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+input.search-product {
+    border-radius: 5px;
     width: 50%;
-    height: 30%;
-    object-fit: contain;
+    margin-top: 30px;
+    margin-left: 15px;
 }
 
-.carrusel1,
-.carrusel2,
-.carrusel3 {
+#check:checked~.search ul.list {
+    left: 0;
+}
+i.fas.fa-sign-in-alt, i.fas.fa-id-card, i.fas.fa-shopping-basket {
+    margin-left: 5px;
+}
+nav ul.list li a {
+    font-size: 18px;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+align-items: baseline;
 }
 
-.carrusel {
-    padding-top: 2%;
-}
-
+/* Tablet */
 @media (min-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-    .menu {
+    .compra {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 17px;
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .checkbtn {
+        display: none;
+    }
+    nav ul.list {
+        float: right;
         display: block;
-    }
-
-    .burger-menu {
-        display: none;
-    }
-
-    .opcionesMenu {
+        position: unset;
+        width: 60%;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 30px;
+        align-content: center;
+        padding-left: 10px;
+
     }
 
-    .menuHeader1 {
+    ul.list {
+        width: 65%;
+        height: 67vh;
+        background: var(--grisClaro);
+        top: 305px;
+        text-align: center;
+        transition: none;
+    }
+
+    ul.list li {
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 5px;
+    }
+
+    ul.list li a {
+        color: var(--negro);
+        font-size: 18px;
+        border-radius: 3px;
+        text-transform: uppercase;
+    }
+    nav ul.list li {
+        margin: 10px 0;
+        line-height: 30px;
+        width: 20%;
         display: flex;
-        width: 45%;
-        height: 110px;
+        flex-wrap: wrap;
     }
 
-
-    .menuHeader2 {
+    .search {
         display: flex;
-        width: 55%;
-        height: 110px;
-        position: relative;
-
+        flex-wrap: wrap;
+        width: 100%;
+        padding-bottom: 10px;
+        justify-content: center;
     }
 
-    .menuNavegacion {
-        display: block;
+    input.search-product {
+        width: 35%;
+        margin-top: 5px;
+    margin-left: 5px;
     }
-    li.product {
-        display: none;
-    }
-
-    .contenidoMenuNavegacion {
+    nav ul.list li a {
+        font-size: 11px;
+        width: 100%;
         display: flex;
+    align-items: baseline;
     }
-
-    .menuHamburguesa {
-        display: none;
-    }
-
-    .horno img {
-        height: 50%;
-        object-fit: cover;
-        padding-top: 50px;
-
-    }
-
-    .laptop img {
-        height: 50%;
-        object-fit: cover;
-        padding-top: 50px;
-
-    }
-
-    .samsung img {
-        height: 50%;
-        object-fit: cover;
-        padding-top: 50px;
-
-    }
-
-    .tv img {
-        height: 50%;
-        object-fit: cover;
-        padding-top: 50px;
-
-    }
-
-    .bloque1 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .bloque2 {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .carrusel1 img,
-    .carrusel2 img,
-    .carrusel3 img {
-        width: 300%;
-        object-fit: contain;
-    }
-
-    .carrusel1,
-    .carrusel2,
-    .carrusel3 {
-        display: flex;
-
-    }
-
-    .divCarrusel {
-        display: flex;
-        padding-top: 2%;
-    }
-
-    .menuNavegacion {
-        padding-top: 2%;
-    }
-
-    .menuNavegacion1 {
-        margin-top: 2%;
-    }
-    li.register {
-        display: none;
-    }
-
-    li.login {
-        display: none;
-    }
+    
+i.fas.fa-sign-in-alt, i.fas.fa-id-card, i.fas.fa-shopping-basket {
+    margin-left: 5px;
+}
 
 }
 
-@media(min-width:1024px) {
-    .ofertasBloques {
-        display: flex;
-    }
-
-    .horno img {
-        height: 25%;
-    }
-
-    .laptop img {
-        height: 25%;
-    }
-
-    .samsung img {
-        height: 25%;
-    }
-
-    .tv img {
-        height: 25%;
-    }
-
-    .relative-laptop:hover {
-        display: block;
-    }
-
-    li.register {
-        display: none;
-    }
-
-    li.login {
-        display: none;
-    }
-
-    li.home {
-        width: 25%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    li.cart {
-        width: 25%;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    li.product {
-        width: 25%;
-        display: flex;
-        flex-wrap: wrap;
-        box-shadow: none;
-    }
-
-    li.leave {
-        width: 25%;
-    }
-    
-
-    a {
-        width: 60%;
-        text-decoration: none;
-    }
-
-    a.product {
+/* Desktop */
+@media (min-width: 1024px) {
+    nav ul.list li a {
+        font-size: 15px;
         width: 100%;
-    }
-
-    ul.submenu {
         display: flex;
-        flex-wrap: wrap;
-        width: 100%;
+    align-items: baseline;
     }
-
-    a.submenu-item {
-        width: 100%;
+    nav ul.list :hover, li a.active{
+        background: none;
+        color: var(--blanco);
+        transition: 450ms;
     }
-
-    li.submenu-item {
-        display: flex;
-        width: 100%;
-        height: 35px;
-        padding: 0;
-        flex-wrap: wrap;
-        align-content: center;
-    
-    }
-
-    i.fa-solid.fa-house {
-        width: 40%;
-    }
-
-    i.fa-solid.fa-cart-shopping {
-        width: 40%;
-    }
-    li {
-        margin-top: 10px;
-    }
-    
-
-    /*submenu*/
-    .menuHeader2 a:hover,
-    .menuHeader2 a:active,
-    .menuHeader2 a:focus,
-    .menuHeader2 a.is-active {
-        background: none !important;
-        color: inherit;
-        border-bottom: 2px solid #fff;
-    }
-
-    .menuHeader2 .submenu {
-        position: absolute;
-        list-style: none;
-        background: var(--blanco);
-        padding: 0;
-        width: 120px;
-        right: 144px;
-        visibility: hidden;
-        top: 85px;
-       
-    }
-
-    .menuHeader2 .submenu li:hover {
+    nav ul.list li :hover{
         background: var(--celeste);
-        color: #fff;
-        -moz-transition: all, 0.3s;
-        -o-transition: all, 0.3s;
-        -webkit-transition: all, 0.3s;
-        transition: all, 0.3s;
+        transition: .5s;
     }
-
-    .menuHeader2 .submenu li a {
+    .compra {
+        padding-top: 10px;
+        text-align: center;
+        font-size: 17px;
         width: 100%;
-        border-bottom: none;
-        text-decoration: none;
-        display: block;
-        font-size: 16px;
+        padding-bottom: 12px;
     }
-
-    .menuHeader2 li:hover .submenu {
-        top: 3px;
-        left: 22px;
-        visibility: visible;
-        position: relative;
+    input.search-product {
+        width: 35%;
+        margin-top: 0px;
+        margin-left: 5px;
+        padding-bottom: 2px;
     }
-    .opcionesMenu li:hover {
-        box-shadow: 10px 10px 5px 0px grey;
-    }
-    .opcionesMenu li.product:hover {
-        box-shadow: none;
-    }
-
-
 }

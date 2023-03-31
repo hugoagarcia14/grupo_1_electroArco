@@ -46,6 +46,9 @@ a.btn-link {
 img.img-user {
     width: 100%;
 }
+.banner-img {
+    display: block;
+}
 
 .container-information {
     display: flex;

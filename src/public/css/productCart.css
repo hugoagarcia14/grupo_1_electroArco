@@ -35,7 +35,7 @@ h1.title {
 .banner {
     display: flex;
     width: 100%;
-    position: relative;
+    /*position: relative;*/
 }
 
 img.banner {
@@ -366,4 +366,7 @@ img.paymentOptions {
     font-size: 12px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.banner-img {
+    display: none;
 }
