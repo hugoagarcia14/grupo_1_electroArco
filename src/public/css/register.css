@@ -17,7 +17,7 @@ main.editUser {
 .overlay {
     box-shadow: 10px 10px 5px 0px gray;
     width: 90%;
-    background-color: #ebebeb;
+    background-color: #fff;
     border-radius: 30px;
     padding: 20px;
     margin-bottom: 20px;
@@ -110,11 +110,15 @@ input {
 }
 
 .input-control {
+    border: 1px solid;
     width: 100%;
     padding: 10px;
-    padding-left: 0px;
+    padding-left: 5px;
 }
 
+.in-vaild{
+    border: 1px solid red;
+}
 .boton-formulario {
     width: 40%;
     height: 30px;
@@ -150,6 +154,12 @@ input {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    
+}
+.img-edit input{
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
 }
 .container {
     display: flex;
@@ -161,6 +171,11 @@ input {
 }
 .celular, .idUser {
     width: 100%;
+}
+.validator{
+    font-size: 16px;
+    color: red;
+    font-style: italic;
 }
 
 @media(min-width:481px) {

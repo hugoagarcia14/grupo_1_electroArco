@@ -3,6 +3,12 @@ const express = require('express');
 const { resolve } = require('path');
 const app = express();
 
+app.use(express.urlencoded({extended: false}));
+
+//session
+
+const session = require('express-session');
+
 //Multer
 const methodOverride =  require('method-override');
 
@@ -23,6 +29,7 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
 app.use(methodOverride('_method'));
+app.use(session({secret:'secret'}));
 
 
 
