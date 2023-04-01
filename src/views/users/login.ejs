@@ -5,15 +5,20 @@
             
             <div class="overlay2" id="overlay2">
                 <div class="formularioRegistroLogin" id="formularioRegistroLogin">
-                    <form action="/headerAdmin" method="POST" class="crear-formulario">
+                    <form action="/login" method="POST" class="crear-formulario" enctype="multipart/form-data">
                         <h2>Ingresa tus datos</h2>
                         <div class="divNombreApellidologin">
                             <label class="labelCorreo">Correo:</label>
-                            <input type="text" name="correoUsuario" id="correoUsuario" class="correoUsuario">
+                            <input type="email" name="email" id="email" class="correoUsuario">
+                            <div class="validator ">
+                                <% if (locals.errors && errors.email) { %>
+                                    <%= errors.email.msg %>
+                                <% }%>
+                            </div>
                         </div>
                         <div class="contrasenaLogin">
                             <label class="labelContraseña">Contraseña:</label>
-                            <input type="password" name="contraseñaUsuario" id="contraseñaUsuario"
+                            <input type="password" name="password" id="password"
                                 class="contraseñaUsuario" >
                         </div>
                         <p class="remember">Recordar contraseña</p>

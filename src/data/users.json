@@ -105,42 +105,62 @@
  },
  {
   "id": 11,
-  "id_user": "1212155251",
+  "id_user": "70909135",
   "first_name": "Hugo Alberto",
   "last_name": "Garcia Castaño",
   "image": "defaul-image.png",
   "email": "hugoagarcia14@hotmail.com",
-  "phone": "3125486644",
-  "password": "$2a$10$RdhRrMqWQwAsXmqUENrlfOlzK3NMFqRiKpg8sZcV.HRVHCMlOqDee"
+  "phone": "3052888622",
+  "password": "$2a$10$vpCIdFpa7dzqGdU1xghghOsCdu5iHwgwJEu03ykd0d0y9/BqSC3MG"
  },
  {
   "id": 12,
-  "id_user": "454584252",
-  "first_name": "Andres",
-  "last_name": "Ramirez",
+  "id_user": "215658952",
+  "first_name": "Carlos",
+  "last_name": "Perez",
   "image": "defaul-image.png",
-  "email": "hugoagarcia14@hotmail.com",
-  "phone": "3212121452",
-  "password": "$2a$10$KClB2Q/4bI7bPaRcou1ziuzaNV3dEpGPU16XPM/.8xQQgz505aoCq"
+  "email": "hugoaannnn@gmial.com",
+  "phone": "321212121522",
+  "password": "$2a$10$rStTboiL0rEOdZDvqBBYce2h8dgKBe6GrT45KbAVWXcjuZvlhZmy6"
  },
  {
   "id": 13,
-  "id_user": "",
-  "first_name": "",
-  "last_name": "",
+  "id_user": "121",
+  "first_name": "Andres",
+  "last_name": "Garcia",
   "image": "defaul-image.png",
-  "email": "",
-  "phone": "",
-  "password": "$2a$10$INTOLwGTfms1XX70sB1/rux1dXhu60M0pp5lYQzieROdUi86qvth."
+  "email": "aaa@mmm.com",
+  "phone": "3214565",
+  "password": "$2a$10$hEFrNVUdtEcIaeJYb3sRA.utUy6R1kwoKh7IJow3M9FnBINEB.Zsm"
  },
  {
   "id": 14,
-  "id_user": "44455222",
-  "first_name": "Andres",
-  "last_name": "Perez",
+  "id_user": "12121",
+  "first_name": "Carlos",
+  "last_name": "Garcia",
   "image": "defaul-image.png",
-  "email": "hugoagarcia14@gmail.com",
-  "phone": "321456987",
-  "password": "$2a$10$F443efR.MxQNwlrwETSoNOwxTF2r.3shleRFjNt2YM5agrVPPqZNq"
+  "email": "mmmm@haua.com",
+  "phone": "2121",
+  "password": "$2a$10$7wAbK5msRiomUCJlnLcLku4.g/htXSuJZswBvkz8IbvsvlYoTw4le"
+ },
+ {
+  "id": 15,
+  "id_user": "78555",
+  "first_name": "Carlos",
+  "last_name": "Ramirez",
+  "image": "defaul-image.png",
+  "email": "lllll@gmail.com",
+  "phone": "213211",
+  "password": "$2a$10$Jmtqj7o1xJm8JcqohgG22Ozh8RoLMojGH9WD/wz3OnKTNf7Gw8bz2"
+ },
+ {
+  "id": 16,
+  "id_user": "75521255",
+  "first_name": "Hugo Alberto",
+  "last_name": "Garcia",
+  "image": "defaul-image.png",
+  "email": "ia14@hotmail.com",
+  "phone": "23125216565",
+  "password": "$2a$10$dstk05l657I8KNoOA1P.7ePB3dPRLkcqLYdp6zhVidR5OFQGh71JW"
  }
 ]

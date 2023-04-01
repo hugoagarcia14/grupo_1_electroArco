@@ -29,7 +29,7 @@
                         <div class="container">
                             <div class="celular">
                                 <label>Celular:</label>
-                                <input type="number" name="phone" id="phone" class="input-control">
+                                <input type="number" name="phone" id="phone" class="input-control" value="<%= locals.oldData ? oldData.phone : null %>">
                                 <div class="validator">
                                     <% if (locals.errors && errors.phone) { %>
                                         <%= errors.phone.msg %>

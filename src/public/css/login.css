@@ -8,12 +8,23 @@ h2{
 }
 .overlay2{
     box-shadow: 10px 10px 5px 0px grey;
-    width: 80%;
-    margin-left: 12%;
-    background-color: #ebebeb;
+    width: 60%;
+    margin-left: 20%;
+    background-color: #fff;
     border-radius: 20px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+.validator{
+    font-size: 16px;
+    color: red;
+    font-style: italic;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px
+    
+
 }
 
 .labelCorreo,.correoUsuario,.labelContraseña,.contraseñaUsuario{
