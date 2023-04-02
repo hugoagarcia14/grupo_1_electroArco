@@ -1,33 +1,27 @@
-
+<link rel="stylesheet" href="/css/homeAdmin.css">
 <header>
-    <div class="logo"><img src="/images/home/logo.svg" alt="Logo ElctroArco"></div>
-    <div class="header1">
-        <div class="buscarProducto">
-            <input type="search" placeholder="Buscar productos,marcas" class="input-control2">
-        </div>
 
+    <nav>
+        <div class="logo"><img src="/images/home/logo.svg" alt="Logo ElctroArco"></div>
         <div class="compra">
             <i class="fa-solid fa-truck"></i> Envío gratis en referencias seleccionadas
         </div>
-            <div class="opcionesMenu">
-                <ul class="menuHeader">
-                    <li>Electrodomésticos</li>
-                    <li>Tecnología</li>
-                    <li>Videos Juegos</li>
-                </ul>
-
-                <ul class="menuHeader">
-                    <li class="menuHeader"><a href="/">Home</a><i class="fa-solid fa-house"></i></li>
-                    <li class="menuHeader"><a href="register">Regístrate</a><i class="fa-solid fa-address-card"></i>
-                    </li>
-                    <li class="menuHeader"><a href="login">Ingresá</a><i class="fa-solid fa-right-to-bracket"></i></li>
-                    <li class="menuHeader"><a href="productCart">Carrito</a><i class="fa-solid fa-cart-shopping"></i></li>
-                    <li class="menuHeader"><a>Ayuda</a></li>
-                </ul>
-            </div>
-            <div class="burger-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-    </div>
-    <div class="banner"><img src="/images/home/banner.jpg"></div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+    
+        <div class="search">
+            <input type="search" placeholder="Buscar productos, marcas y mas" class="search-product">
+            <ul class="list">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="register">Registrate<i class="fas fa-id-card"></i></a></li>
+                <li><a href="login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="productCart">Carrito<i class="fas fa-shopping-basket"></i></a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+        </div>
+       
+    </nav>
+    <div class="banner-img"><img src="/images/home/banner.jpg"></div>
 </header>

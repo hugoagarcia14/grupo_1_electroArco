@@ -10,6 +10,9 @@ main.editUser {
     padding-bottom: 15px;
     padding-top: 15px;
 }
+.banner-img {
+    display: block;
+}
 
 .overlay {
     box-shadow: 10px 10px 5px 0px gray;
