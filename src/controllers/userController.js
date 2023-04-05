@@ -43,7 +43,7 @@ const controller = {
             if(isOkPassword){
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
-                return res.redirect('/users/profile');
+                return res.redirect('/profile');
 
             }return res.render('users/login',{
                 errors:{

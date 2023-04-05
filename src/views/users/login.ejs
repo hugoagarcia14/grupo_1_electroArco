@@ -5,7 +5,7 @@
             
             <div class="overlay2" id="overlay2">
                 <div class="formularioRegistroLogin" id="formularioRegistroLogin">
-                    <form action="/login" method="POST" class="crear-formulario" enctype="multipart/form-data">
+                    <form action="/login" method="POST" class="crear-formulario" enctype="application/json">
                         <h2>Ingresa tus datos</h2>
                         <div class="divNombreApellidologin">
                             <label class="labelCorreo">Correo:</label>
@@ -22,13 +22,14 @@
                                 class="contraseñaUsuario" >
                         </div>
                         <p class="remember">Recordar contraseña</p>
-                </div>
+                
 
                 <div class="botonGuardarLogin">
                     <button type="submit" class="botonFormularioLogin">INGRESAR</button>
                     <button type="delete" class="botonFormularioLogin">CANCELAR</button>
                 </div>
                 </form>
+            </div>
             </div>
             <%- include('../partials/footer') %>
     </body>
