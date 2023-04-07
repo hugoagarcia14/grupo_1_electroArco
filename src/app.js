@@ -3,6 +3,10 @@ const express = require('express');
 const { resolve } = require('path');
 const app = express();
 
+
+
+
+
 app.use(express.urlencoded({extended: false}));
 
 //session
@@ -29,6 +33,9 @@ app.use(express.static(path.join(__dirname,'/public')));
 app.use(express.urlencoded({ extended:false }));
 app.use(express.json());
 app.use(methodOverride('_method'));
+
+const userLogged = require('./middlewares/userLogged');
+
 app.use(session({
     secret:'secret',
     resave: false,
@@ -36,7 +43,7 @@ app.use(session({
 }));
 
 
-
+app.use(userLogged);
 //Public
 
 

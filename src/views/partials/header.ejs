@@ -12,13 +12,20 @@
         </label>
     
         <div class="search">
-            <input type="search" placeholder="Buscar productos, marcas y mas" class="search-product">
+            <input type="search" placeholder="Buscar productos, marcas y más" class="search-product">
             <ul class="list">
                 <li><a href="/">Inicio</a></li>
-                <li><a href="register">Registrate<i class="fas fa-id-card"></i></a></li>
-                <li><a href="login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="productCart">Carrito<i class="fas fa-shopping-basket"></i></a></li>
-                <li><a href="#">Ayuda</a></li>
+                    <% if(!locals.isLogged){%>
+                    <li><a href="register">Registrate<i class="fas fa-id-card"></i></a></li>
+                    <li><a href="login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
+                <%} else {%>
+                    <li><a href="productCart">Carrito<i class="fas fa-shopping-basket"></i></a></li>
+                    <li><a href="/logout">logout<i class="fa-solid fa-right-from-bracket"></i></a></li>
+                    <li><img src ="../images/user/<%=locals.userLogged.image%>" width="40px"; style="border-radius: 100%;"></li>
+                    <li><%=locals.userLogged.first_name %></li>
+                    
+                <%}%>
+                
             </ul>
         </div>
        

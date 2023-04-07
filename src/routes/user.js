@@ -12,15 +12,16 @@ const uploadFile = require('../middlewares/multerMiddleware');
 
 const validations = require('../middlewares/validateRegisterMiddleware');
 
+const guestMiddleware = require('../middlewares/guestMiddleware')
 
-router.get ('/login', userController.login);
+router.get ('/login', guestMiddleware, userController.login);
 router.post ('/login', userController.loginProcess);
 
-router.get ('/register', userController.register);
+router.get ('/register', guestMiddleware, userController.register);
 router.post('/register', uploadFile.single("image"), validations, userController.store);
 
 //Procesar el registro
-;
+
 
 router.get('/detail/:id', userController.detail);
 
@@ -30,6 +31,8 @@ router.put('/detail/edit/:id', uploadFile.single("image"), userController.update
 router.delete('/detail/delete/:id', userController.destroy);
 
 router.get('/profile', userController.profile);
+
+router.get('/logout/', userController.logout);
 
 
 module.exports = router;

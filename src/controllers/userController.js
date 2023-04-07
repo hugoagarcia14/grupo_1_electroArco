@@ -36,14 +36,14 @@ const controller = {
     loginProcess: (req, res) => {
         
         let userToLogin = controller.findByField('email', req.body.email);
-            console.log(userToLogin);
+        
         
         if(userToLogin){
             let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
             if(isOkPassword){
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
-                return res.redirect('/profile');
+                return res.redirect('/');
 
             }return res.render('users/login',{
                 errors:{
@@ -160,7 +160,10 @@ const controller = {
         fs.writeFileSync(userFilePath, JSON.stringify(users, null, ' '));
         res.redirect('/admin/adminUser?admin=true');
     },
-   
+   logout:(req, res)=>{
+    req.session.destroy();
+    return res.redirect('/');
+   }
 
 
 
