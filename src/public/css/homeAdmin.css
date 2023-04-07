@@ -90,21 +90,42 @@ input.search-product {
 
 nav ul.list {
 
-    float: center;
+    float: right;
     font-size: 15px;
-
     display: flex;
     position: unset;
-    
     flex-wrap: wrap;
-    flex-direction: column-reverse;
+    flex-direction: row-reverse;
     height: 50px;
     text-transform: uppercase;
     border-radius: 3px;
     color: var(--negro);
 
 }
+.remember{
+    font-size: 13px;
+    width: 25%;
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+/* Móvil*/
+@media (min-width: 320px){
+    nav ul.list {
+    float: center;
+    font-size: 12px;
+    display: flex;
+    position: unset;
+    flex-wrap: wrap-reverse;
+    flex-direction: column;
+    height: 70px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    color: var(--negro);
+    margin-right: 50px;
 
+}
+}
 /* Tablet */
 @media (min-width: 768px) {
     nav {
@@ -169,6 +190,20 @@ i.fas.fa-sign-in-alt, i.fas.fa-id-card, i.fas.fa-shopping-basket, i.fa-right-fro
 
 /* Desktop */
 @media (min-width: 1024px) {
+    nav ul.list {
+
+        float: right;
+        font-size: 15px;
+        display: flex;
+        position: unset;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        height: 50px;
+        text-transform: uppercase;
+        border-radius: 3px;
+        color: var(--negro);
+    
+    }
     
     nav ul.list :hover, li a.active{
         background: none;

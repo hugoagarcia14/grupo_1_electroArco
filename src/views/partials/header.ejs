@@ -14,7 +14,7 @@
         <div class="search">
             <input type="search" placeholder="Buscar productos, marcas y más" class="search-product">
             <ul class="list">
-                <li><a href="/">Inicio</a></li>
+                
                     <% if(!locals.isLogged){%>
                     <li><a href="register">Registrate<i class="fas fa-id-card"></i></a></li>
                     <li><a href="login">Ingresa<i class="fas fa-sign-in-alt"></i></a></li>
@@ -25,6 +25,7 @@
                     <li><%=locals.userLogged.first_name %></li>
                     
                 <%}%>
+                <li><a href="/">Inicio</a></li>
                 
             </ul>
         </div>
