@@ -1,0 +1,48 @@
+body{
+    background: var(--blanco);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    width: 40%;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    color: var(--negro);
+    font-size: 10px;
+    padding: 20px;
+}
+button{
+    padding: 13px 30px;
+    border-radius: 15px;
+    border: none;
+    background: var(--grisOscuro);
+    
+}
+a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+@media (min-width:480px){
+    h1{        
+        font-size: 16px;        
+    }
+}
+@media (min-width:1024px){
+    h1{        
+        font-size: 25px;        
+    }
+    img{
+        width: 30%;
+    }
+}
