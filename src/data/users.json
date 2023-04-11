@@ -162,5 +162,15 @@
   "email": "ia14@hotmail.com",
   "phone": "23125216565",
   "password": "$2a$10$dstk05l657I8KNoOA1P.7ePB3dPRLkcqLYdp6zhVidR5OFQGh71JW"
+ },
+ {
+  "id": 17,
+  "id_user": "123456",
+  "first_name": "Rafael ",
+  "last_name": "Padilla de Agustín ",
+  "image": "defaul-image.png",
+  "email": "santopd1997@gmail.com",
+  "phone": "3128192722",
+  "password": "$2a$10$KGR95DKSowAs94qfj13oBevSXld1QK/PRmq/sQGdj6Tw.tq3J6qEW"
  }
 ]

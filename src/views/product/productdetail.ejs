@@ -50,14 +50,15 @@
 								<p>Retiro gratis en locales del vendedor</p>
 							</li>
 						</ul>
-
 						<a href="#" class="buy-now-button">COMPRAR AHORA</a>
+						<% if(!locals.isLogged){%>
 						<hr>
-
+						<%} else {%>
 						<a href="/editProduct/<%= product.id %>" class="action-button edit">EDITAR PRODUCTO</a>
 						<form action="/productdetail/delete/<%= product.id %>?_method=DELETE" method="POST" style="display: inline-flex">
 							<button type="submit" class="action-button delete">ELIMINAR</button>
 						</form>
+						<%}%>
 					</article>
 				</div>
 			</div>
