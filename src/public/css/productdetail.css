@@ -641,15 +641,32 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 15px 30px;
   margin-top: 15px;
 }
 
 .action-button.edit {
+  font-size: 1.6em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
   background-color: chocolate;
 }
 
 .action-button.delete {
+  font-size: 1.6em;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  margin-bottom: 15px;
   background-color: rgb(248, 69, 37);
 }
 
