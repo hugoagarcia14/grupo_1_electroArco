@@ -40,15 +40,8 @@ module.exports = {
           model: 'categories',
           key: 'id'
         }
-      },
-      colors_id: {
-        type: Sequelize.INTEGER,
-        references: {
-          model: 'colors',
-          key: 'id'
-        }
       }
-      
+    
     });
 
   },
