@@ -8,7 +8,13 @@ module.exports = {
      *
      * Example:*/
     await queryInterface.createTable('products_colors', {
-      product_id: {
+      id: {
+        allowNull: false,
+        autoIncrement: true,
+        primaryKey: true,
+        type: Sequelize.INTEGER
+      },
+      products_id: {
         type: Sequelize.INTEGER,
         references: {
           model: 'products',
@@ -21,6 +27,14 @@ module.exports = {
           model: 'colors',
           key: 'id'
         }
+      },
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
       }
     });
   },

@@ -14,23 +14,23 @@ module.exports = {
     */
     await queryInterface.bulkInsert('products_colors', [
       {
-        product_id: 1,
+        products_id: 1,
         colors_id:1
       },
       {
-        product_id: 1,
+        products_id: 1,
         colors_id:2
       },
       {
-        product_id: 2,
+        products_id: 2,
         colors_id:3
       },
       {
-        product_id: 2,
+        products_id: 2,
         colors_id:4
       },
       {
-        product_id: 3,
+        products_id: 3,
         colors_id:5
       }
     ], {});
