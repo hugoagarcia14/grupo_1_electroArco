@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         name: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         }    
     };
@@ -19,11 +19,13 @@ module.exports = (sequelize, dataTypes) => {
     }
     const Color = sequelize.define(alias, cols, config);
     
-    Color.belongsToMany(models.Product,{
+    Color.associate = function(models){
+        Color.belongsToMany(models.Product,{
         as:'products',
-        through:'products_has_colors',
+        through:'products_colors',
         foreignKey:'colors_id',
         otherKey:'products_id'
     });
+}
     return Color
 };

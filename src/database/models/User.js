@@ -11,27 +11,27 @@ module.exports = (sequelize, dataTypes) => {
             allowNull: false
         },
         first_name: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         },
         last_name: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         },
         email: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         },
         phone: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         },
         address: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         },
         password: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         },
         image: {
@@ -48,7 +48,7 @@ module.exports = (sequelize, dataTypes) => {
     const User = sequelize.define(alias, cols, config);
 
     User.associate = function(models){
-        User.belongsto(models.Rol,{
+        User.belongsTo(models.Rol,{
             as:'rol',
             foreignKey:'roles_id'
         });

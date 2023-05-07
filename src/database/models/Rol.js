@@ -7,7 +7,7 @@ module.exports = (sequelize, dataTypes) => {
             autoIncrement: true
         },
         name: {
-            type: dataTypes.TEXT(100).UNSIGNED,
+            type: dataTypes.TEXT(100),
             allowNull: false
         }    
     };
