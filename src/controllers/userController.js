@@ -3,8 +3,10 @@ const fs = require('fs');
 const path = require('path');
 const bcryptjs = require('bcryptjs');
 const { validationResult } = require('express-validator');
+const db = require('../database/models');
+const { Op } = require('sequelize');
 
-const userFilePath = path.join(__dirname, '../data/users.json');
+/*const userFilePath = path.join(__dirname, '../data/users.json');*/
 
 
 
@@ -14,7 +16,7 @@ function getUser() {
 
 const controller = {
     getData: function () {
-        return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
+       /* return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));*/
     },
     findAll: function () {
         return this.getData();
@@ -30,8 +32,8 @@ const controller = {
     },
     findByField: function (field, text) {
         let allUser = this.findAll();
-        let userFound = allUser.find(oneUser => oneUser[field] === text);
-        return userFound;
+        /* let userFound = allUser.find(oneUser => oneUser[field] === text);
+        return userFound;*/
     },
     loginProcess: (req, res) => {
         
@@ -119,11 +121,16 @@ const controller = {
         fs.writeFileSync(userFilePath, JSON.stringify(users, null, ' '));
         res.redirect('/login')
     },
-    adminUser: (req, res) => {
-        const users = getUser();
-        res.render('users/adminUser', {
-            users
-        })
+    adminUser:  async (req, res) => {
+        try {
+            const user = await db.User.findAll();
+            if (!user) {
+                return res.status(404).json({ message: 'Usuarios no encontrados' });
+            }
+            res.render('users/adminUser', { user});
+        } catch (error) {
+            res.send(error);
+        }
     },
     detail: (req, res) => {
         const id = req.params.id;

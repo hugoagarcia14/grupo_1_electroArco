@@ -2,13 +2,15 @@ const express = require('express');
 const path = require('path');
 const fs = require('fs');
 const db = require("../database/models");
+const { Op } = require('sequelize');
 
-const productsFilePath = path.join(__dirname, '../data/product.json');
+/*const productsFilePath = path.join(__dirname, '../data/product.json');*/
 function getProducts() {
 	return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 }
 
 const controller={
+
 
 	formCreationProduct:(req, res) => {
         res.render ('product/formCreationProduct')
