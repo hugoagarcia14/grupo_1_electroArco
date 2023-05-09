@@ -8,7 +8,7 @@ const validations = [
     body('first_name').notEmpty().withMessage('Debes escribir tus nombres'),
     body('last_name').notEmpty().withMessage('Debes escribir tus apellidos'),
     body('phone').notEmpty().withMessage('Debes escribir tu número de teléfono'),
-    body('id_user').notEmpty().withMessage('Debes escribir tu número de identificación'),
+    body('dni').notEmpty().withMessage('Debes escribir tu número de identificación'),
     body('email').notEmpty().withMessage('Debes escribir tu email').bail()
     .isEmail().withMessage('Debes escribir un correo válido'),
     body('password').notEmpty().withMessage('Debes escribir tu contraseña'),

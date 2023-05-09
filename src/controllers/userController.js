@@ -10,13 +10,13 @@ const { Op } = require('sequelize');
 
 
 
-function getUser() {
+/*function getUser() {
     return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
-}
+}*/
 
 const controller = {
     getData: function () {
-       /* return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));*/
+        /* return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));*/
     },
     findAll: function () {
         return this.getData();
@@ -36,39 +36,40 @@ const controller = {
         return userFound;*/
     },
     loginProcess: (req, res) => {
-        
+
         let userToLogin = controller.findByField('email', req.body.email);
-        
-        
-        if(userToLogin){
+
+
+        if (userToLogin) {
             let isOkPassword = bcryptjs.compareSync(req.body.password, userToLogin.password);
-            if(isOkPassword){
+            if (isOkPassword) {
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
 
-                if(req.body.remembre){
-                    res.cookie('userEmail', req.body.email, { maxAge:(1000*60)*2
+                if (req.body.remembre) {
+                    res.cookie('userEmail', req.body.email, {
+                        maxAge: (1000 * 60) * 2
                     })
                 }
 
                 return res.redirect('/');
 
-            }return res.render('users/login',{
-                errors:{
-                    email:{
-                        msg:'Las credenciales son inválidas'
+            } return res.render('users/login', {
+                errors: {
+                    email: {
+                        msg: 'Las credenciales son inválidas'
                     }
                 }
             });
         }
 
-        return res.render('users/login',{
-            errors:{
-                email:{
-                    msg:'No se encuentra este correo registrado'
+        return res.render('users/login', {
+            errors: {
+                email: {
+                    msg: 'No se encuentra este correo registrado'
                 }
             }
-        });  
+        });
     },
 
     register: (req, res) => {
@@ -76,8 +77,8 @@ const controller = {
         res.render('users/register')
     },
     profile: (req, res) => {
-        res.render('users/profile',{
-            
+        res.render('users/profile', {
+
         })
     },
 
@@ -92,7 +93,7 @@ const controller = {
         }
 
         let userInDB = controller.findByField('email', req.body.email);
-       
+
         if (userInDB) {
             return res.render('users/register', {
                 errors: {
@@ -103,82 +104,94 @@ const controller = {
                 oldData: req.body
             });
         }
-        
-        const image = req.file ? req.file.filename : 'defaul-image.png';
-        const users = getUser();
 
-        const newUser = {
-            id: users[users.length - 1].id + 1,
-            id_user: req.body.id_user,
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            image: image,
-            email: req.body.email,
-            phone: req.body.phone,
-            password: bcryptjs.hashSync(req.body.password, 10)
+        /* const users = getUser();*/
+        
+        async (req, res) => {
+            try {
+                const image = req.file ? req.file.filename : 'defaul-image.png';
+                const newUser = {
+                    dni: req.body.dni,
+                    first_name: req.body.first_name,
+                    last_name: req.body.last_name,
+                    image: image,
+                    email: req.body.email,
+                    phone: req.body.phone,
+                    password: bcryptjs.hashSync(req.body.password, 10),
+
+                };
+                await db.User.create(newUser);
+                res.redirect('/login');
+            } catch (error) {
+                res.send(error);
+            }
+
         }
-        users.push(newUser);
-        fs.writeFileSync(userFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/login')
     },
-    adminUser:  async (req, res) => {
+    adminUser: async (req, res) => {
         try {
             const user = await db.User.findAll();
             if (!user) {
                 return res.status(404).json({ message: 'Usuarios no encontrados' });
             }
-            res.render('users/adminUser', { user});
+            res.render('users/adminUser', { user });
         } catch (error) {
             res.send(error);
         }
     },
-    detail: (req, res) => {
-        const id = req.params.id;
-        const users = getUser();
-        const user = users.find(user => user.id == id);
-        res.render('users/cardUser', {
-            user
-        });
-    },
-    editUser: (req, res) => {
-        const id = req.params.id;
-        const users = getUser();
-        const user = users.find(user => user.id == id);
-        res.render('users/editUser', {
-            user
-        });
-    },
-    update: (req, res) => {
-        const id = req.params.id;
-        const users = getUser();
-        const userIndex = users.findIndex(user => user.id == id);
-        const image = req.file ? req.file.filename : users[userIndex].image;
-        users[userIndex] = {
-            ...users[userIndex],
-            id_user: req.body.id_user,
-            first_name: req.body.first_name,
-            last_name: req.body.last_name,
-            image: image,
-            email: req.body.email,
-            phone: req.body.phone,
-            password: req.body.password
+    detail: async (req, res) => {
+        try {
+            const user = await db.User.findByPk(req.params.id);
+            if (!user) {
+                return res.status(404).json({ message: 'Usuario no encontrado' });
+            }
+            res.render('users/cardUser', { user });
+        } catch (error) {
+            res.send(error);
         }
-        fs.writeFileSync(userFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/admin/adminUser?admin=true');
     },
-    destroy: (req, res) => {
-        const id = req.params.id;
-        const users = getUser();
-        const userIndex = users.findIndex(user => user.id == id);
-        users.splice(userIndex, 1);
-        fs.writeFileSync(userFilePath, JSON.stringify(users, null, ' '));
-        res.redirect('/admin/adminUser?admin=true');
+    editUser: async (req, res) => {
+        try {
+            const user = await db.User.findByPk(req.params.id);
+            res.render('users/editUser', { User: user });
+        } catch (error) {
+            res.send(error);
+        }
     },
-   logout:(req, res)=>{
-    res.clearCookie('userEmail');
-    req.session.destroy();
-    return res.redirect('/');
-   }
+    update: async (req, res) => {
+        try {
+            const user = req.params.id;
+            const image = req.file ? req.file.filename : users[userIndex].image;
+            const userUpdate = {
+                dni: req.body.dni,
+                first_name: req.body.first_name,
+                last_name: req.body.last_name,
+                image: image,
+                email: req.body.email,
+                phone: req.body.phone,
+                password: bcryptjs.hashSync(req.body.password, 10),
+                roles_id: req.body.roles_id
+            };
+            await db.User.update(userUpdate, { where: { id: user} });
+            res.redirect('/admin/adminUser?admin=true');
+        } catch (error) {
+            res.send(error);
+        }
+    },
+    destroy: function (req, res) {
+        let userId = req.params.id;
+        db.User
+            .destroy({ where: { id: userId }, force: true })
+            .then(() => {
+                return res.redirect('/admin/adminUser?admin=true')
+            })
+            .catch(error => res.send(error))
+    },
+    logout: (req, res) => {
+        res.clearCookie('userEmail');
+        req.session.destroy();
+        return res.redirect('/');
+    }
 
 
 
