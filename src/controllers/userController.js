@@ -30,14 +30,18 @@ const controller = {
         return userFound;
 
     },
-    findByField: function (field, text) {
-        let allUser = this.findAll();
+    findByEmail: async function (email) {
+        return await db.User.findOne({
+            where: { email: '' + email }
+        });
+
+
         /* let userFound = allUser.find(oneUser => oneUser[field] === text);
         return userFound;*/
     },
-    loginProcess: (req, res) => {
+    loginProcess: async (req, res) => {
 
-        let userToLogin = controller.findByField('email', req.body.email);
+        let userToLogin = await controller.findByEmail(req.body.email);
 
 
         if (userToLogin) {
@@ -82,7 +86,7 @@ const controller = {
         })
     },
 
-    store: (req, res) => {
+    store: async (req, res) => {
         const resultValidation = validationResult(req);
 
         if (resultValidation.errors.length > 0) {
@@ -92,8 +96,8 @@ const controller = {
             });
         }
 
-        let userInDB = controller.findByField('email', req.body.email);
-
+        let userInDB = await controller.findByEmail(req.body.email);
+        console.log(userInDB)
         if (userInDB) {
             return res.render('users/register', {
                 errors: {
@@ -106,27 +110,27 @@ const controller = {
         }
 
         /* const users = getUser();*/
-        
-        async (req, res) => {
-            try {
-                const image = req.file ? req.file.filename : 'defaul-image.png';
-                const newUser = {
-                    dni: req.body.dni,
-                    first_name: req.body.first_name,
-                    last_name: req.body.last_name,
-                    image: image,
-                    email: req.body.email,
-                    phone: req.body.phone,
-                    password: bcryptjs.hashSync(req.body.password, 10),
 
-                };
-                await db.User.create(newUser);
-                res.redirect('/login');
-            } catch (error) {
-                res.send(error);
-            }
-
+        try {
+            const image = req.file ? req.file.filename : 'defaul-image.png';
+            const newUser = {
+                dni: req.body.dni,
+                first_name: req.body.first_name,
+                last_name: req.body.last_name,
+                image: image,
+                email: req.body.email,
+                address:req.body.address,
+                phone: req.body.phone,
+                password: bcryptjs.hashSync(req.body.password, 10),
+                roles_id:3
+            };
+            await db.User.create(newUser);
+            res.redirect('/login');
+        } catch (error) {
+            res.send(error);
         }
+
+
     },
     adminUser: async (req, res) => {
         try {
@@ -172,7 +176,7 @@ const controller = {
                 password: bcryptjs.hashSync(req.body.password, 10),
                 roles_id: req.body.roles_id
             };
-            await db.User.update(userUpdate, { where: { id: user} });
+            await db.User.update(userUpdate, { where: { id: user } });
             res.redirect('/admin/adminUser?admin=true');
         } catch (error) {
             res.send(error);

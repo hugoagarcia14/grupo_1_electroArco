@@ -1,12 +1,12 @@
 const User = require('../controllers/userController');
 
-function userLogged(req, res, next) {
+async function userLogged(req, res, next) {
     // TODO: aca tenemos que hacer la validación de las variables de sesión para saber si el usuario esta logueado
     res.locals.isLogged = false;
 
     let emailInCookie = req.cookies.userEmail;
-    let userFromCookie = User.findByField('email',emailInCookie);
-
+    let userFromCookie = await User.findByEmail(emailInCookie);
+     console.log(userFromCookie);
     if(userFromCookie){
         req.session.userLogged = userFromCookie;
     }

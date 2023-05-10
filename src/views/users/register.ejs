@@ -55,18 +55,16 @@
                                 </div>
                             </div>
                             
-                          <!---- %>  <div class="idUser" id="roles">
-                                <label>Rol:</label>
-                                <select name="Roles">
-                                    <option value=""></option>
-                                    <option value="#00ff00">Verde</option>
-                                    <option value="#0000ff">Azul</option>
-                                    <option value="#770077">Morado</option>
-                                    </select>
+                          <div class="idUser" id="roles">
+                                <label>Dirección</label>
+                                <input type="text" name="address" id="address" class="input-control is-invalid" value="<%= locals.oldData ? oldData.address : null %>">
+                                
                                 <div class="validator">
-                                    
+                                    <% if (locals.errors && errors.address) { %>
+                                        <%= errors.address.msg %>
+                                            <% }%>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="divCorreoContrasena">
                             <div class="correo">
