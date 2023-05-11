@@ -6,17 +6,9 @@ const { validationResult } = require('express-validator');
 const db = require('../database/models');
 const { Op } = require('sequelize');
 
-/*const userFilePath = path.join(__dirname, '../data/users.json');*/
-
-
-
-/*function getUser() {
-    return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));
-}*/
-
 const controller = {
     getData: function () {
-        /* return JSON.parse(fs.readFileSync(userFilePath, 'utf-8'));*/
+
     },
     findAll: function () {
         return this.getData();
@@ -35,9 +27,6 @@ const controller = {
             where: { email: '' + email }
         });
 
-
-        /* let userFound = allUser.find(oneUser => oneUser[field] === text);
-        return userFound;*/
     },
     loginProcess: async (req, res) => {
 
@@ -109,7 +98,6 @@ const controller = {
             });
         }
 
-        /* const users = getUser();*/
 
         try {
             const image = req.file ? req.file.filename : 'defaul-image.png';
@@ -119,10 +107,10 @@ const controller = {
                 last_name: req.body.last_name,
                 image: image,
                 email: req.body.email,
-                address:req.body.address,
+                address: req.body.address,
                 phone: req.body.phone,
                 password: bcryptjs.hashSync(req.body.password, 10),
-                roles_id:3
+                roles_id: 3
             };
             await db.User.create(newUser);
             res.redirect('/login');
@@ -164,21 +152,22 @@ const controller = {
     },
     update: async (req, res) => {
         try {
-            const user = req.params.id;
-            const image = req.file ? req.file.filename : users[userIndex].image;
-            const userUpdate = {
-                dni: req.body.dni,
-                first_name: req.body.first_name,
-                last_name: req.body.last_name,
-                image: image,
-                email: req.body.email,
-                phone: req.body.phone,
-                password: bcryptjs.hashSync(req.body.password, 10),
-                roles_id: req.body.roles_id
-            };
-            await db.User.update(userUpdate, { where: { id: user } });
+            console.log(req.body, req.params)
+            const user = await db.User.findByPk(req.params.id);
+            console.log(user)
+            const image = req.file ? req.file.filename : user.image;
+            user.dni = req.body.dni;
+            user.first_name = req.body.first_name;
+            user.last_name = req.body.last_name;
+            user.email = req.body.email;
+            user.phone = req.body.phone;
+            user.password = bcryptjs.hashSync(req.body.password, 10);
+            user.image = image
+            await user.save()
+
             res.redirect('/admin/adminUser?admin=true');
         } catch (error) {
+            console.log(error)
             res.send(error);
         }
     },
@@ -201,5 +190,3 @@ const controller = {
 
 }
 module.exports = controller;
-
-//console.log (controller.findByField('email','hugoagarcia14@hotmail.com'));
