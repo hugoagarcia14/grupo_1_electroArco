@@ -91,3 +91,25 @@ Sprint 5
 5. Empezar a hacer:
 •   Optimizar mejor el tiempo.
 •   Ser más organizados en el desarrollo de los sprint.
+
+Sprint 6
+
+1. Seguir haciendo
+•   Continuar con lo descrito en este numeral, en el sprint anterior. 
+•   Continuar con la comunicacion por Discord. 
+
+2. Menos de:
+•   No esperar hasta el final para agregar actividades faltantes
+•   Tolerancia hacia los compañeros que no se han reportado en el grupo
+
+3. Mas de: 
+•  Planificación de las actividades organizando por nivel de dificultad.
+•  Mantener actualizado el tablero de trabajo.
+
+4. Dejar de hacer:
+•   Procrastinar
+
+5. Empezar a hacer:
+•   Optimizar mejor el tiempo.
+•   Ser más organizados en el desarrollo de los sprint.
+
