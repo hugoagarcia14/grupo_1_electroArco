@@ -117,7 +117,7 @@ input {
 }
 
 .in-vaild{
-    border: 1px solid red;
+    border: 2px solid red;
 }
 .boton-formulario {
     width: 40%;
@@ -177,6 +177,16 @@ input {
     color: red;
     font-style: italic;
 }
+
+.is-valid {
+    color:green
+}
+
+.is-invalid {
+    border: red 2px solid;
+    color:red;
+}
+
 
 @media(min-width:481px) {
     .cabecera-botones {
