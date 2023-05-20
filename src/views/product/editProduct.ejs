@@ -17,11 +17,17 @@
                                     <label class="labelEdit">Nombre del producto</label>
                                     <input type="text" name="name" class="inputEdit" id="name"
                                         value="<%= product.name %>">
+                                        <div class="validator">
+                                            <% if (locals.errors && errors.name) { %>
+                                                <%= errors.name.msg %>
+                                                    <% }%>
+                                        </div>
                                 </div>
                                 <div class="colorProduct">
                                     <label class="labelEdit">Color</label>
                                     <input type="text" name="color" class="inputEdit" id="color"
                                         value="<%= product.color %>">
+                                       
                                 </div>
                             </div>
                             <div class="price-discount">
@@ -29,22 +35,42 @@
                                     <label class="labelEdit">Precio del producto</label>
                                     <input type="text" name="price" class="inputEdit" id="price"
                                         value="<%= product.price %>">
+                                        <div class="validator">
+                                            <% if (locals.errors && errors.price) { %>
+                                                <%= errors.price.msg %>
+                                                    <% }%>
+                                        </div>
                                 </div>
                                 <div class="discountProduct">
                                     <label class="labelEdit">Descuento</label>
                                     <input type="text" name="discount" class="inputEdit" id="discount"
                                         value="<%= product.discount %>">
+                                        <div class="validator">
+                                            <% if (locals.errors && errors.discount) { %>
+                                                <%= errors.discount.msg %>
+                                                    <% }%>
+                                        </div>
                                 </div>
                             </div>
                             <div class="controlFoto">
                                 <label class="labelEdit">Foto del producto</label>
                                 <input type="file" placeholder="Foto del producto" name="image" id="image"
                                     class="inputEdit" id="image" value="<%= product.image %>">
+                                    <div class="validator">
+                                        <% if (locals.errors && errors.image) { %>
+                                            <%= errors.image.msg %>
+                                                <% }%>
+                                    </div>
                             </div>
                             <div class="divDescriptionProduct">
                                 <label for="description" class="labelEdit">Descripción</label>
                                 <textarea name="description" class="descriptionProduct"
                                     id="description"><%= product.description %></textarea>
+                                    <div class="validator">
+                                        <% if (locals.errors && errors.description) { %>
+                                            <%= errors.description.msg %>
+                                                <% }%>
+                                    </div>
 
                             </div>
 

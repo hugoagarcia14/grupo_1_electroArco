@@ -10,16 +10,31 @@
                     <div class="formulario">
                         <div class="control-for">
                             <input type="text" placeholder="Nombre del producto:" name="name" class="input-control1"
-                                id="nombreProducto" required>
+                                id="name" value="<%= locals.oldData ? oldData.name : null %>">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.name) { %>
+                                        <%= errors.name.msg %>
+                                            <% }%>
+                                </div>
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Descripción del producto" name="description" class="input-control1"
-                                required>
+                            value="<%= locals.oldData ? oldData.description : null %>">
+                            <div class="validator">
+                                <% if (locals.errors && errors.description) { %>
+                                    <%= errors.description.msg %>
+                                        <% }%>
+                            </div>
                         </div>
                         <div class="controlFoto">
                             <h5>Foto del producto</h5>
-                            <input type="file" placeholder="Foto del producto" name="image" id="fotoProducto" class="inputFoto"
-                                required>
+                            <input type="file" placeholder="Foto del producto" name="image" id="image" class="inputFoto"
+                            >
+                            <div class="validator">
+                                <% if (locals.errors && errors.image) { %>
+                                    <%= errors.image.msg %>
+                                        <% }%>
+                            </div>
                         </div>
                         
                         <div class="control-for">
@@ -28,7 +43,12 @@
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Precio del producto:" name="price" class="input-control1"
-                                id="precioProducto">
+                                id="precioProducto" value="<%= locals.oldData ? oldData.price : null %>">
+                                <div class="validator">
+                                    <% if (locals.errors && errors.price) { %>
+                                        <%= errors.price.msg %>
+                                            <% }%>
+                                </div>
                         </div>
                         <div class="control-for">
                             <input type="text" placeholder="Descuento del producto:" name="discount" class="input-control1"

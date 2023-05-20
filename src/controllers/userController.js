@@ -152,9 +152,7 @@ const controller = {
     },
     update: async (req, res) => {
         try {
-            console.log(req.body, req.params)
             const user = await db.User.findByPk(req.params.id);
-            console.log(user)
             const image = req.file ? req.file.filename : user.image;
             user.dni = req.body.dni;
             user.first_name = req.body.first_name;

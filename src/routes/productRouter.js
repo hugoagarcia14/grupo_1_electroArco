@@ -18,6 +18,8 @@ const guestMiddleware = require('../middlewares/guestMiddleware');
 
 const authMiddleware = require('../middlewares/authMiddlewares');
 
+const validationsProduct = require('../middlewares/validateProduct');
+
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, path.resolve(__dirname, '../public/images/products'));
@@ -33,13 +35,13 @@ router.get ('/productCart', authMiddleware, productController.productCart);
 
 router.get ('/productdetail/:id', productController.productdetail);
 
-router.get ('/formCreationProduct', authMiddleware, productController.formCreationProduct);
-router.post('/', upload.single('image'), authMiddleware, productController.store);
+router.get ('/formCreationProduct', validationsProduct, authMiddleware, productController.formCreationProduct);
+router.post('/', upload.single('image'),  validationsProduct, authMiddleware, productController.store);
 
-router.post('/createProduct', upload.single('image'), productController.store);
+router.post('/createProduct', upload.single('image'), validationsProduct, productController.store);
 
 router.get ('/editProduct/:id', authMiddleware, productController.editProduct);
-router.put('/editProduct/:id', upload.single('image'), productController.update); 
+router.put('/editProduct/:id', upload.single('image'), validationsProduct, productController.update); 
 
 router.delete('/productdetail/delete/:id', authMiddleware, productController.destroy);
 

@@ -14,6 +14,7 @@ const validations = require('../middlewares/validateRegisterMiddleware');
 
 const guestMiddleware = require('../middlewares/guestMiddleware')
 
+
 router.get ('/login', guestMiddleware, userController.login);
 router.post ('/login', userController.loginProcess);
 

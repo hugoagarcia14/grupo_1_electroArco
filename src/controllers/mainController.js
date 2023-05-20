@@ -22,25 +22,7 @@ const controller = {
             res.send(error);
         }
     }
-    /*register:(req, res) => {
-         res.render ('register')
-     },
     
-     login:(req, res) => {
-         res.render ('login')
-     },
-     
-     editProduct:(req, res) => {
-         res.render ('editProduct')
-     },
-     homeAdmin:(req, res) => {
-         res.render ('homeAdmin')
-     },*/
 }
-
-
-
-//home
-
 module.exports = controller;
 
