@@ -73,7 +73,7 @@
                           <div class="idUser" id="roles">
                                 <label>Dirección</label>
                                 <div>
-                                    <input type="text" name="address" id="address" class="input-control is-invalid" value="<%= locals.oldData ? oldData.address : null %>">
+                                    <input type="text" name="address" id="address" class="input-control" value="<%= locals.oldData ? oldData.address : null %>">
                                     <p class="error-message" id="error-address"></p>
                                 </div>
                                     <div class="validator">
@@ -87,7 +87,7 @@
                             <div class="correo">
                                 <label>Correo:</label>
                                 <div>
-                                    <input type="email" name="email" id="email" class="input-control is-invalid" value="<%= locals.oldData ? oldData.email : null %>">
+                                    <input type="email" name="email" id="email" class="input-control" value="<%= locals.oldData ? oldData.email : null %>">
                                     <p class="error-message" id="error-email"></p>
                                 </div>
                                     <div class="validator ">
@@ -118,7 +118,7 @@
                 </div>
             </div>
         <%- include('../partials/footer') %>
-        <script src="/js/validacionesRegistroUsuarios.js"></script>
+        <script src="/js/validateRegisterUsers.js"></script>
     </body>
 
     </html>
