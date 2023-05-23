@@ -2,37 +2,45 @@
 
     <body>
         <%- include('../partials/header') %>
-            
+
             <div class="overlay2" id="overlay2">
                 <div class="formularioRegistroLogin" id="formularioRegistroLogin">
-                    <form action="/login" method="POST" class="crear-formulario" enctype="application/json">
+                    <form action="/login" method="POST" class="crear-formulario" id="login" enctype="application/json">
                         <h2>Ingresa tus datos</h2>
-                        <div class="divNombreApellidologin">
-                            <label class="labelCorreo">Correo:</label>
-                            <input type="email" name="email" id="email" class="correoUsuario">
+                        <div class="group-email" id="group-email">
+                            <label class="form-label">Correo:</label>
+                            <input type="email" name="email" id="email" class="form-imput">
+                            <i class="form-validation fas fa-times-circle"></i>
+                            <p class="form-input-error">El correo solo puede contener letras, numeros, puntos,
+                                guiones y guion bajo.</p>
                             <div class="validator ">
                                 <% if (locals.errors && errors.email) { %>
                                     <%= errors.email.msg %>
-                                <% }%>
+                                        <% }%>
                             </div>
                         </div>
-                        <div class="contrasenaLogin">
-                            <label class="labelContraseña">Contraseña:</label>
-                            <input type="password" name="password" id="password"
-                                class="contraseñaUsuario" >
+                        <div class="group-password" id="group-password">
+                            <label class="form-label">Contraseña:</label>
+                            <input type="password" name="password" id="password" class="form-imput">
+                            <i class="form-validation fas fa-times-circle"></i>
+                            <p class="form-input-error">La contraseña tiene que ser de 6 a 12 dígitos.</p>
                         </div>
-                        <div class="remember">
-                            <input type="checkbox" class="remember" name="remember">Recordar contraseña</p>
+                        <div class="remember-password">
+                            <input type="checkbox" class="remember-password" name="remember">Recordar contraseña</p>
                         </div>
 
-                <div class="botonGuardarLogin">
-                    <button type="submit" class="botonFormularioLogin">INGRESAR</button>
-                    <button type="delete" class="botonFormularioLogin">CANCELAR</button>
+                        <div class="botonGuardarLogin">
+                            <button type="submit" class="botonFormularioLogin">INGRESAR</button>
+                            <button type="delete" class="botonFormularioLogin">CANCELAR</button>
+                        </div>
+                        <div class="form-message" id="form-message">
+                            <p class="error"><i class="fas fa-exclamation-triangle"></i> Error: Por favor rellena el formulario correctamente. </p>
+                        </div>
+                    </form>
                 </div>
-                </form>
-            </div>
             </div>
             <%- include('../partials/footer') %>
+                <script src="/js/validateLogin.js"></script>
     </body>
 
     </html>
