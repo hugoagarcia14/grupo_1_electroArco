@@ -1,6 +1,7 @@
 <%- include('../partials/head',{styles:['formCreationProduct']}) %>
 
     <body>
+       
         <%- include('../partials/header') %>
             <div class="titulo">
                 <h1>Estas editando <%= product.name %>
@@ -8,7 +9,7 @@
             </div>
             <main class="mainEdit">
 
-                <form method="post" action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
+                <form method="post" class="products" action="/editProduct/<%= product.id %>?_method=PUT" enctype="multipart/form-data">
 
                     <div class="formularioEdit">
                         <div class="divEdit">
@@ -17,7 +18,8 @@
                                     <label class="labelEdit">Nombre del producto</label>
                                     <input type="text" name="name" class="inputEdit" id="name"
                                         value="<%= product.name %>">
-                                        <div class="validator">
+                                        <p class="error-message" id="error-name"></p>
+                                     <div class="validator">
                                             <% if (locals.errors && errors.name) { %>
                                                 <%= errors.name.msg %>
                                                     <% }%>
@@ -35,6 +37,7 @@
                                     <label class="labelEdit">Precio del producto</label>
                                     <input type="text" name="price" class="inputEdit" id="price"
                                         value="<%= product.price %>">
+                                        <p class="error-message" id="error-price"></p>
                                         <div class="validator">
                                             <% if (locals.errors && errors.price) { %>
                                                 <%= errors.price.msg %>
@@ -56,6 +59,8 @@
                                 <label class="labelEdit">Foto del producto</label>
                                 <input type="file" placeholder="Foto del producto" name="image" id="image"
                                     class="inputEdit" id="image" value="<%= product.image %>">
+                                    <p class="error-message" id="error-image"></p>
+
                                     <div class="validator">
                                         <% if (locals.errors && errors.image) { %>
                                             <%= errors.image.msg %>
@@ -66,6 +71,8 @@
                                 <label for="description" class="labelEdit">Descripción</label>
                                 <textarea name="description" class="descriptionProduct"
                                     id="description"><%= product.description %></textarea>
+                                    <p class="error-message" id="error-description"></p>
+
                                     <div class="validator">
                                         <% if (locals.errors && errors.description) { %>
                                             <%= errors.description.msg %>
@@ -86,4 +93,7 @@
             </main>
 
             <%- include('../partials/footer') %>
+<script src="/js/validateProduct.js" ></script>
+
+
     </body>
