@@ -62,6 +62,8 @@ const mainRouter = require('./routes/main');
 const productRouter = require('./routes/productRouter');
 const userRouter = require('./routes/user');
 const adminRouter= require('./routes/admin');
+//Routes Api
+const apiUsersRouter = require('./routes/api/userRouter');
 
 
 //Route main
@@ -72,10 +74,12 @@ app.use(userRouter);
 app.use('/admin',adminRouter);
 app.use('/detail', userRouter);
 app.use('/products', productRouter);
+app.use('/api/users',apiUsersRouter);
 //app.use(editUser);
 app.use((req,res, next)=>{
     res.status(404).render('404/404')
 })
-//app.use('/product', listProducts);
+
+
 
 
