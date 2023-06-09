@@ -7,9 +7,16 @@ const bcrypt = require('bcryptjs');
 
 const productsAPIController = {
     'list': (req, res) => {
+        const { search } = req.query
+        let query
+        if (search) {
+            query = { name: { [Op.like]: `%${search}%` } }
+        }
         db.Product.findAll({
-            include: ['category']})
-        
+            include: ['category'],
+            where:query
+        })
+
             .then(products => {
                 let respuesta = {
                     meta: {
@@ -18,10 +25,10 @@ const productsAPIController = {
                         url: 'api/products'
                     },
                     data: products
-                }; 
+                };
                 res.json(respuesta);
             })
-    }, 
+    },
     'detail': (req, res) => {
         db.Product.findByPk(req.params.id, {
             include: ['category']
