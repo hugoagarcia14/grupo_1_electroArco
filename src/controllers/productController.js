@@ -101,10 +101,7 @@ const controller = {
 				return res.redirect('/')
 			})
 			.catch(error => res.send(error))
-
-	}
-
-
+		}
 };
 
 module.exports = controller;
