@@ -21,11 +21,11 @@ window.onload = function () {
         if (!name) {
             errors.push({ name: 'name', message: 'Debes escribir el nombre del producto' });
             form.name.classList.add('is-invalid');
-        } else if (name.length < 5 || name.length > 20) {
-            errors.push({ name: 'name', message: 'Los nombres deben tener entre 5 y 20 caracteres' });
+        } else if (name.length < 5 || name.length > 60) {
+            errors.push({ name: 'name', message: 'Los nombres deben tener entre 5 y 60 caracteres' });
             form.name.classList.add('is-invalid');
-        } else if (!/^[a-zA-Z\s]+$/.test(name)) {
-            errors.push({ name: 'name', message: 'Los nombres deben contener solo letras' });
+        } else if (!/^[a-zA-Z0-9\s]+$/.test(name)) {
+            errors.push({ name: 'name', message: 'Los nombres deben contener solo letras y numeros' });
             form.name.classList.add('is-invalid');
         } else {
             form.name.classList.remove('is-invalid');
@@ -36,11 +36,11 @@ window.onload = function () {
         if (!description) {
             errors.push({ name: 'description', message: 'Debes escribir una descripcion' });
             form.description.classList.add('is-invalid');
-       } else if (description.length < 20 || description.length > 200) {
+       } else if (description.length < 20 || description.length > 800) {
           errors.push({ name: 'description', message: 'Debe tener almenos 20 caracteres.' });
             form.description.classList.add('is-invalid');
-        } else if (!/^[a-zA-Z0-9\s]+$/.test(description)) {
-            errors.push({ name: 'description', message: 'La caracteristica solo puede contener letras y numeros .' });
+        } else if (!/^[a-zA-Z0-9\s.,!@#$%^&*()_-áéíóúÁÉÍÓÚñÑ]+$/.test(description)) {
+            errors.push({ name: 'description', message: 'La caracteristica solo puede contener letras y numeros.' });
              form.description.classList.add('is-invalid');
         } else {
             form.description.classList.remove('is-invalid');
