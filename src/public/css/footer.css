@@ -102,6 +102,7 @@
         justify-content: space-around;
         width: 100%;
         padding: 20px 20px 10px 30px;
+        background-color: var(--blanco);
     }
 
     .contenedorIconsSocialNetworks {
@@ -137,19 +138,19 @@
         padding: 10px 0px 10px 0px;
         border-top: 1px solid var(--grisClaro);
     }
-    
+
     .logoRightsReserved img {
         width: 30px;
         align-items: center;
         display: flex;
     }
-    
+
     #textRightsReserved {
         align-items: center;
         display: flex;
         font-size: 10px;
     }
-    
+
     .containerOnlineChat {
         display: flex;
         flex-direction: column;
@@ -157,17 +158,46 @@
         margin-top: 40px;
         color: var(--verde);
     }
-    
+
     #iconWhatsApp {
         font-size: 40px;
     }
-    
+
     #textOnlineChat {
         font-size: 10px;
         font-style: italic;
         font-weight: bold;
     }
-    
+
+    .fa-facebook-square {
+        color: var(--azulFace)
+    }
+
+    .fa-twitter-square {
+        color: var(--azulTwi)
+    }
+
+    .fa-youtube-square {
+        color: var(--rojoYou)
+    }
+
+    .fa-pinterest-square {
+        color: var(--rojoPint)
+    }
+
+    .iconsSocialNetworksInsta {
+        color: var(--purpuraInsta);
+        font-size: 30px;
+        margin-right: 10px;
+        width: 15%;
+    }
+
+    .logoInstagram {
+        width: 110%;
+        height: 80%;
+        margin-top: 3px;
+    }
+
     /*End Footer*/
 
 }
@@ -186,6 +216,10 @@
         background-color: var(--grisClaro);
         padding: 25px 70px 25px 70px;
     }
+
+    .iconsSocialNetworksInsta {
+        width: 10%;
+
 }
 
 @media(min-width:1440px) {
@@ -199,4 +233,18 @@
     .containerPhone {
         align-items: center;
     }
+
+    .iconsSocialNetworksInsta {
+        color: var(--purpuraInsta);
+        font-size: 30px;
+        margin-right: 10px;
+        width: 7%;
+    }
+
+    .logoInstagram {
+        width: 110%;
+        height: 80%;
+        margin-top: 3px;
+    }
+
 }

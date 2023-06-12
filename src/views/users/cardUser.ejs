@@ -1,0 +1,32 @@
+<%- include('../partials/head',{styles:['cardUser']}) %>
+
+    <body>
+        <%- include('../partials/header') %>
+            <main>
+                <% let date = new Date(user.aparicion)
+                date = date.getFullYear()
+            %>
+                <div class="container">
+                    <div class="img-user">
+                        <img class="img-user" src="../images/user/<%= user.image %>"">
+                    </div>
+                    <div class="container-information">
+                        <div class="id"><%= user.dni %></div>
+                        <div class="name"><%= user.first_name %></div>
+                        <div class="lastname"><%= user.last_name %></div>
+                        <div class="phone"><%= user.phone %></div>
+                        <div class="email"><%= user.email %></div>
+                    </div>
+            </div>
+            <div class="boton-guardar">
+                <button type="submit" class="boton-formulario"><a class="back" href="/admin/adminUser?admin=true">REGRESAR</a></button>
+                <button type="submit" class="boton-formulario"><a class="edit" href="/detail/edit/<%= user.id %>">EDITAR</a></button>
+                <form class="delete" action="/detail/delete/<%= user.id %>?_method=DELETE" method="POST">
+                <button type="submit" class="boton-delete">ELIMINAR</button>
+            </form>
+            </div>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
+
+    </html>

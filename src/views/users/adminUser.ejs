@@ -1,0 +1,38 @@
+<%- include('../partials/head',{styles:['adminUser']}) %>
+
+    <body>
+        <%- include('../partials/header') %>
+            <main>
+                <% for( let i = 0; i < user.length; i++ ){ %>
+                    <div class="container">
+                        <a href="/detail/<%= user[i].id %>">
+                            <div class="img-user">
+                                <img class="img-user" src="../images/user/<%= user[i].image %>">
+                            </div>
+                            <div class="container-information">
+                                <div class="id">
+                                    <%= user[i].dni %>
+                                </div>
+                                <div class="name">
+                                    <%= user[i].first_name %>
+                                </div>
+                                <div class="lastname">
+                                    <%= user[i].last_name %>
+                                </div>
+                                <div class="phone">
+                                    <%= user[i].phone %>
+                                </div>
+                                <div class="email">
+                                    <%= user[i].email %>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <% }; %>
+                    <a href="/register" class="btn-link">CREAR NUEVO USUARIO</a>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
+
+    </html>

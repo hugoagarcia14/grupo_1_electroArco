@@ -1,0 +1,72 @@
+<%- include('../partials/head',{styles:['formCreationProduct']}) %>
+
+    <body>
+        <%- include('../partials/header') %>
+        <div class="titulo"><h1>Creación de productos</h1></div>
+            <main class="main">
+                
+                <form action="/createProduct" class="products" method="POST" enctype="multipart/form-data">
+                    
+                    <div class="formulario">
+                        <div class="control-for">
+                            <input type="text" placeholder="Nombre del producto:" name="name" class="input-control1"
+                                id="name" value="<%= locals.oldData ? oldData.name : null %>">
+                                <p class="error-message" id="error-name"></p>
+                                <div class="validator">
+                                    <% if (locals.errors && errors.name) { %>
+                                        <%= errors.name.msg %>
+                                            <% }%>
+                                </div>
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Descripción del producto" name="description" class="input-control1"
+                            value="<%= locals.oldData ? oldData.description : null %>">
+                            <p class="error-message" id="error-description"></p>
+                            <div class="validator">
+                                <% if (locals.errors && errors.description) { %>
+                                    <%= errors.description.msg %>
+                                        <% }%>
+                            </div>
+                        </div>
+                        <div class="controlFoto">
+                            <h5>Foto del producto</h5>
+                            <input type="file" placeholder="Foto del producto" name="image" id="image" class="inputFoto"
+                            >
+                            <p class="error-message" id="error-image"></p>
+                            <div class="validator">
+                                
+                                <% if (locals.errors && errors.image) { %>
+                                    <%= errors.image.msg %>
+                                        <% }%>
+                            </div>
+                        </div>
+                        
+                        <div class="control-for">
+                            <input type="text" placeholder="Colores del producto:" name="color" class="input-control1"
+                                id="color">
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Precio del producto:" name="price" class="input-control1"
+                                id="precioProducto" value="<%= locals.oldData ? oldData.price : null %>">
+                                <p class="error-message" id="error-price"></p>
+                                <div class="validator">
+                                    <% if (locals.errors && errors.price) { %>
+                                        <%= errors.price.msg %>
+                                            <% }%>
+                                </div>
+                        </div>
+                        <div class="control-for">
+                            <input type="text" placeholder="Descuento del producto:" name="discount" class="input-control1"
+                                id="descuentoProducto">
+                        </div>
+                        <div class="boton-guardar">
+                            <button type="submit" class="botonGuardar">GUARDAR</button>
+                            <button type="delete" class="botonBorrar">BORRAR</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+           
+            <%- include('../partials/footer') %>
+            <script src="/js/validateProduct.js" ></script>
+    </body>

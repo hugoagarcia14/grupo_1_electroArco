@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    width: 100%;
+}
+main.editUser {
+    background-color: var(--grisClaro);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.overlay {
+    box-shadow: 10px 10px 5px 0px var(--grisClaro);
+    width: 90%;
+    background-color: var(--blanco);
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+  
+    align-items: center;
+}
+
+.formularioRegistro {
+    width: 100%;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+.crear-formulario {
+    width: 100%;
+}
+
+.cabecera {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    height: 50px;
+    justify-content: right;
+}
+
+.imgLogo {
+    width: 30%;
+    height: 100px;
+    display: flex;
+}
+
+.botones {
+    display: flex;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.botonHome>button {
+    width: 150px;
+    height: 30px;
+}
+
+.botonIngresa>button {
+    width: 150px;
+    height: 30px;
+}
+
+.botonAyuda>button {
+    width: 150px;
+    height: 30px;
+}
+
+.botonContacto>button {
+    width: 150px;
+    height: 30px;
+}
+
+.botonPublica>button {
+    width: 150px;
+    height: 40px;
+    margin: 4px;
+    margin-left: -4px;
+
+}
+
+.botonPublica {
+    width: 150px;
+    margin-top: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+input {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.input-control {
+    width: 100%;
+    padding: 10px;
+    padding-left: 0px;
+}
+
+.boton-formulario {
+    width: 70%;
+    height: 30px;
+    margin: 20px;
+    background-color: var(--celeste);
+    color: var(--blanco);
+    justify-content: space-between;
+    border-radius: 5px;
+
+}
+.boton-delete {
+    width: 70%;
+    height: 30px;
+    margin: 20px;
+    background-color: var(--celeste);
+    color: var(--blanco);
+    justify-content: space-between;
+    border-radius: 5px;
+
+}
+form.delete {
+    width: 40%;
+}
+
+.boton-formulario:hover {
+    background: var(--grisClaro);
+}
+
+.burger-menu {
+    display: none;
+}
+
+.nombre,
+.apellido,
+.correo,
+.contrasena, .img-edit {
+    width: 100%;
+}
+
+.boton-guardar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.img-edit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.celular, .idUser {
+    width: 100%;
+}
+
+@media(min-width:481px) {
+    .cabecera-botones {
+        display: none;
+    }
+
+    .imgLogo {
+        width: 80%;
+        height: 50px;
+        justify-content: left;
+
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .burger-menu i {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        padding: 4px;
+        display: flex;
+        color: var(--blanco);
+        justify-content: center;
+        background-color: var(--negro);
+        height: 25px;
+        width: 30px;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    .divNombreApellido {
+        display: flex;
+    }
+    .divCorreoContrasena {
+        display: flex;
+    }
+    .nombre,
+    .apellido,
+    .correo,
+    .contrasena {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .celular, .idUser {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .boton-formulario {
+        width: 50%;
+    }
+    .img-edit, .idUser {
+        width: 50%;
+
+        padding: 30px;
+    }
+    form.delete {
+        width: 60%;
+    }
+    .boton-delete {
+        width: 70%;
+        height: 30px;
+        margin: 20px;
+        background-color: var(--celeste);
+        color: var(--blanco);
+        justify-content: space-between;
+        border-radius: 5px;
+    
+    }
+}
+
+@media(min-width:1024px) {
+    .cabecera-botones {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .divNombreApellido {
+        display: flex;
+    }
+
+    .divCorreoContrasena {
+        display: flex;
+    }
+
+    .celular, .idUser {
+        width: 50%;
+    }
+
+    .nombre,
+    .apellido,
+    .correo,
+    .contrasena {
+        width: 50%;
+    }
+
+    .overlay {
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .boton-formulario {
+        width: 45%;
+    }
+}

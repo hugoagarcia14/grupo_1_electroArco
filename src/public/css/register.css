@@ -1,97 +1,125 @@
-*{
+* {
     box-sizing: border-box;
 }
-h2{
+
+h2 {
     width: 100%;
 }
-.overlay{
+main.editUser {
+    background-color: var(--grisClaro);
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.banner-img {
+    display: block;
+}
+
+.overlay {
     box-shadow: 10px 10px 5px 0px gray;
-    width: 60%;
-    background-color: #ebebeb;
+    width: 90%;
+    background-color: #fff;
     border-radius: 30px;
     padding: 20px;
     margin-bottom: 20px;
-    margin-top: 10px;
-    margin-left: 20%;
+    margin-top: 15px;
+  
     align-items: center;
-    
-      
 }
 
-.formularioRegistro{
+.formularioRegistro {
     width: 100%;
-       
+
 }
-h1{
+
+h1 {
     text-align: center;
 }
-.crear-formulario{
+
+.crear-formulario {
     width: 100%;
 }
-.cabecera{
-    width:100%;
+
+.cabecera {
+    width: 100%;
     border-radius: 10px;
     display: flex;
     height: 50px;
     justify-content: right;
 }
-.imgLogo{
+
+.imgLogo {
     width: 30%;
-    height:100px;
+    height: 100px;
     display: flex;
 }
-.botones{
+
+.botones {
     display: flex;
     padding: 10px;
     margin-left: 20px;
 }
-.botonHome > button{
+
+.botonHome>button {
     width: 150px;
     height: 30px;
 }
-.botonIngresa > button{
+
+.botonIngresa>button {
     width: 150px;
     height: 30px;
 }
-.botonAyuda > button{
+
+.botonAyuda>button {
     width: 150px;
     height: 30px;
 }
-.botonContacto > button{
+
+.botonContacto>button {
     width: 150px;
     height: 30px;
 }
-.botonPublica > button{
+
+.botonPublica>button {
     width: 150px;
     height: 40px;
     margin: 4px;
     margin-left: -4px;
-  
+
 }
-.botonPublica{
+
+.botonPublica {
     width: 150px;
     margin-top: 0;
     padding: 0;
 }
-h2{
+
+h2 {
     text-align: center;
 }
 
-label{
+label {
     font-size: 18px;
     margin-bottom: 5px;
     font-style: italic;
     display: block;
 }
-input{
+
+input {
     border-radius: 5px;
+    width: 100%;
 }
-.input-control{
+
+.input-control {
+    border: 1px solid;
     width: 100%;
     padding: 10px;
-    padding-left: 0px;
+    padding-left: 5px;
 }
-.boton-formulario{
+
+.in-vaild{
+    border: 2px solid red;
+}
+.boton-formulario {
     width: 40%;
     height: 30px;
     margin: 20px;
@@ -99,37 +127,84 @@ input{
     color: #ebebeb;
     justify-content: space-between;
     border-radius: 5px;
-    
+
 }
-.boton-formulario:hover{
-    background:gray;
+
+.boton-formulario:hover {
+    background: gray;
 }
-.burger-menu{
-    display:none;
+
+.burger-menu {
+    display: none;
 }
-.nombre, .apellido,.correo, .contrasena{
+
+.nombre,
+.apellido,
+.correo,
+.contrasena, .img-edit {
     width: 100%;
 }
-.boton-guardar{
+
+.boton-guardar {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-               
-@media(min-width:361px){
-    .cabecera-botones{
+.img-edit {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.img-edit input{
+    border: 1px solid;
+    width: 100%;
+    padding: 10px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.celular, .idUser {
+    width: 100%;
+}
+.validator{
+    font-size: 16px;
+    color: red;
+    font-style: italic;
+}
+
+.is-valid {
+    color:green
+}
+
+.is-invalid {
+    border: red 2px solid;
+    color:red;
+}
+
+
+@media(min-width:481px) {
+    .cabecera-botones {
         display: none;
     }
-    .imgLogo{
+
+    .imgLogo {
         width: 80%;
         height: 50px;
         justify-content: left;
-        
+
     }
-    .burger-menu{
-        display:flex;
+
+    .burger-menu {
+        display: flex;
     }
-    .burger-menu i{
+
+    .burger-menu i {
         margin-bottom: 10px;
         margin-top: 10px;
         padding: 4px;
@@ -139,47 +214,74 @@ input{
         background-color: black;
         height: 25px;
         width: 30px;
-        border-radius: 5px;  
-        margin-right: 10px;  
+        border-radius: 5px;
+        margin-right: 10px;
     }
-   
-    .nombre, .apellido,.correo, .contrasena{
-        width: 100%;
-        padding: 30px;
-    }
-    .celular{
-        width: 100%;
-        padding: 30px;
-    }
-    .boton-formulario{
-        width: 50%;
-    }
-}
-@media(min-width:760px){
-    .cabecera-botones{
+    .divNombreApellido {
         display: flex;
     }
-    .burger-menu{
-        display: none;
-    }
-    .divNombreApellido{
+    .divCorreoContrasena {
         display: flex;
     }
-    .divCorreoContrasena{
-        display:flex;
-    }
-    .celular{
-        width:50%;
-    }
-    .nombre, .apellido,.correo, .contrasena{
+    .nombre,
+    .apellido,
+    .correo,
+    .contrasena {
         width: 50%;
-    }
-    .overlay{
-        width: 80%;
-        margin-left: 10%;
+        padding: 30px;
     }
 
-    .boton-formulario{
+    .celular, .idUser {
+        width: 50%;
+        padding: 30px;
+    }
+
+    .boton-formulario {
+        width: 50%;
+    }
+    .img-edit, .idUser {
+        width: 50%;
+
+        padding: 30px;
+    }
+}
+
+@media(min-width:1024px) {
+    .cabecera-botones {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .divNombreApellido {
+        display: flex;
+    }
+
+    .divCorreoContrasena {
+        display: flex;
+    }
+
+    .celular, .idUser {
+        width: 50%;
+    }
+
+    .nombre,
+    .apellido,
+    .correo,
+    .contrasena {
+        width: 50%;
+    }
+
+    .overlay {
+        width: 80%;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .boton-formulario {
         width: 40%;
     }
 }

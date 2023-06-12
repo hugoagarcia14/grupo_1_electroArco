@@ -1,151 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('../partials/head',{styles:['productdetail']}) %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/productdetail.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/34b99c374a.js" crossorigin="anonymous"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-    <link href="/css/colors.css" rel="stylesheet">
-    <title>ElectoArco</title>
-</head>
+	<body>
+		<%- include('../partials/header') %>
+			<div class="container products-wrapper">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="products-title">Detalle del producto: <%= product.name %>
+						</h2>
+					</div>
+				</div>
+				<div class="product-detail">
+					<div class="row">
+						<div class="col-12 col-lg-8">
+							<img src="/images/products/<%=product.image %>" alt="product image"
+								class="product-detail-img">
+							<html lang="en">
 
-<body>
-    <%- include('./partials/header') %>
-    <main>
-        <section class="containerProductDetail1">
-            <div class="containerNavigationBar">
-                <div id="iconLeft">
-                    <i class="fa-solid fa-chevron-left"></i>
-                </div>
-                <div id="iconShare">
-                    <i class="fa-regular fa-share-from-square"></i>
-                </div>
-                <div id="iconProductCart">
-                    <i class="fa-brands fa-shopify"></i>
-                </div>
-            </div>
-            <div class="containerProductInfo">
-                <div id="mark">
-                    <p>Samsung</p>
-                </div>
-                <div id="productName">
-                    <p>Galaxy S10 Core 32GB Blue</p>
-                </div>
-                <div id="subtitleProductDescription">
-                    <p>Código: 0802 0011 2236</p>
-                </div>
-            </div>
-            <div class="slide1"><img src="images/img-samsung-galaxy-s10.jpg" alt="aquívalaimagendelproducto"></div>
-            <div class="price1">
-                <p>1.700.000</p>
-            </div>
-            <div id="containerPriceAndShipping1">
-                <div class="deliveryOptions1">
-                    <p>Opciones de entrega</p>
-                </div>
-                <div class="containerDeliveryOptions1">
-                    <div class="textDO1">
-                        <label>
-                            <input type="radio" name="deliveryOptions" value="Envío a tu dirección"><i id="truck2"><i
-                                    class="fas fa-truck"></i></i>Envío a tu dirección
-                        </label>
-                    </div>
-                    <div class="textDO1">
-                        <label>
-                            <input type="radio" name="deliveryOptions" value="Recoge en la tienda"><i
-                                class="fas fa-shopping-bag"></i></i>Recoge en la tienda
-                        </label>
-                    </div>
-                </div>
-                <div class="availabilityInStore1">
-                    <p>Disponibilidad en tienda</p>
-                </div>
-                <div class="containerSelectStore1">
-                    <div class="iconSelectStore1"><i class="fas fa-store"></i></i></div>
-                    <div class="textSelectStore1">
-                        <p>Seleccionar tienda</p>
-                    </div>
-                </div>
-            </div>
-            <div class="addAmount1">
-                <button class="addToCart1" type="submit">Agregar al Carrito</button>
-            </div>
-        </section>
-        <section class="containerProductDetail">
-            <div class="slide"><img src="images/img-samsung-galaxy-s10.jpg" alt="aquívalaimagendelproducto"></div>
-            <div id="containerProductDescription">
-                <p class="titleProductDescription">Samsung Galaxy S10 Core 32GB Blue</p>
-                <p class="subtitleProductDescription">Código: 0802 0011 2236</p>
-            </div>
-            <div id="containerPriceAndShipping">
-                <div class="price">
-                    <p>1.700.000</p>
-                </div>
-                <div class="addAmount">
-                    <button class="addToCart" type="submit">Agregar al Carrito</button>
-                </div>
-                <div class="deliveryOptions">
-                    <p>Opciones de entrega</p>
-                </div>
-                <div class="containerDeliveryOptions">
-                    <div class="text2">
-                        <label>
-                            <input type="radio" name="deliveryOptions" value="Envío a tu dirección"><i id="truck2"><i
-                                    class="fas fa-truck"></i></i>Envío a tu dirección
-                        </label>
-                    </div>
-                    <div class="text2">
-                        <label>
-                            <input type="radio" name="deliveryOptions" value="Recoge en la tienda"><i
-                                class="fas fa-shopping-bag"></i></i>Recoge en la tienda
-                        </label>
-                    </div>
-                </div>
-                <div class="availabilityInStore">
-                    <p>Disponibilidad en tienda</p>
-                </div>
-                <div class="containerSelectStore">
-                    <div class="iconSelectStore"><i class="fas fa-store"></i></i></div>
-                    <div class="textSelectStore">
-                        <p>Seleccionar tienda</p>
-                    </div>
-                </div>
-            </div>
-            <div id="containerOutstandingFeatures">
-                <div class="titleOutstandingFeatures">
-                    <p>Caracteristicas Importantes</p>
-                </div>
-                <div class="listOutstandingFeatures">
-                    <ul>
-                        <li>Contenidos más nítidos, definidos y claros.</li>
-                        <li>Disfruta del dispositivo durante horas con su gran batería.</li>
-                        <li>Gran procesador para un rendimiento rápido y eficiente.</li>
-                    </ul>
-                </div>
-            </div>
-            <div id="containerProductOverview">
-                <div class="titleProductOverview">
-                    <p>Resumen del producto</p>
-                </div>
-                <div class="textProductOverview">
-                    <p>Con Galaxy S10 los beneficios claves están en su mejor expresión, disfruta de tus contenidos al
-                        mejor nivel, gracias a su amplia pantalla de 6.5" con alta resolución. Disfruta de tu apps
-                        favoritas con la alta velocidad de su procesador de ocho núcleos y quédate tranquilo todo el
-                        día, gracias a su batería de larga duración de 5.000 mAh. ¡Lleva el tuyo ahora!</p>
-                </div>
-            </div>
-        </section>
-        <section id="containerMoreInfoProduct">
-            <i class="fas fa-info-circle"></i>
-            <p>Más información del producto</p>
-        </div>
-    </main>
-    <%- include('./partials/footer') %>
-</body>
-</html>
+							<head>
+								<meta charset="UTF-8">
+								<meta http-equiv="X-UA-Compatible" content="IE=edge">
+								<meta name="viewport" content="width=device-width, initial-scale=1.0">
+								<title>Document</title>
+							</head>
+
+							<body>
+
+							</body>
+
+							</html>
+							<p class="product-detail-description">
+								<%= product.description %>
+							</p>
+						</div>
+						<div class="col-12 col-lg-4">
+							<article class="product-detail-info">
+								<h2 class="product-detail-title">
+									<%= product.name %>
+									<%= product.color %>
+								</h2>
+
+								<p class="product-detail-price small">
+									<span>$<%= product.price %></span>
+									
+									<b>
+										<%= product.discount %>% OFF
+									</b>
+								</p>
+								<p class="product-detail-price">
+									$<%= (product.price * (100 - product.discount) / 100).toFixed(2) %>
+								</p>
+
+								<ul class="actions-list">
+									<li>
+										<i class="fas fa-credit-card"></i>
+										<p>Pagá en 12 cuotas sin interes</p>
+									</li>
+									<li>
+										<i class="fas fa-store"></i>
+										<p>Retiro gratis en locales del vendedor</p>
+									</li>
+								</ul>
+								<a href="#" class="buy-now-button">COMPRAR AHORA</a>
+								<% if(!locals.isLogged){%>
+									<hr>
+									<%} else {%>
+										<div class="buttonEditDelete">
+											
+											<form action="/productdetail/delete/<%= product.id %>?_method=DELETE"
+												method="POST" style="display: inline-flex">
+												<a href="/editProduct/<%= product.id %>" class="action-button edit">EDITAR
+													PRODUCTO</a>
+												<button type="submit" class="action-button delete">ELIMINAR</button>
+											</form>
+
+											<%}%>
+										</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+			<%- include('../partials/footer') %>
+	</body>
+
+	</html>
