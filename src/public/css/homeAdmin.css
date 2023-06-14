@@ -52,7 +52,7 @@ ul.list {
 nav ul.list li {
     display: flex;
     margin: 10px 0;
-    width: 16%;
+    width: 14%;
 }
 
 
@@ -66,7 +66,7 @@ input.search-product {
    
 }
 
-#check:checked~.search ul.list {
+#check:checked ~.search ul.list {
     left: 0;
 }
 i.fas.fa-sign-in-alt, i.fas.fa-id-card, i.fas.fa-shopping-basket {
